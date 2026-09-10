@@ -40,26 +40,6 @@ Der Wahlguide ist keine Wahlempfehlung und kein offizielles Angebot der Stadt Os
     └── e2e/                # Playwright-Tests der Browser-Flows
 ```
 
-## Lokal starten
-
-Die Seite muss über einen lokalen Webserver laufen, weil Browser JSON-Dateien bei `file://` aus Sicherheitsgründen nicht zuverlässig laden.
-
-```bash
-npm install
-npm run serve
-```
-
-Anschließend `http://localhost:8765` öffnen. Alternativ funktioniert jeder statische Webserver, etwa `python -m http.server 8000`.
-
-## Deployment mit GitHub Pages
-
-1. Repository auf GitHub anlegen und die Dateien in den Standard-Branch pushen.
-2. Unter **Settings → Pages** bei **Build and deployment** „Deploy from a branch“ auswählen.
-3. Den Branch (meist `main`) und den Ordner `/(root)` wählen.
-4. Speichern. GitHub Pages stellt anschließend die URL bereit.
-
-Da `index.html` im Repository-Stamm liegt und alle Pfade relativ sind, ist kein Build-Schritt erforderlich.
-
 ## Architektur und Datenmodell
 
 `data/questions.json` ist die einzige Laufzeit-Datenquelle. Die Module trennen Datenzugriff, Quiz-Zustand, Berechnung und Oberfläche bewusst voneinander:
@@ -100,30 +80,6 @@ Beim Bearbeiten gilt:
 - Für Parteien sind `agree`, `neutral`, `disagree` und `unknown` gültige Werte.
 - Quellen und Parteibegründungen werden beim CSV-Import nach bestehender Thesen-ID erhalten; die veröffentlichte JSON-Datei bleibt die maßgebliche, vollständige Datenquelle.
 - Eine geänderte Partei-ID wird auch in Antworten und Parteibegründungen aktualisiert.
-
-## Tests
-
-```bash
-npm run test:unit
-npm run test:e2e
-npm test
-```
-
-Für die End-to-End-Tests wird einmalig ein Playwright-Browser benötigt:
-
-```bash
-npx playwright install chromium
-```
-
-## Roadmap
-
-- Redaktioneller Workflow für Quellen- und Positionsupdates
-- Themenauswertung und Diagramme
-- Ergebnis als Bild exportieren
-- Mehrere Kommunen und getrennte Fragensätze
-- Zusätzliche Antwortoptionen und konfigurierbare Sprachversionen
-- Erweiterte Barrierefreiheits- und Plausibilitätsprüfungen
-
 ## Lizenz
 
 Der Quellcode steht unter der [MIT-Lizenz](LICENSE).
