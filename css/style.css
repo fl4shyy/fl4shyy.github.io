@@ -146,7 +146,7 @@ h1 { max-width: 18ch; margin: 0; font-size: clamp(2rem, 8vw, 3.25rem); line-heig
 .progress-dot.is-important::after { content: ""; position: absolute; top: -0.28rem; right: -0.28rem; width: 0.35rem; height: 0.35rem; border: 1px solid var(--color-surface); border-radius: 50%; background: #d63939; }
 
 .question-card { position: relative; margin-top: 2rem; padding: clamp(1.5rem, 6vw, 2.5rem); border-radius: calc(var(--radius) + 0.25rem); background: var(--color-surface); box-shadow: var(--shadow); }
-.question-card h1 { max-width: 22ch; font-size: clamp(1.65rem, 6vw, 2.5rem); }
+.question-card h1 { max-width: 22ch; font-size: clamp(1.5rem, 5vw, 2.2rem); }
 .source-list { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 0 0 1.1rem; }
 .source-tag { display: inline-flex; align-items: center; min-height: 1.8rem; padding: 0.25rem 0.55rem; border-radius: 0.45rem; color: #536176; background: #edf0f4; font-size: 0.76rem; font-weight: 650; }
 
@@ -168,12 +168,14 @@ h1 { max-width: 18ch; margin: 0; font-size: clamp(2rem, 8vw, 3.25rem); line-heig
 
 .weighting-count { margin: 1.25rem 0 0; color: var(--color-primary-dark); font-size: 0.92rem; font-weight: 700; }
 .weighting-list { display: grid; gap: 0.7rem; margin: 1rem 0 0; padding: 0; list-style: none; }
-.weighting-item { display: flex; align-items: center; gap: 0.85rem; padding: 0.95rem 1rem; border: 1px solid var(--color-border); border-radius: 0.8rem; background: var(--color-surface); }
+.weighting-item { display: flex; align-items: center; gap: 0.85rem; padding: 0.95rem 1rem; border: 1px solid var(--color-border); border-radius: 0.8rem; background: var(--color-surface); cursor: pointer; transition: border-color 160ms ease, background-color 160ms ease; }
+.weighting-item:not(.is-skipped):hover { border-color: #9bb8ff; background: #f8faff; }
 .weighting-item.is-skipped { opacity: 0.6; }
 .weighting-item-meta { flex: 1; min-width: 0; }
 .question-meta-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 0.7rem; }
 .weighting-question { margin: 0; font-size: 0.94rem; font-weight: 650; line-height: 1.35; }
 .question-category { flex: 0 0 auto; margin-top: 0.05rem; text-align: right; }
+.weighting-item .question-category { display: inline-flex; margin-top: 0.45rem; text-align: left; }
 .weighting-answer { margin: 0.2rem 0 0; color: var(--color-muted); font-size: 0.8rem; font-weight: 650; }
 .weighting-toggle { flex: 0 0 auto; display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 0.85rem; border: 1px solid var(--color-border); border-radius: 999px; color: var(--color-muted); background: var(--color-surface); font-size: 0.82rem; font-weight: 700; cursor: pointer; transition: border-color 160ms ease, background-color 160ms ease, color 160ms ease; }
 .weighting-toggle:hover { border-color: #d63939; color: #b32626; }
