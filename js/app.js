@@ -196,19 +196,17 @@ function renderWeighting() {
       const state = states.get(question.id);
       const item = document.createElement("li");
       item.className = "weighting-item";
+      item.dataset.weightingQuestionId = question.id;
       if (state.skipped) item.classList.add("is-skipped");
 
       const meta = document.createElement("div");
       meta.className = "weighting-item-meta";
-      const metaHead = document.createElement("div");
-      metaHead.className = "question-meta-head";
       const q = document.createElement("p");
       q.className = "weighting-question";
       q.textContent = `${index + 1}. ${question.question}`;
       const category = document.createElement("span");
       category.className = "category-label question-category";
       category.textContent = question.category;
-      metaHead.append(q, category);
 
       const answer = document.createElement("p");
       answer.className = "weighting-answer";
@@ -222,7 +220,7 @@ function renderWeighting() {
         icon.setAttribute("aria-hidden", "true");
         answer.append(icon, document.createTextNode(ANSWER_LABELS[state.answer]));
       }
-      meta.append(metaHead, answer);
+      meta.append(q, category, answer);
 
       const toggle = document.createElement("button");
       toggle.type = "button";
@@ -248,10 +246,13 @@ function renderWeighting() {
 }
 
 function handleWeightingToggle(event) {
-  const toggle = event.target.closest("[data-weighting-question-id]");
+  const item = event.target.closest(".weighting-item");
+  if (!item) return;
+
+  const toggle = item.querySelector("[data-weighting-question-id]");
   if (!toggle || toggle.disabled) return;
 
-  const questionId = toggle.dataset.weightingQuestionId;
+  const questionId = item.dataset.weightingQuestionId;
   const isImportant = toggle.getAttribute("aria-pressed") === "true";
   const next = quiz.setImportant(questionId, !isImportant);
 
