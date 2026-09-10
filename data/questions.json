@@ -1,0 +1,781 @@
+{
+  "metadata": {
+    "title": "Wahlguide Osnabrück",
+    "municipality": "Osnabrück",
+    "electionDate": "2026-09-13",
+    "electionYear": 2026,
+    "version": "1.0.0",
+    "description": "Wahlguide für die Kommunalwahl in Osnabrück am 13. September 2026."
+  },
+  "answerOptions": [
+    {
+      "id": "agree",
+      "label": "Stimme zu",
+      "sortOrder": 1
+    },
+    {
+      "id": "neutral",
+      "label": "Neutral",
+      "sortOrder": 2
+    },
+    {
+      "id": "disagree",
+      "label": "Stimme nicht zu",
+      "sortOrder": 3
+    }
+  ],
+  "parties": [
+    {
+      "id": "volt",
+      "name": "Volt",
+      "shortName": "Volt",
+      "color": "#582C83"
+    },
+    {
+      "id": "afd",
+      "name": "AfD",
+      "shortName": "AfD",
+      "color": "#009EE0"
+    },
+    {
+      "id": "fdp",
+      "name": "FDP",
+      "shortName": "FDP",
+      "color": "#FFED00"
+    },
+    {
+      "id": "cdu",
+      "name": "CDU",
+      "shortName": "CDU",
+      "color": "#1B1B1B"
+    },
+    {
+      "id": "linke",
+      "name": "Die Linke",
+      "shortName": "Die Linke",
+      "color": "#BE3075"
+    },
+    {
+      "id": "spd",
+      "name": "SPD",
+      "shortName": "SPD",
+      "color": "#E3000F"
+    },
+    {
+      "id": "gruene",
+      "name": "GRÜNE",
+      "shortName": "GRÜNE",
+      "color": "#46962B"
+    },
+    {
+      "id": "uwg",
+      "name": "UWG",
+      "shortName": "UWG",
+      "color": "#2E6E57"
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "question": "Die Partei setzt sich für die Einführung von Busspuren auf allen zweispurigen Straßen ein.",
+      "category": "Verkehr",
+      "weight": 1,
+      "parties": {
+        "volt": "unknown",
+        "afd": "unknown",
+        "fdp": "disagree",
+        "cdu": "disagree",
+        "linke": "agree",
+        "spd": "disagree",
+        "gruene": "agree",
+        "uwg": "unknown"
+      },
+      "sources": [
+        "LocalZero Wahlcheck",
+        "Wahlprogramme"
+      ],
+      "partyExplanations": {
+        "volt": "Keine hinreichend konkrete/eindeutige Position ableitbar/gefunden. Volt befürwortet jedoch ausdrücklich Busspuren als Beschleunigungsmaßnahme (Programm S. 9)",
+        "afd": "Keine hinreichend konkrete/eindeutige Position ableitbar/gefunden. Im Programm auf S. 6 wird dies für die Iburger Straße verneint, jedoch fehlt eine allgemeine Aussage.",
+        "fdp": "Im Statement auf LocalZero wird die pauschale Aussage abgehlehnt. Zudem wird im Programm auf S.2 die Einspurigkeit auf stark befahrenen Straßen abgelehnt",
+        "cdu": "Im Statement auf LocalZero wird die Pauschale Aussage abgelehnt. Zudem finden sich weitere Begründungen im Programm auf S. 8",
+        "linke": "Die pauschale Aussage wird im Statement bei LocalZero bejaht. Zudem gibt es weiteren Zuspruch zur These im Programm auf S.5.",
+        "spd": "Die pauschale Aussage wird im Statement auf LocalZero abgelehnt, jedoch gibt es im Programm auf S.25 eine klare Forderung nach Busspuren",
+        "gruene": "Die pauschale Aussage wird im Statement bei LocalZero bejaht. Zudem gibt es weitere Hinweise im Programm auf S.16.",
+        "uwg": "Keine hinreichend konkrete/eindeutige Position ableitbar/gefunden"
+      }
+    },
+    {
+      "id": "2",
+      "question": "Die Partei hat die Konzeptvariante 3B für den Neumarkt mitgetragen. Sie sieht einen Ausschluss des Autoverkehrs, eine Reduzierung des Busverkehrs um bis zu 70 % sowie eine teilweise Verlagerung des Busverkehrs über die Johannisfreiheit vor.",
+      "category": "Verkehr",
+      "weight": 1,
+      "parties": {
+        "volt": "agree",
+        "afd": "neutral",
+        "fdp": "disagree",
+        "cdu": "agree",
+        "linke": "disagree",
+        "spd": "agree",
+        "gruene": "agree",
+        "uwg": "disagree"
+      },
+      "sources": [
+        "Ratssitzung 09.12.2025"
+      ],
+      "partyExplanations": {
+        "volt": "Abstimmungsverhalten entnommen",
+        "afd": "Abstimmungsverhalten entnommen",
+        "fdp": "Abstimmungsverhalten entnommen",
+        "cdu": "Abstimmungsverhalten entnommen",
+        "linke": "Abstimmungsverhalten entnommen",
+        "spd": "Abstimmungsverhalten entnommen",
+        "gruene": "Abstimmungsverhalten entnommen",
+        "uwg": "Abstimmungsverhalten entnommen"
+      }
+    },
+    {
+      "id": "3",
+      "question": "Die Partei hat für die letzten 2 Erhöhungen der Preise im Busverkehr mitgetragen.",
+      "category": "Verkehr",
+      "weight": 1,
+      "parties": {
+        "volt": "agree",
+        "afd": "agree",
+        "fdp": "disagree",
+        "cdu": "agree",
+        "linke": "disagree",
+        "spd": "disagree",
+        "gruene": "agree",
+        "uwg": "disagree"
+      },
+      "sources": [
+        "Ratssitzung 16.09.2025",
+        "Ratssitzung 03.09.2024"
+      ],
+      "partyExplanations": {
+        "volt": "Abstimmungsverhalten entnommen",
+        "afd": "Abstimmungsverhalten entnommen",
+        "fdp": "Abstimmungsverhalten entnommen",
+        "cdu": "Abstimmungsverhalten entnommen",
+        "linke": "Abstimmungsverhalten entnommen",
+        "spd": "Abstimmungsverhalten entnommen",
+        "gruene": "Abstimmungsverhalten entnommen",
+        "uwg": "Abstimmungsverhalten entnommen"
+      }
+    },
+    {
+      "id": "4",
+      "question": "Die Partei hat in der näheren Vergangenheit Finanzierungsmaßnahmen für den FMO unterstützt.",
+      "category": "Verkehr",
+      "weight": 1,
+      "parties": {
+        "volt": "agree",
+        "afd": "agree",
+        "fdp": "agree",
+        "cdu": "agree",
+        "linke": "disagree",
+        "spd": "agree",
+        "gruene": "agree",
+        "uwg": "agree"
+      },
+      "sources": [
+        "Ratssitzung 01.10.2024"
+      ],
+      "partyExplanations": {
+        "volt": "Abstimmungsverhalten entnommen",
+        "afd": "Abstimmungsverhalten entnommen",
+        "fdp": "Abstimmungsverhalten entnommen",
+        "cdu": "Abstimmungsverhalten entnommen",
+        "linke": "Abstimmungsverhalten entnommen",
+        "spd": "Abstimmungsverhalten entnommen",
+        "gruene": "Abstimmungsverhalten entnommen",
+        "uwg": "Abstimmungsverhalten entnommen"
+      }
+    },
+    {
+      "id": "5",
+      "question": "Tempo 30 soll in Osnabrück innerorts grundsätzlich ausgeweitet werden und auch auf Hauptverkehrsstraßen häufiger gelten.",
+      "category": "Verkehr",
+      "weight": 1,
+      "parties": {
+        "volt": "agree",
+        "afd": "disagree",
+        "fdp": "disagree",
+        "cdu": "disagree",
+        "linke": "agree",
+        "spd": "agree",
+        "gruene": "agree",
+        "uwg": "disagree"
+      },
+      "sources": [
+        "Ratssitzung 19.05.2026",
+        "Wahlprogramme",
+        "LocalZero Wahlcheck"
+      ],
+      "partyExplanations": {
+        "volt": "Abstimmungsverhalten entnommen + weitere Hinweise im Programm (S. 24).",
+        "afd": "Abstimmungsverhalten entnommen + weitere Hinweise im Programm (S. 5)",
+        "fdp": "Abstimmungsverhalten entnommen + weitere Hinweise im Statement auf LocalZero",
+        "cdu": "Abstimmungsverhalten entnommen + Inhalt Änderungsantrag + Inhalt des Statements auf LocalZero",
+        "linke": "Abstimmungsverhalten entnommen + Wahlprogramm (S. 7) + Inhalt des Statements auf LocalZero",
+        "spd": "Abstimmungsverhalten entnommen - Wahlprogramm + Inhalt des Statements auf LocalZero eher unkonkret bzgl. Hauptverkehrsstraßen",
+        "gruene": "Abstimmungsverhalten entnommen + Wahlprogramm (S. 16) + Inhalt des Statements auf LocalZero",
+        "uwg": "Abstimmungsverhalten entnommen"
+      }
+    },
+    {
+      "id": "6",
+      "question": "Die Partei unterstützte einen Antrag zur Prüfung des Ausbaus der E-Ladeinfrastruktur, insbesondere durch Ladepunkte an Straßenlaternen.",
+      "category": "Verkehr",
+      "weight": 1,
+      "parties": {
+        "volt": "agree",
+        "afd": "disagree",
+        "fdp": "agree",
+        "cdu": "agree",
+        "linke": "agree",
+        "spd": "agree",
+        "gruene": "agree",
+        "uwg": "agree"
+      },
+      "sources": [
+        "Ratssitzung 01.10.2024"
+      ],
+      "partyExplanations": {
+        "volt": "Abstimmungsverhalten entnommen",
+        "afd": "Abstimmungsverhalten entnommen",
+        "fdp": "Abstimmungsverhalten entnommen",
+        "cdu": "Abstimmungsverhalten entnommen",
+        "linke": "Abstimmungsverhalten entnommen",
+        "spd": "Abstimmungsverhalten entnommen",
+        "gruene": "Abstimmungsverhalten entnommen",
+        "uwg": "Abstimmungsverhalten entnommen"
+      }
+    },
+    {
+      "id": "7",
+      "question": "Die Parkgebühren in der Osnabrücker Innenstadt sollen gesenkt bzw. durch gezielte Rabatte vergünstigt werden.",
+      "category": "Verkehr",
+      "weight": 1,
+      "parties": {
+        "volt": "disagree",
+        "afd": "agree",
+        "fdp": "agree",
+        "cdu": "agree",
+        "linke": "disagree",
+        "spd": "disagree",
+        "gruene": "disagree",
+        "uwg": "agree"
+      },
+      "sources": [
+        "Ratssitzung 19.05.2026"
+      ],
+      "partyExplanations": {
+        "volt": "Abstimmungsverhalten entnommen",
+        "afd": "Abstimmungsverhalten entnommen",
+        "fdp": "Abstimmungsverhalten entnommen",
+        "cdu": "Abstimmungsverhalten entnommen",
+        "linke": "Abstimmungsverhalten entnommen",
+        "spd": "Abstimmungsverhalten entnommen",
+        "gruene": "Abstimmungsverhalten entnommen",
+        "uwg": "Abstimmungsverhalten entnommen"
+      }
+    },
+    {
+      "id": "8",
+      "question": "Die Maßnahmen des Bürgerbegehrens Radentscheid sollen umgesetzt werden, darunter der Ausbau von Fahrradstraßen und Radschnellwegen, zusätzliche Stellplätze sowie Sicherheitsmaßnahmen an Hauptverkehrsachsen und Kreuzungen.",
+      "category": "Verkehr",
+      "weight": 1,
+      "parties": {
+        "volt": "agree",
+        "afd": "disagree",
+        "fdp": "agree",
+        "cdu": "agree",
+        "linke": "agree",
+        "spd": "agree",
+        "gruene": "agree",
+        "uwg": "agree"
+      },
+      "sources": [
+        "LocalZero Wahlcheck",
+        "Wahlprogramme"
+      ],
+      "partyExplanations": {
+        "volt": "Wahlprogramm (S. 8f.) entnommen",
+        "afd": "Wahlprogramm Forderungen (S. 5f) widersprechen Radentscheid in Teilen",
+        "fdp": "Im Statement auf LocalZero wird sich klar dafür positioniert.",
+        "cdu": "Im Statement auf LocalZero wird sich klar dafür positioniert.",
+        "linke": "Wahlprogramm (S. 6) explizit + Im Statement auf LocalZero wird sich klar dafür positioniert.",
+        "spd": "Wahlprogramm (S. 26) explizit + Im Statement auf LocalZero wird sich klar dafür positioniert",
+        "gruene": "Wahlprogramm (S. 20) + Im Statement auf LocalZero wird sich klar dafür positioniert",
+        "uwg": "Inhalte der Wahlprüfsteine S. 1f. erachten wir als hinreichend konkret und übereinstimmend"
+      }
+    },
+    {
+      "id": "9",
+      "question": "Die Partei unterstützt den Lückenschluss der A33-Nord mit der A1 durch den Neubau der rund 9 km langen Strecke zwischen Belm und der A1 bei Wallenhorst.",
+      "category": "Verkehr",
+      "weight": 1,
+      "parties": {
+        "volt": "unknown",
+        "afd": "agree",
+        "fdp": "agree",
+        "cdu": "agree",
+        "linke": "disagree",
+        "spd": "agree",
+        "gruene": "disagree",
+        "uwg": "disagree"
+      },
+      "sources": [
+        "Wahlprogramme",
+        "Ratssitzung 29.04.2025"
+      ],
+      "partyExplanations": {
+        "volt": "Keine hinreichend konkrete/eindeutige Position ableitbar/gefunden",
+        "afd": "Wahlprogramm S. 4",
+        "fdp": "Begründung während der Ratssitzung",
+        "cdu": "Wahlprogramm S. 8",
+        "linke": "Wahlprogramm S. 7",
+        "spd": "Wahlprogramm S. 25",
+        "gruene": "Wahlprogramm S. 25 + Statement in der Ratssitzung",
+        "uwg": "Statement in der Ratssitzung"
+      }
+    },
+    {
+      "id": "10",
+      "question": "Die Partei unterstützte einen Beschluss zur Abschaffung der Elternbeiträge für Krippen, Kindergärten, Horte und Kindertagespflege.",
+      "category": "Bildung & Kultur",
+      "weight": 1,
+      "parties": {
+        "volt": "agree",
+        "afd": "disagree",
+        "fdp": "disagree",
+        "cdu": "disagree",
+        "linke": "agree",
+        "spd": "agree",
+        "gruene": "agree",
+        "uwg": "disagree"
+      },
+      "sources": [
+        "Ratssitzung 01.07.2025"
+      ],
+      "partyExplanations": {
+        "volt": "Abstimmungsverhalten entnommen",
+        "afd": "Abstimmungsverhalten entnommen",
+        "fdp": "Abstimmungsverhalten entnommen",
+        "cdu": "Abstimmungsverhalten entnommen",
+        "linke": "Abstimmungsverhalten entnommen",
+        "spd": "Abstimmungsverhalten entnommen",
+        "gruene": "Abstimmungsverhalten entnommen",
+        "uwg": "Abstimmungsverhalten entnommen"
+      }
+    },
+    {
+      "id": "11",
+      "question": "Die Stadt Osnabrück soll den Aufbau einer privatrechtlich organisierten Hochschule für Medizin in kommunaler Trägerschaft unterstützen.",
+      "category": "Bildung & Kultur",
+      "weight": 1,
+      "parties": {
+        "volt": "agree",
+        "afd": "neutral",
+        "fdp": "agree",
+        "cdu": "agree",
+        "linke": "disagree",
+        "spd": "agree",
+        "gruene": "agree",
+        "uwg": "agree"
+      },
+      "sources": [
+        "Ratssitzung 01.07.25"
+      ],
+      "partyExplanations": {
+        "volt": "Abstimmungsverhalten entnommen",
+        "afd": "Abstimmungsverhalten entnommen",
+        "fdp": "Abstimmungsverhalten entnommen",
+        "cdu": "Abstimmungsverhalten entnommen",
+        "linke": "Abstimmungsverhalten entnommen",
+        "spd": "Abstimmungsverhalten entnommen",
+        "gruene": "Abstimmungsverhalten entnommen",
+        "uwg": "Abstimmungsverhalten entnommen"
+      }
+    },
+    {
+      "id": "12",
+      "question": "Die Partei stimmte für die Einführung eines qualifizierten Mietspiegels nach wissenschaftlichen Grundsätzen.",
+      "category": "Wohnen",
+      "weight": 1,
+      "parties": {
+        "volt": "agree",
+        "afd": "disagree",
+        "fdp": "disagree",
+        "cdu": "disagree",
+        "linke": "agree",
+        "spd": "agree",
+        "gruene": "agree",
+        "uwg": "disagree"
+      },
+      "sources": [
+        "Ratssitzung 03.09.2024"
+      ],
+      "partyExplanations": {
+        "volt": "Abstimmungsverhalten entnommen",
+        "afd": "Abstimmungsverhalten entnommen",
+        "fdp": "Abstimmungsverhalten entnommen",
+        "cdu": "Abstimmungsverhalten entnommen",
+        "linke": "Abstimmungsverhalten entnommen",
+        "spd": "Abstimmungsverhalten entnommen",
+        "gruene": "Abstimmungsverhalten entnommen",
+        "uwg": "Abstimmungsverhalten entnommen"
+      }
+    },
+    {
+      "id": "13",
+      "question": "Die Stadt soll neue Wohnbauflächen ausweisen, die auch den Bau von Einfamilienhäusern ermöglichen.",
+      "category": "Wohnen",
+      "weight": 1,
+      "parties": {
+        "volt": "disagree",
+        "afd": "unknown",
+        "fdp": "agree",
+        "cdu": "agree",
+        "linke": "unknown",
+        "spd": "unknown",
+        "gruene": "disagree",
+        "uwg": "unknown"
+      },
+      "sources": [
+        "Wahlprogramme"
+      ],
+      "partyExplanations": {
+        "volt": "Wahlprogramm S. 19: „Baugenehmigungen ... ausschließlich für Mehrparteienhäuser",
+        "afd": "Keine hinreichend konkrete/eindeutige Position ableitbar/gefunden",
+        "fdp": "Wahlprogramm S. 3: Einfamilienhäuser bei Auflistung für Ausweisung neuer Baugebiete explizit erwähnt.",
+        "cdu": "Wahlprogramm S. 5: Fortderung zur allgemeinen, moderaten Ausweisung neuer Bauflächen + Förderung der Eigenheimfinanzierung stärken die These unserer Meinung nach in einem ausreichend explizitem Maßen, um diese Annahme zu treffen",
+        "linke": "Keine hinreichend konkrete/eindeutige Position ableitbar/gefunden",
+        "spd": "Keine hinreichend konkrete/eindeutige Position ableitbar/gefunden. S. 24:wird der Fokus auf geförderten Geschosswohnungsbau (Vertikalverdichtung) gelegt. Jedoch nicht ausreichend konkret, um eine Ablehnung anzunehmen",
+        "gruene": "Wahlprogramm S. 11: Keine Planung neuer Einfamilienhaussiedlungen. Stattdessen auf Nachverdichtung setzen. Ausreichend konkret",
+        "uwg": "Keine hinreichend konkrete/eindeutige Position ableitbar/gefunden"
+      }
+    },
+    {
+      "id": "14",
+      "question": "Die Partei trug die Einrichtung einer Waffen- und Messerverbotszone in der südlichen Innenstadt mit.",
+      "category": "Sicherheit",
+      "weight": 1,
+      "parties": {
+        "volt": "agree",
+        "afd": "neutral",
+        "fdp": "agree",
+        "cdu": "agree",
+        "linke": "disagree",
+        "spd": "unknown",
+        "gruene": "agree",
+        "uwg": "agree"
+      },
+      "sources": [
+        "Ratssitzung 03.09.2024"
+      ],
+      "partyExplanations": {
+        "volt": "Abstimmungsverhalten entnommen",
+        "afd": "Abstimmungsverhalten entnommen",
+        "fdp": "Abstimmungsverhalten entnommen",
+        "cdu": "Abstimmungsverhalten entnommen",
+        "linke": "Abstimmungsverhalten entnommen",
+        "spd": "Keine hinreichend konkrete/eindeutige Position ableitbar/gefunden",
+        "gruene": "Abstimmungsverhalten entnommen",
+        "uwg": "Abstimmungsverhalten entnommen"
+      }
+    },
+    {
+      "id": "15",
+      "question": "Im Bereich Neumarkt / Johannisstraße / Schlosspark soll eine dauerhaft besetzte Polizeistation eingerichtet werden.",
+      "category": "Sicherheit",
+      "weight": 1,
+      "parties": {
+        "volt": "disagree",
+        "afd": "agree",
+        "fdp": "disagree",
+        "cdu": "disagree",
+        "linke": "disagree",
+        "spd": "disagree",
+        "gruene": "disagree",
+        "uwg": "disagree"
+      },
+      "sources": [
+        "Ratssitzung 10.02.2026"
+      ],
+      "partyExplanations": {
+        "volt": "Abstimmungsverhalten entnommen",
+        "afd": "Abstimmungsverhalten entnommen",
+        "fdp": "Abstimmungsverhalten entnommen",
+        "cdu": "Abstimmungsverhalten entnommen",
+        "linke": "Abstimmungsverhalten entnommen",
+        "spd": "Abstimmungsverhalten entnommen",
+        "gruene": "Abstimmungsverhalten entnommen",
+        "uwg": "Abstimmungsverhalten entnommen"
+      }
+    },
+    {
+      "id": "16",
+      "question": "Die Partei trug die Einführung einer zusätzlichen Steuer auf Übernachtungen („Bettensteuer“) mit.",
+      "category": "Bildung & Kultur",
+      "weight": 1,
+      "parties": {
+        "volt": "agree",
+        "afd": "disagree",
+        "fdp": "disagree",
+        "cdu": "disagree",
+        "linke": "agree",
+        "spd": "agree",
+        "gruene": "agree",
+        "uwg": "disagree"
+      },
+      "sources": [
+        "Ratssitzung 17.06.25"
+      ],
+      "partyExplanations": {
+        "volt": "Abstimmungsverhalten entnommen",
+        "afd": "Abstimmungsverhalten entnommen",
+        "fdp": "Abstimmungsverhalten entnommen",
+        "cdu": "Abstimmungsverhalten entnommen",
+        "linke": "Abstimmungsverhalten entnommen",
+        "spd": "Abstimmungsverhalten entnommen",
+        "gruene": "Abstimmungsverhalten entnommen",
+        "uwg": "Abstimmungsverhalten entnommen"
+      }
+    },
+    {
+      "id": "17",
+      "question": "Die Partei unterstützte die Einführung einer Verpackungssteuer, um die Nutzung von Mehrwegverpackungen zu fördern und Einwegmüll zu reduzieren.",
+      "category": "Umwelt",
+      "weight": 1,
+      "parties": {
+        "volt": "agree",
+        "afd": "disagree",
+        "fdp": "disagree",
+        "cdu": "disagree",
+        "linke": "agree",
+        "spd": "agree",
+        "gruene": "agree",
+        "uwg": "disagree"
+      },
+      "sources": [
+        "Ratssitzung 17.03.2026"
+      ],
+      "partyExplanations": {
+        "volt": "Abstimmungsverhalten entnommen",
+        "afd": "Abstimmungsverhalten entnommen",
+        "fdp": "Abstimmungsverhalten entnommen",
+        "cdu": "Abstimmungsverhalten entnommen",
+        "linke": "Abstimmungsverhalten entnommen",
+        "spd": "Abstimmungsverhalten entnommen",
+        "gruene": "Abstimmungsverhalten entnommen",
+        "uwg": "Abstimmungsverhalten entnommen"
+      }
+    },
+    {
+      "id": "18",
+      "question": "Die Partei trug die Bereitstellung eines städtischen Zuschusses von bis zu 33 Millionen Euro für die Sanierung der Bremer Brücke mit.",
+      "category": "Bildung & Kultur",
+      "weight": 1,
+      "parties": {
+        "volt": "agree",
+        "afd": "disagree",
+        "fdp": "disagree",
+        "cdu": "agree",
+        "linke": "disagree",
+        "spd": "agree",
+        "gruene": "agree",
+        "uwg": "disagree"
+      },
+      "sources": [
+        "Ratssitzung 04.11.2025"
+      ],
+      "partyExplanations": {
+        "volt": "Abstimmungsverhalten entnommen",
+        "afd": "Abstimmungsverhalten entnommen",
+        "fdp": "Abstimmungsverhalten entnommen",
+        "cdu": "Abstimmungsverhalten entnommen",
+        "linke": "Abstimmungsverhalten entnommen",
+        "spd": "Abstimmungsverhalten entnommen",
+        "gruene": "Abstimmungsverhalten entnommen",
+        "uwg": "Abstimmungsverhalten entnommen"
+      }
+    },
+    {
+      "id": "19",
+      "question": "Die Partei stimmte für die Einrichtung einer Koordinierungsstelle zur Stärkung und Weiterentwicklung der Osnabrücker Nachtkultur.",
+      "category": "Bildung & Kultur",
+      "weight": 1,
+      "parties": {
+        "volt": "agree",
+        "afd": "disagree",
+        "fdp": "disagree",
+        "cdu": "disagree",
+        "linke": "agree",
+        "spd": "agree",
+        "gruene": "agree",
+        "uwg": "disagree"
+      },
+      "sources": [
+        "Ratssitzung 21.04.2026"
+      ],
+      "partyExplanations": {
+        "volt": "Abstimmungsverhalten entnommen",
+        "afd": "Abstimmungsverhalten entnommen",
+        "fdp": "Abstimmungsverhalten entnommen",
+        "cdu": "Abstimmungsverhalten entnommen",
+        "linke": "Abstimmungsverhalten entnommen",
+        "spd": "Abstimmungsverhalten entnommen",
+        "gruene": "Abstimmungsverhalten entnommen",
+        "uwg": "Abstimmungsverhalten entnommen"
+      }
+    },
+    {
+      "id": "20",
+      "question": "Die Partei stimmte für die Einführung einer verbindlichen Baumschutzsatzung zum Schutz von Bäumen auf Privatgrundstücken.",
+      "category": "Umwelt",
+      "weight": 1,
+      "parties": {
+        "volt": "agree",
+        "afd": "disagree",
+        "fdp": "disagree",
+        "cdu": "disagree",
+        "linke": "agree",
+        "spd": "agree",
+        "gruene": "agree",
+        "uwg": "disagree"
+      },
+      "sources": [
+        "Ratssitzung 17.03.2026"
+      ],
+      "partyExplanations": {
+        "volt": "Abstimmungsverhalten entnommen",
+        "afd": "Abstimmungsverhalten entnommen",
+        "fdp": "Abstimmungsverhalten entnommen",
+        "cdu": "Abstimmungsverhalten entnommen",
+        "linke": "Abstimmungsverhalten entnommen",
+        "spd": "Abstimmungsverhalten entnommen",
+        "gruene": "Abstimmungsverhalten entnommen",
+        "uwg": "Abstimmungsverhalten entnommen"
+      }
+    },
+    {
+      "id": "21",
+      "question": "Das VW-Werk in Osnabrück soll erhalten bleiben und vorrangig für zivile und nachhaltige Produktion genutzt werden; auch eine Produktion von Verteidigungsgütern soll unter bestimmten Bedingungen möglich sein.",
+      "category": "Bildung & Kultur",
+      "weight": 1,
+      "parties": {
+        "volt": "agree",
+        "afd": "neutral",
+        "fdp": "agree",
+        "cdu": "agree",
+        "linke": "disagree",
+        "spd": "agree",
+        "gruene": "agree",
+        "uwg": "agree"
+      },
+      "sources": [
+        "Ratssitzung 21.04.2026"
+      ],
+      "partyExplanations": {
+        "volt": "Abstimmungsverhalten entnommen",
+        "afd": "Abstimmungsverhalten entnommen",
+        "fdp": "Abstimmungsverhalten entnommen",
+        "cdu": "Abstimmungsverhalten entnommen",
+        "linke": "Abstimmungsverhalten entnommen",
+        "spd": "Abstimmungsverhalten entnommen",
+        "gruene": "Abstimmungsverhalten entnommen",
+        "uwg": "Abstimmungsverhalten entnommen"
+      }
+    },
+    {
+      "id": "22",
+      "question": "Die Partei sprach sich für eine Prüfung der Erfolgsaussichten einer kommunalen Verfassungsbeschwerde gegen das derzeitige Modell der Bezahlkarte für Geflüchtete aus.",
+      "category": "Migration, Soziales & Teilhabe",
+      "weight": 1,
+      "parties": {
+        "volt": "agree",
+        "afd": "disagree",
+        "fdp": "disagree",
+        "cdu": "disagree",
+        "linke": "agree",
+        "spd": "agree",
+        "gruene": "agree",
+        "uwg": "disagree"
+      },
+      "sources": [
+        "Ratssitzung 29.04.2025"
+      ],
+      "partyExplanations": {
+        "volt": "Abstimmungsverhalten entnommen",
+        "afd": "Abstimmungsverhalten entnommen",
+        "fdp": "Abstimmungsverhalten entnommen",
+        "cdu": "Abstimmungsverhalten entnommen",
+        "linke": "Abstimmungsverhalten entnommen",
+        "spd": "Abstimmungsverhalten entnommen",
+        "gruene": "Abstimmungsverhalten entnommen",
+        "uwg": "Abstimmungsverhalten entnommen"
+      }
+    },
+    {
+      "id": "23",
+      "question": "Die Partei stimmte für die Einrichtung einer eigenen queeren Beratungsstelle, unter anderem für Coming-out-, Identitäts- und Trans-Beratung.",
+      "category": "Migration, Soziales & Teilhabe",
+      "weight": 1,
+      "parties": {
+        "volt": "agree",
+        "afd": "disagree",
+        "fdp": "agree",
+        "cdu": "agree",
+        "linke": "agree",
+        "spd": "agree",
+        "gruene": "agree",
+        "uwg": "agree"
+      },
+      "sources": [
+        "Ratssitzung 01.10.2024"
+      ],
+      "partyExplanations": {
+        "volt": "Abstimmungsverhalten entnommen",
+        "afd": "Abstimmungsverhalten entnommen",
+        "fdp": "Abstimmungsverhalten entnommen",
+        "cdu": "Abstimmungsverhalten entnommen",
+        "linke": "Abstimmungsverhalten entnommen",
+        "spd": "Abstimmungsverhalten entnommen",
+        "gruene": "Abstimmungsverhalten entnommen",
+        "uwg": "Abstimmungsverhalten entnommen"
+      }
+    },
+    {
+      "id": "24",
+      "question": "Die Partei sprach sich für gezielte Maßnahmen aus, um den Anteil von Beschäftigten mit Migrationsgeschichte - insbesondere in höheren Positionen - zu erhöhen.",
+      "category": "Migration, Soziales & Teilhabe",
+      "weight": 1,
+      "parties": {
+        "volt": "agree",
+        "afd": "disagree",
+        "fdp": "disagree",
+        "cdu": "agree",
+        "linke": "agree",
+        "spd": "agree",
+        "gruene": "agree",
+        "uwg": "disagree"
+      },
+      "sources": [
+        "Ratssitzung 11.06.2024"
+      ],
+      "partyExplanations": {
+        "volt": "Abstimmungsverhalten entnommen",
+        "afd": "Abstimmungsverhalten entnommen",
+        "fdp": "Abstimmungsverhalten entnommen",
+        "cdu": "Abstimmungsverhalten entnommen",
+        "linke": "Abstimmungsverhalten entnommen",
+        "spd": "Abstimmungsverhalten entnommen",
+        "gruene": "Abstimmungsverhalten entnommen",
+        "uwg": "Abstimmungsverhalten entnommen"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "wahlguide-osnabrueck",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Statischer Wahlguide für die Kommunalwahl in Osnabrück am 13. September 2026.",
+  "type": "module",
+  "scripts": {
+    "serve": "python3 -m http.server 8765",
+    "test:unit": "node --test \"test/unit/**/*.test.js\"",
+    "test:e2e": "playwright test",
+    "test": "npm run test:unit && npm run test:e2e"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  }
+}
