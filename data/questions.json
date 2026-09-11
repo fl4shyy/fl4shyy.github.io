@@ -29,49 +29,57 @@
       "id": "volt",
       "name": "Volt",
       "shortName": "Volt",
-      "color": "#582C83"
+      "color": "#582C83",
+      "wahlprogramm": "https://voltdeutschland.org/storage/assets-osna/docs/kwp_osnabruck.pdf"
     },
     {
       "id": "afd",
       "name": "AfD",
       "shortName": "AfD",
-      "color": "#009EE0"
+      "color": "#009EE0",
+      "wahlprogramm": "https://afd-os.de/wp-content/uploads/2026/01/Kommunalwahlprogramm-2026.pdf"
     },
     {
       "id": "fdp",
       "name": "FDP",
       "shortName": "FDP",
-      "color": "#FFED00"
+      "color": "#FFED00",
+      "wahlprogramm": "https://www.fdp-osnabrueck.de/sites/default/files/2026-08/Kurzwahlprogramm-FDP-Osnabru%CC%88ck-2026_0.pdf"
     },
     {
       "id": "cdu",
       "name": "CDU",
       "shortName": "CDU",
-      "color": "#1B1B1B"
+      "color": "#1B1B1B",
+      "wahlprogramm": "https://cdu-osnabrueck.de/wp-content/plugins/embedpress/assets/pdf/web/viewer.html?&file=https%3A%2F%2Fcdu-osnabrueck.de%2Fwp-content%2Fuploads%2FCDU_Osnabrueck_Kommunalwahlprogramm_2026.pdf"
     },
     {
       "id": "linke",
       "name": "Die Linke",
       "shortName": "Die Linke",
-      "color": "#BE3075"
+      "color": "#BE3075",
+      "wahlprogramm": "https://www.dielinke-osnabrueck.de/fileadmin/lcmskvosnabrueckstadt/user/upload/KWP_2026_Linke_OS_Stadt.pdf"
     },
     {
       "id": "spd",
       "name": "SPD",
       "shortName": "SPD",
-      "color": "#E3000F"
+      "color": "#E3000F",
+      "wahlprogramm": "https://www.spd-osnabrueck.de/wp-content/uploads/sites/758/2026/07/spd-os_wahlprogramm_26_2_korr2.pdf"
     },
     {
       "id": "gruene",
       "name": "GRÜNE",
       "shortName": "GRÜNE",
-      "color": "#46962B"
+      "color": "#46962B",
+      "wahlprogramm": "https://gruene-os.de/wp-content/uploads/2026/07/Osnabrueck-zusammen-Kommunalwahlprogramm-2026-1.pdf"
     },
     {
       "id": "uwg",
       "name": "UWG",
       "shortName": "UWG",
-      "color": "#2E6E57"
+      "color": "#2E6E57",
+      "wahlprogramm": "https://www.sjr-osnabrueck.de/wp-content/uploads/go-x/u/e3b74829-ebd6-4435-aa48-67c5493fb295/Wahlpruefsteine-Antworten-UWG.pdf"
     }
   ],
   "questions": [
@@ -93,6 +101,10 @@
       "sources": [
         "LocalZero Wahlcheck",
         "Wahlprogramme"
+      ],
+      "links": [
+        "https://localzero.net/loesungen/wahlcheck/kommunalwahl-ni-2026/osnabrueck",
+        "-"
       ],
       "partyExplanations": {
         "volt": "Keine hinreichend konkrete/eindeutige Position ableitbar/gefunden. Volt befürwortet jedoch ausdrücklich Busspuren als Beschleunigungsmaßnahme (Programm S. 9)",
@@ -122,6 +134,9 @@
       },
       "sources": [
         "Ratssitzung 09.12.2025"
+      ],
+      "links": [
+        "https://www.osnabrueck.sitzung-online.de/public/si010"
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
@@ -153,6 +168,10 @@
         "Ratssitzung 16.09.2025",
         "Ratssitzung 03.09.2024"
       ],
+      "links": [
+        "https://www.osnabrueck.sitzung-online.de/public/si010",
+        "https://www.osnabrueck.sitzung-online.de/public/si010"
+      ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
         "afd": "Abstimmungsverhalten entnommen",
@@ -181,6 +200,9 @@
       },
       "sources": [
         "Ratssitzung 01.10.2024"
+      ],
+      "links": [
+        "https://www.osnabrueck.sitzung-online.de/public/si010"
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
@@ -213,6 +235,11 @@
         "Wahlprogramme",
         "LocalZero Wahlcheck"
       ],
+      "links": [
+        "https://www.osnabrueck.sitzung-online.de/public/si010",
+        "-",
+        "https://localzero.net/loesungen/wahlcheck/kommunalwahl-ni-2026/osnabrueck"
+      ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen + weitere Hinweise im Programm (S. 24).",
         "afd": "Abstimmungsverhalten entnommen + weitere Hinweise im Programm (S. 5)",
@@ -242,6 +269,9 @@
       "sources": [
         "Ratssitzung 01.10.2024"
       ],
+      "links": [
+        "https://www.osnabrueck.sitzung-online.de/public/si010"
+      ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
         "afd": "Abstimmungsverhalten entnommen",
@@ -270,6 +300,9 @@
       },
       "sources": [
         "Ratssitzung 19.05.2026"
+      ],
+      "links": [
+        "https://www.osnabrueck.sitzung-online.de/public/si010"
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
@@ -301,6 +334,10 @@
         "LocalZero Wahlcheck",
         "Wahlprogramme"
       ],
+      "links": [
+        "https://localzero.net/loesungen/wahlcheck/kommunalwahl-ni-2026/osnabrueck",
+        "-"
+      ],
       "partyExplanations": {
         "volt": "Wahlprogramm (S. 8f.) entnommen",
         "afd": "Wahlprogramm Forderungen (S. 5f) widersprechen Radentscheid in Teilen",
@@ -331,6 +368,10 @@
         "Wahlprogramme",
         "Ratssitzung 29.04.2025"
       ],
+      "links": [
+        "-",
+        "https://www.osnabrueck.sitzung-online.de/public/si010"
+      ],
       "partyExplanations": {
         "volt": "Keine hinreichend konkrete/eindeutige Position ableitbar/gefunden",
         "afd": "Wahlprogramm S. 4",
@@ -359,6 +400,9 @@
       },
       "sources": [
         "Ratssitzung 01.07.2025"
+      ],
+      "links": [
+        "https://www.osnabrueck.sitzung-online.de/public/si010"
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
@@ -389,6 +433,9 @@
       "sources": [
         "Ratssitzung 01.07.25"
       ],
+      "links": [
+        "https://www.osnabrueck.sitzung-online.de/public/si010"
+      ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
         "afd": "Abstimmungsverhalten entnommen",
@@ -417,6 +464,9 @@
       },
       "sources": [
         "Ratssitzung 03.09.2024"
+      ],
+      "links": [
+        "https://www.osnabrueck.sitzung-online.de/public/si010"
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
@@ -476,6 +526,9 @@
       "sources": [
         "Ratssitzung 03.09.2024"
       ],
+      "links": [
+        "https://www.osnabrueck.sitzung-online.de/public/si010"
+      ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
         "afd": "Abstimmungsverhalten entnommen",
@@ -504,6 +557,9 @@
       },
       "sources": [
         "Ratssitzung 10.02.2026"
+      ],
+      "links": [
+        "https://www.osnabrueck.sitzung-online.de/public/si010"
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
@@ -534,6 +590,9 @@
       "sources": [
         "Ratssitzung 17.06.25"
       ],
+      "links": [
+        "https://www.osnabrueck.sitzung-online.de/public/si010"
+      ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
         "afd": "Abstimmungsverhalten entnommen",
@@ -562,6 +621,9 @@
       },
       "sources": [
         "Ratssitzung 17.03.2026"
+      ],
+      "links": [
+        "https://www.osnabrueck.sitzung-online.de/public/si010"
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
@@ -592,6 +654,9 @@
       "sources": [
         "Ratssitzung 04.11.2025"
       ],
+      "links": [
+        "https://www.osnabrueck.sitzung-online.de/public/si010"
+      ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
         "afd": "Abstimmungsverhalten entnommen",
@@ -620,6 +685,9 @@
       },
       "sources": [
         "Ratssitzung 21.04.2026"
+      ],
+      "links": [
+        "https://www.osnabrueck.sitzung-online.de/public/si010"
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
@@ -650,6 +718,9 @@
       "sources": [
         "Ratssitzung 17.03.2026"
       ],
+      "links": [
+        "https://www.osnabrueck.sitzung-online.de/public/si010"
+      ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
         "afd": "Abstimmungsverhalten entnommen",
@@ -678,6 +749,9 @@
       },
       "sources": [
         "Ratssitzung 21.04.2026"
+      ],
+      "links": [
+        "https://www.osnabrueck.sitzung-online.de/public/si010"
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
@@ -708,6 +782,9 @@
       "sources": [
         "Ratssitzung 29.04.2025"
       ],
+      "links": [
+        "https://www.osnabrueck.sitzung-online.de/public/si010"
+      ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
         "afd": "Abstimmungsverhalten entnommen",
@@ -737,6 +814,9 @@
       "sources": [
         "Ratssitzung 01.10.2024"
       ],
+      "links": [
+        "https://www.osnabrueck.sitzung-online.de/public/si010"
+      ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
         "afd": "Abstimmungsverhalten entnommen",
@@ -765,6 +845,9 @@
       },
       "sources": [
         "Ratssitzung 11.06.2024"
+      ],
+      "links": [
+        "https://www.osnabrueck.sitzung-online.de/public/si010"
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
