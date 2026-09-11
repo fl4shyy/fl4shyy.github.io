@@ -70,6 +70,7 @@
               <li>Die Kürzung komplexer Sachverhalte auf Ja, Nein oder Neutral führt zwangsläufig zu Unschärfen.</li>
               <li>Politische Aussagen, Abstimmungsverhalten und programmatische Positionen können missverständlich, unvollständig oder fehlerhaft interpretiert worden sein.</li>
               <li>Thesen ohne ausreichend konkrete Position werden nicht in die Berechnung einbezogen.</li>
+              <li>Aufgrund der Datenlage geht es bei vielen Fragen auch um vergangenheitsgerichtete Themen. Diese stellen eher einen Einblick in das Verhalten der Parteien in der abgelaufenen Legislaturperiode dar.</li>
               <li>Einige Parteien sind nicht enthalten. Mehr dazu unter „Quellen · Weitere Infos · Fehler“.</li>
             </ul>
           </section>
@@ -115,11 +116,13 @@
           Du kannst die Auswahl jederzeit ändern.
         </p>
         <p id="weighting-count" class="weighting-count" aria-live="polite"></p>
+        <div class="weighting-actions weighting-actions-top">
+          <button id="weighting-continue-button-top" class="button button-primary" type="button">
+            Zur Auswertung
+          </button>
+        </div>
         <ol id="weighting-list" class="weighting-list"></ol>
         <div class="weighting-actions">
-          <button id="weighting-back-button" class="button button-secondary" type="button">
-            Zurück zu den Thesen
-          </button>
           <button id="weighting-continue-button" class="button button-primary" type="button">
             Zur Auswertung
           </button>
@@ -145,9 +148,13 @@
 
     <footer class="site-footer">
       <div class="container">
-        <p>
-          Wahlguide Osnabrück · Keine personenbezogenen Daten ·
-          <a class="footer-info-link" href="weitere-infos.html"><img src="assets/book.svg" alt="" aria-hidden="true" />Quellen · Weitere Infos · Fehler</a>
+        <p class="footer-note">
+          <span>Wahlguide Osnabrück · Keine personenbezogenen Daten</span>
+          <span class="footer-links">
+            <a class="footer-info-link" href="weitere-infos.html"><img src="assets/book.svg" alt="" aria-hidden="true" />Quellen · Weitere Infos · Fehler</a>
+            <span aria-hidden="true">·</span>
+            <a class="footer-info-link" href="https://mein.online-impressum.de/wahlguide-osnabrueck/" target="_blank" rel="noreferrer">Impressum</a>
+          </span>
         </p>
       </div>
     </footer>

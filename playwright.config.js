@@ -2,7 +2,8 @@ import { defineConfig } from "@playwright/test";
 import { fileURLToPath } from "node:url";
 
 const BASE_URL = process.env.BASE_URL ?? "http://localhost:8765";
-process.env.PLAYWRIGHT_BROWSERS_PATH = fileURLToPath(new URL("./tmp/ms-playwright", import.meta.url));
+process.env.PLAYWRIGHT_BROWSERS_PATH =
+  process.env.PLAYWRIGHT_BROWSERS_PATH ?? fileURLToPath(new URL("./tmp/ms-playwright", import.meta.url));
 
 export default defineConfig({
   testDir: "./test/e2e",
