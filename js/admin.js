@@ -60,7 +60,8 @@ function dataToModel(data) {
       id: p.id,
       name: p.name,
       shortName: p.shortName ?? p.name,
-      color: p.color ?? "#000000"
+      color: p.color ?? "#000000",
+      wahlprogramm: p.wahlprogramm
     })),
     questions: (data.questions || []).map((q) => ({
       id: q.id,
@@ -69,6 +70,7 @@ function dataToModel(data) {
       weight: q.weight ?? 1,
       parties: { ...(q.parties || {}) },
       sources: q.sources || [],
+      links: q.links || [],
       partyExplanations: q.partyExplanations || {}
     }))
   };
@@ -81,6 +83,7 @@ function cloneModel(m) {
       ...q,
       parties: { ...q.parties },
       sources: [...(q.sources || [])],
+      links: [...(q.links || [])],
       partyExplanations: { ...(q.partyExplanations || {}) }
     }))
   };
@@ -230,7 +233,8 @@ function parseAndValidate() {
       id,
       name: row[partyNameIndex]?.trim() || id,
       shortName: row[partyShortIndex]?.trim() || row[partyNameIndex]?.trim() || id,
-      color: row[partyColorIndex]?.trim() || "#000000"
+      color: row[partyColorIndex]?.trim() || "#000000",
+      wahlprogramm: model.parties.find((party) => party.id === id)?.wahlprogramm
     });
   });
 
@@ -298,6 +302,7 @@ function parseAndValidate() {
       weight,
       parties: qp,
       sources: [...(existingQuestion?.sources || [])],
+      links: [...(existingQuestion?.links || [])],
       partyExplanations: { ...(existingQuestion?.partyExplanations || {}) }
     });
   });
@@ -593,6 +598,7 @@ function handleAddQuestion() {
     weight: 1,
     parties,
     sources: [],
+    links: [],
     partyExplanations: {}
   });
   renderQuestionsEditor();

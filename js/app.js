@@ -23,8 +23,8 @@ const elements = {
   weightingTitle: document.querySelector("#weighting-title"),
   weightingCount: document.querySelector("#weighting-count"),
   weightingList: document.querySelector("#weighting-list"),
-  weightingBackButton: document.querySelector("#weighting-back-button"),
   weightingContinueButton: document.querySelector("#weighting-continue-button"),
+  weightingContinueButtonTop: document.querySelector("#weighting-continue-button-top"),
   categoryLabel: document.querySelector("#category-label"),
   questionSources: document.querySelector("#question-sources"),
   progressText: document.querySelector("#progress-text"),
@@ -59,11 +59,12 @@ function bindEvents() {
   elements.progressNavigation.addEventListener("click", handleQuestionNavigation);
   elements.resultList.addEventListener("click", handleResultToggle);
   elements.weightingList.addEventListener("click", handleWeightingToggle);
-  elements.weightingBackButton.addEventListener("click", handleWeightingBack);
   elements.weightingContinueButton.addEventListener("click", handleWeightingContinue);
+  elements.weightingContinueButtonTop.addEventListener("click", handleWeightingContinue);
 }
 
 function startQuiz() {
+  document.body.classList.add("quiz-started");
   showScreen("quiz");
   renderQuestion();
   elements.questionText.focus();
@@ -78,21 +79,35 @@ function renderQuestion() {
   elements.questionText.textContent = question.question;
   elements.categoryLabel.textContent = question.category;
   elements.progressText.textContent = `These ${currentNumber} von ${total} · ${quiz.getResolvedCount()} erledigt`;
-  renderQuestionSources(question.sources);
+  renderQuestionSources(question.sources, question.links);
   renderProgressNavigation();
   renderAnswerSelection(state.answer);
   updateSkipButton(state.skipped);
 }
 
-function renderQuestionSources(sources) {
+function renderQuestionSources(sources, links) {
   elements.questionSources.replaceChildren(
-    ...(sources || []).map((source) => {
+    ...(sources || []).map((source, index) => {
+      if (isUsableSourceLink(links?.[index])) {
+        const anchor = document.createElement("a");
+        anchor.className = "source-tag";
+        anchor.href = links[index].trim();
+        anchor.target = "_blank";
+        anchor.rel = "noreferrer";
+        anchor.textContent = source;
+        return anchor;
+      }
       const tag = document.createElement("span");
       tag.className = "source-tag";
       tag.textContent = source;
       return tag;
     })
   );
+}
+
+function isUsableSourceLink(link) {
+  const value = typeof link === "string" ? link.trim() : "";
+  return value !== "" && value !== "-";
 }
 
 function renderProgressNavigation() {
@@ -266,15 +281,6 @@ function handleWeightingToggle(event) {
     : "Keine These als wichtig markiert.";
 }
 
-function handleWeightingBack() {
-  showScreen("quiz");
-  const lastIndex = data.questions.length - 1;
-  quiz.goToQuestion(lastIndex);
-  renderQuestion();
-  setQuizControlsDisabled(false);
-  elements.questionText.focus();
-}
-
 function handleWeightingContinue() {
   renderResults();
   showScreen("results");
@@ -361,9 +367,21 @@ function createResultCard(result, questionStates, isTopMatch) {
 
 function createComparisonList(result, questionStates) {
   const wrapper = document.createDocumentFragment();
+  const head = document.createElement("div");
+  head.className = "comparison-head";
   const intro = document.createElement("p");
   intro.className = "comparison-intro";
   intro.textContent = `Deine Antworten im Vergleich mit ${result.name}`;
+  head.append(intro);
+  if (result.wahlprogramm) {
+    const programLink = document.createElement("a");
+    programLink.className = "party-program-link";
+    programLink.href = result.wahlprogramm;
+    programLink.target = "_blank";
+    programLink.rel = "noreferrer";
+    programLink.textContent = "Zum Wahlprogramm";
+    head.append(programLink);
+  }
   const list = document.createElement("ol");
   list.className = "comparison-list";
 
@@ -413,7 +431,7 @@ function createComparisonList(result, questionStates) {
     list.append(item);
   });
 
-  wrapper.append(intro, list);
+  wrapper.append(head, list);
   return wrapper;
 }
 
