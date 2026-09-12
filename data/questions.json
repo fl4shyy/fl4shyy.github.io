@@ -133,59 +133,69 @@
         "uwg": "disagree"
       },
       "sources": [
-        "Ratssitzung 09.12.2025"
+        "Ratssitzung 09.12.2025",
+        "Ratssitzung 01.10.2024",
+        "Wahlprogramme"
       ],
       "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/si010"
+        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2371466.pdf",
+        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc1622309.pdf",
+        "-"
+
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
-        "afd": "Abstimmungsverhalten entnommen",
-        "fdp": "Abstimmungsverhalten entnommen",
-        "cdu": "Abstimmungsverhalten entnommen",
-        "linke": "Abstimmungsverhalten entnommen",
-        "spd": "Abstimmungsverhalten entnommen",
-        "gruene": "Abstimmungsverhalten entnommen",
-        "uwg": "Abstimmungsverhalten entnommen"
+        "afd": "Abstimmungsverhalten entnommen, Auf S. 5 des Programms wird sich gegen Bus- & Autofreiheit am Neumarkt ausgesprochen",
+        "fdp": "Abstimmungsverhalten entnommen, Auf S.2 im Programm fordert die FDP zudem einen Bus- & Autofreien Neumarkt",
+        "cdu": "Abstimmungsverhalten entnommen, die CDU betont jedoch, dass die Autofreiheit am Neumarkt mit einem Kompromiss für Zweispurigkeit auf dem Wall einhergeht (Programm S. 7)",
+        "linke": "Abstimmungsverhalten entnommen, Fordert keine Umleitung über die Johannisfreiheit & den Neumarkt als zentralen Umstiegspunkt erhalten (Programm S. 5)",
+        "spd": "Abstimmungsverhalten entnommen; die SPD redet von einer Umgesteltung zu einem multifunktionalen Stadtraum (Programm, S. 21)",
+        "gruene": "Abstimmungsverhalten entnommen; Laut Wahlprogramm (S. 20) wird der Neumarkt durchmehr Platz an den Haltestellen, Wetterschutz, Barrierefreiheit und moderne Fahrgastinformation massiv aufgewertet",
+        "uwg": "Abstimmungsverhalten entnommen, zudem existieren Wahlplakate zur Ablehnung der Umfahrung über die Johannisfreiheit"
       }
     },
     {
       "id": "3",
-      "question": "Die Partei hat für die letzten 2 Erhöhungen der Preise im Busverkehr mitgetragen.",
+      "question": "Die Partei setzte sich gegen die letzten zwei Preiserhöhungen im Busverkehr ein.",
       "category": "Verkehr",
       "weight": 1,
       "parties": {
-        "volt": "agree",
-        "afd": "agree",
-        "fdp": "disagree",
-        "cdu": "agree",
-        "linke": "disagree",
-        "spd": "disagree",
-        "gruene": "agree",
-        "uwg": "disagree"
+        "volt": "disagree",
+        "afd": "disagree",
+        "fdp": "agree",
+        "cdu": "disagree",
+        "linke": "agree",
+        "spd": "agree",
+        "gruene": "disagree",
+        "uwg": "agree"
       },
       "sources": [
         "Ratssitzung 16.09.2025",
-        "Ratssitzung 03.09.2024"
+        "Ratssitzung 03.09.2024",
+        "Wahlprüfsteine",
+        "Wahlprogramme"
       ],
       "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/si010",
-        "https://www.osnabrueck.sitzung-online.de/public/si010"
+        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2358033.pdf,",
+        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc1618217.pdf",
+        "https://www.sjr-osnabrueck.de/aktuelles/wahlpruefsteine-2026/",
+        "-"
+
       ],
       "partyExplanations": {
-        "volt": "Abstimmungsverhalten entnommen",
-        "afd": "Abstimmungsverhalten entnommen",
-        "fdp": "Abstimmungsverhalten entnommen",
-        "cdu": "Abstimmungsverhalten entnommen",
-        "linke": "Abstimmungsverhalten entnommen",
-        "spd": "Abstimmungsverhalten entnommen",
-        "gruene": "Abstimmungsverhalten entnommen",
+        "volt": "Abstimmungsverhalten entnommen: Die Partei hat für die letzten 2 Erhöhungen der Preise im Busverkehr mitgetragen.",
+        "afd": "Abstimmungsverhalten entnommen: Abstimmungsverhalten entnommen: Die Partei hat für die letzten 2 Erhöhungen der Preise im Busverkehr mitgetragen.",
+        "fdp": "Abstimmungsverhalten entnommen, Agrumentieren in den Wahl-Prüfsteinen (S.1) für einen gesicherten und kostengünstigen ÖPNV-Takt",
+        "cdu": "Abstimmungsverhalten entnommen. Begründung durch finanzielle Zwänge in der (Ratssitzung)",
+        "linke": "Abstimmungsverhalten entnommen, fordern Nulltarif im Nahverkehr (Programm S. 5)",
+        "spd": "Abstimmungsverhalten entnommen, Lehnen Erhöhungen ab (Prüfsteine S. 1)",
+        "gruene": "Abstimmungsverhalten entnommen: Abstimmungsverhalten entnommen: Die Partei hat für die letzten 2 Erhöhungen der Preise im Busverkehr mitgetragen.",
         "uwg": "Abstimmungsverhalten entnommen"
       }
     },
     {
       "id": "4",
-      "question": "Die Partei hat in der näheren Vergangenheit Finanzierungsmaßnahmen für den FMO unterstützt.",
+      "question": "Die Partei hat in der näheren Vergangenheit Finanzierungsmaßnahmen für den Flughafen Münster/Osnabrückk unterstützt.",
       "category": "Verkehr",
       "weight": 1,
       "parties": {
@@ -199,19 +209,21 @@
         "uwg": "agree"
       },
       "sources": [
-        "Ratssitzung 01.10.2024"
+        "Ratssitzung 01.10.2024",
+        "Wahlprogramme"
       ],
       "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/si010"
+        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc1622309.pdf",
+        "-"
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
         "afd": "Abstimmungsverhalten entnommen",
         "fdp": "Abstimmungsverhalten entnommen",
         "cdu": "Abstimmungsverhalten entnommen",
-        "linke": "Abstimmungsverhalten entnommen",
-        "spd": "Abstimmungsverhalten entnommen",
-        "gruene": "Abstimmungsverhalten entnommen",
+        "linke": "Abstimmungsverhalten entnommen, die Partei möchte den FMO schließen oder Anteile verkaufen (Programm S. 7)",
+        "spd": "Abstimmungsverhalten entnommen, Positionieren sich im Programm S. 9 zur Stärkung des FMO",
+        "gruene": "Abstimmungsverhalten entnommen, Fordern jedoch ein Ende der Subventionen und Kapitaleinlagen für den FMO (Programm S. 26)",
         "uwg": "Abstimmungsverhalten entnommen"
       }
     },
@@ -236,7 +248,7 @@
         "LocalZero Wahlcheck"
       ],
       "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/si010",
+        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2407582.pdf",
         "-",
         "https://localzero.net/loesungen/wahlcheck/kommunalwahl-ni-2026/osnabrueck"
       ],
@@ -267,19 +279,19 @@
         "uwg": "agree"
       },
       "sources": [
-        "Ratssitzung 01.10.2024"
+        "Ratssitzung 05.11.2024"
       ],
       "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/si010"
+        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc1628506.pdf"
       ],
       "partyExplanations": {
-        "volt": "Abstimmungsverhalten entnommen",
+        "volt": "Abstimmungsverhalten entnommen, Fordern öffentliche Ladeinfrastruktur (Programm S. 10)",
         "afd": "Abstimmungsverhalten entnommen",
         "fdp": "Abstimmungsverhalten entnommen",
-        "cdu": "Abstimmungsverhalten entnommen",
-        "linke": "Abstimmungsverhalten entnommen",
+        "cdu": "Abstimmungsverhalten entnommen, Weitere Betonung im Programm auf S. 8",
+        "linke": "Abstimmungsverhalten entnommen, Fordern im Prorgamm (S. 7) mehr Ladesäulen",
         "spd": "Abstimmungsverhalten entnommen",
-        "gruene": "Abstimmungsverhalten entnommen",
+        "gruene": "Abstimmungsverhalten entnommen, Programm S. 23 betont ausreichend öffentliche Ladepunkte an zentralen Knotenpunkten",
         "uwg": "Abstimmungsverhalten entnommen"
       }
     },
@@ -299,19 +311,21 @@
         "uwg": "agree"
       },
       "sources": [
-        "Ratssitzung 19.05.2026"
+        "Ratssitzung 19.05.2026",
+        "Wahlprogramme"
       ],
       "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/si010"
+        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2407582.pdf",
+        "-"
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
         "afd": "Abstimmungsverhalten entnommen",
         "fdp": "Abstimmungsverhalten entnommen",
-        "cdu": "Abstimmungsverhalten entnommen",
+        "cdu": "Abstimmungsverhalten entnommen, Bezeichnen Parkgebühren zudem als überhöht (Programm S. 2)",
         "linke": "Abstimmungsverhalten entnommen",
         "spd": "Abstimmungsverhalten entnommen",
-        "gruene": "Abstimmungsverhalten entnommen",
+        "gruene": "Abstimmungsverhalten entnommen, Im Programm S. 23 ist von einer Anpassung der Parkgebühren die deren zusätzliche Einnahmen für klimafreundliche Mobilität eingesetzt werden könnten",
         "uwg": "Abstimmungsverhalten entnommen"
       }
     },
@@ -332,10 +346,12 @@
       },
       "sources": [
         "LocalZero Wahlcheck",
+        "Wahlprüfsteine",
         "Wahlprogramme"
       ],
       "links": [
         "https://localzero.net/loesungen/wahlcheck/kommunalwahl-ni-2026/osnabrueck",
+        "https://www.sjr-osnabrueck.de/aktuelles/wahlpruefsteine-2026/",
         "-"
       ],
       "partyExplanations": {
@@ -370,7 +386,7 @@
       ],
       "links": [
         "-",
-        "https://www.osnabrueck.sitzung-online.de/public/si010"
+        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2326845.pdf"
       ],
       "partyExplanations": {
         "volt": "Keine hinreichend konkrete/eindeutige Position ableitbar/gefunden",
@@ -399,18 +415,24 @@
         "uwg": "disagree"
       },
       "sources": [
-        "Ratssitzung 01.07.2025"
+        "Ratssitzung 01.07.2025",
+        "Ratssitzung 09.12.2025",
+        "Wahlprüfsteine",
+        "Wahlprogramme"
       ],
       "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/si010"
+        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2343925.pdf",
+        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2371466.pdf",
+        "https://www.sjr-osnabrueck.de/aktuelles/wahlpruefsteine-2026",
+        "-"
       ],
       "partyExplanations": {
-        "volt": "Abstimmungsverhalten entnommen",
-        "afd": "Abstimmungsverhalten entnommen",
-        "fdp": "Abstimmungsverhalten entnommen",
-        "cdu": "Abstimmungsverhalten entnommen",
-        "linke": "Abstimmungsverhalten entnommen",
-        "spd": "Abstimmungsverhalten entnommen",
+        "volt": "Abstimmungsverhalten entnommen, Auf S. 2 der Wahlprüfsteine explizit gefordert",
+        "afd": "Abstimmungsverhalten entnommen, trotz Gegenstimme im Rat im Programm Wegfall der Kita-Gebühren gefordert (S. 13)",
+        "fdp": "Abstimmungsverhalten entnommen, Mit finanziellen Gesichtspunkten begründet",
+        "cdu": "Abstimmungsverhalten entnommen, S. Programm S. 9: mit Qualität und Haushaltslage begründet",
+        "linke": "Abstimmungsverhalten entnommen, Vgl. Programm S. 30",
+        "spd": "Abstimmungsverhalten entnommen, Vgl- Programm S. 44 ",
         "gruene": "Abstimmungsverhalten entnommen",
         "uwg": "Abstimmungsverhalten entnommen"
       }
@@ -431,17 +453,19 @@
         "uwg": "agree"
       },
       "sources": [
-        "Ratssitzung 01.07.25"
+        "Ratssitzung 01.07.25",
+        "Wahlprogramme"
       ],
       "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/si010"
+        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2343925.pdf",
+        "-"
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
         "afd": "Abstimmungsverhalten entnommen",
         "fdp": "Abstimmungsverhalten entnommen",
-        "cdu": "Abstimmungsverhalten entnommen",
-        "linke": "Abstimmungsverhalten entnommen",
+        "cdu": "Abstimmungsverhalten entnommen, im Programm auf S. 17 begründet mit  rot-grüne ablehnung eines Osnabrücker Medizinstudiengangs auf Landesebene",
+        "linke": "Abstimmungsverhalten entnommen, Im Programm parallel zur Ablehnung des Steckens öffentlicher Gelder in private Gesundheitsprojekte (S. 13)",
         "spd": "Abstimmungsverhalten entnommen",
         "gruene": "Abstimmungsverhalten entnommen",
         "uwg": "Abstimmungsverhalten entnommen"
@@ -463,19 +487,22 @@
         "uwg": "disagree"
       },
       "sources": [
-        "Ratssitzung 03.09.2024"
+        "Ratssitzung 03.09.2024",
+        "Wahlprogramme"
       ],
       "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/si010"
+        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc1618217.pdf",
+        "-"
+
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
-        "afd": "Abstimmungsverhalten entnommen",
-        "fdp": "Abstimmungsverhalten entnommen",
-        "cdu": "Abstimmungsverhalten entnommen",
+        "afd": "Abstimmungsverhalten entnommen, In Aussprache wird Kosten vs. Nutzen hinterfragt",
+        "fdp": "Abstimmungsverhalten entnommen, In Aussprache wird Effektivität des Instruments sowie Kosten-Nutzen-Verhältnis hinterfragt & eine Überweisung an Fachaussschuss angeregt",
+        "cdu": "Abstimmungsverhalten entnommen, In Aussprache wurde bürokratischen Aufwand und Priorisierung genannt",
         "linke": "Abstimmungsverhalten entnommen",
-        "spd": "Abstimmungsverhalten entnommen",
-        "gruene": "Abstimmungsverhalten entnommen",
+        "spd": "Abstimmungsverhalten entnommen, In Aussprache wird Mietspiegel als Instrument für gerichtsverwertbare Feststellung der ortsüblichen Miete kontextualisiert",
+        "gruene": "Abstimmungsverhalten entnommen, In Aussprache mit Transparenz, Verlässlichkeit sowie Gerechtigkeit begründet, S. auch Programm S. 31",
         "uwg": "Abstimmungsverhalten entnommen"
       }
     },
@@ -497,8 +524,9 @@
       "sources": [
         "Wahlprogramme"
       ],
+      "links": [],
       "partyExplanations": {
-        "volt": "Wahlprogramm S. 19: „Baugenehmigungen ... ausschließlich für Mehrparteienhäuser",
+        "volt": "Wahlprogramm S. 19: Baugenehmigungen (...) ausschließlich für Mehrparteienhäuser",
         "afd": "Keine hinreichend konkrete/eindeutige Position ableitbar/gefunden",
         "fdp": "Wahlprogramm S. 3: Einfamilienhäuser bei Auflistung für Ausweisung neuer Baugebiete explizit erwähnt.",
         "cdu": "Wahlprogramm S. 5: Fortderung zur allgemeinen, moderaten Ausweisung neuer Bauflächen + Förderung der Eigenheimfinanzierung stärken die These unserer Meinung nach in einem ausreichend explizitem Maßen, um diese Annahme zu treffen",
@@ -524,19 +552,21 @@
         "uwg": "agree"
       },
       "sources": [
-        "Ratssitzung 03.09.2024"
+        "Ratssitzung 03.09.2024",
+        "Wahlprogramme"
       ],
       "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/si010"
+        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc1618217.pdf",
+        "-"
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
         "afd": "Abstimmungsverhalten entnommen",
         "fdp": "Abstimmungsverhalten entnommen",
-        "cdu": "Abstimmungsverhalten entnommen",
-        "linke": "Abstimmungsverhalten entnommen",
-        "spd": "Keine hinreichend konkrete/eindeutige Position ableitbar/gefunden",
-        "gruene": "Abstimmungsverhalten entnommen",
+        "cdu": "Abstimmungsverhalten entnommen, S. S.11 im Wahlprogramm",
+        "linke": "Abstimmungsverhalten entnommen, im Programm auf S. 10 argumentiert, solche Maßnahmen dienten der Verdrängung und erleichtern Racial Profiling",
+        "spd": "Keine hinreichend konkrete/eindeutige Position ableitbar/gefunden, in der Abstimmung war die SPD stark gespalten",
+        "gruene": "Abstimmungsverhalten entnommen, In Aussprache als ein wichtiges Signal gegen Waffen bezeichnet",
         "uwg": "Abstimmungsverhalten entnommen"
       }
     },
@@ -559,16 +589,16 @@
         "Ratssitzung 10.02.2026"
       ],
       "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/si010"
+        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2384564.pdf"
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
-        "afd": "Abstimmungsverhalten entnommen",
-        "fdp": "Abstimmungsverhalten entnommen",
-        "cdu": "Abstimmungsverhalten entnommen",
+        "afd": "Abstimmungsverhalten entnommen, in Aussprache begründet mit Beschwerden über Unsauberkeit, offenen Drogenkonsum und Gewalttaten",
+        "fdp": "Abstimmungsverhalten entnommen, in Aussprache vervwiesen auf  bestehende nahegelegene Polizeistation am Kollegienwall",
+        "cdu": "Abstimmungsverhalten entnommen, in Aussprache Verweis auf nahegelegene Polizeistation und weitere Maßnahmen",
         "linke": "Abstimmungsverhalten entnommen",
-        "spd": "Abstimmungsverhalten entnommen",
-        "gruene": "Abstimmungsverhalten entnommen",
+        "spd": "Abstimmungsverhalten entnommen, in Aussprache Verweis auf bestehende Maßnahmen, Quartiersbüros und anstehende Neumarktentwicklung",
+        "gruene": "Abstimmungsverhalten entnommen, in Aussprache auf weitere Ma0nahmen und Polizeipräsenz verwiesen",
         "uwg": "Abstimmungsverhalten entnommen"
       }
     },
@@ -588,19 +618,21 @@
         "uwg": "disagree"
       },
       "sources": [
-        "Ratssitzung 17.06.25"
+        "Ratssitzung 01.07.25",
+        "Wahlprogramme"
       ],
       "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/si010"
+        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2343925.pdf",
+        "-"
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
         "afd": "Abstimmungsverhalten entnommen",
-        "fdp": "Abstimmungsverhalten entnommen",
-        "cdu": "Abstimmungsverhalten entnommen",
+        "fdp": "Abstimmungsverhalten entnommen, Vgl. Programm S. 4",
+        "cdu": "Abstimmungsverhalten entnommen, Treten für Abschaffung ein (S. 2 Programm)",
         "linke": "Abstimmungsverhalten entnommen",
         "spd": "Abstimmungsverhalten entnommen",
-        "gruene": "Abstimmungsverhalten entnommen",
+        "gruene": "Abstimmungsverhalten entnommen, Programm S. 83 als faires Mittel zur Erzielung weiterer kommunaler Einnahmen erwähnt",
         "uwg": "Abstimmungsverhalten entnommen"
       }
     },
@@ -620,19 +652,21 @@
         "uwg": "disagree"
       },
       "sources": [
-        "Ratssitzung 17.03.2026"
+        "Ratssitzung 17.03.2026",
+        "Wahlprogramme"
       ],
       "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/si010"
+        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2393530.pdf",
+        "-"
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
         "afd": "Abstimmungsverhalten entnommen",
-        "fdp": "Abstimmungsverhalten entnommen",
-        "cdu": "Abstimmungsverhalten entnommen",
-        "linke": "Abstimmungsverhalten entnommen",
-        "spd": "Abstimmungsverhalten entnommen",
-        "gruene": "Abstimmungsverhalten entnommen",
+        "fdp": "Abstimmungsverhalten entnommen, Im Programm (S. 5) kritisiert, die Steuer belaste inbs. kleine Familienbetriebe",
+        "cdu": "Abstimmungsverhalten entnommen, in Aussprache bezeichnen sie eine Steuer u.a. als falsches Instrument, welches höheren Kosten und zusätzliche Arbeit produziere",
+        "linke": "Abstimmungsverhalten entnommen, in der Aussprache werden u.a. Anreize zur Nachhaltigkeit erwähnt",
+        "spd": "Abstimmungsverhalten entnommen, in der Aussprache wird u.a. auf die Kosten der Entsorgung fü die Allgemeinheit eingegangen",
+        "gruene": "Abstimmungsverhalten entnommen, In Aussprache wird auf Ressourcenverbrauch verwiesen & von der Gemeinheit getragene Entsortgungskosten",
         "uwg": "Abstimmungsverhalten entnommen"
       }
     },
@@ -652,19 +686,21 @@
         "uwg": "disagree"
       },
       "sources": [
-        "Ratssitzung 04.11.2025"
+        "Ratssitzung 04.11.2025",
+        "Wahlprogramme"
       ],
       "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/si010"
+        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2367880.pdf",
+        "-"
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
         "afd": "Abstimmungsverhalten entnommen",
-        "fdp": "Abstimmungsverhalten entnommen",
-        "cdu": "Abstimmungsverhalten entnommen",
-        "linke": "Abstimmungsverhalten entnommen",
-        "spd": "Abstimmungsverhalten entnommen",
-        "gruene": "Abstimmungsverhalten entnommen",
+        "fdp": "Abstimmungsverhalten entnommen, in der Aussprache wird die finanzielle Verhältnismäßigkeit angesprochen, im Programm (S. 5:) wird zudem der sofortige Verkauf des Stadions Bremer Brücke gefordert",
+        "cdu": "Abstimmungsverhalten entnommen, im Wahlprogramm (S. 13) wird sich ausdrücklich dafür Positionioert, in der Aussprache wird u.a. auf die Strahlkraft und deren monetären Nutzen verwiesen",
+        "linke": "Abstimmungsverhalten entnommen, Das Programm (S. 1) kritisiert ausdrücklich die Mobilisierung städtischer Mittel für den Profifußball",
+        "spd": "Abstimmungsverhalten entnommen, im Programm (S. 23) wird sich ausdrücklich dafür positioniert, in der Aussprache wurde die Nutzung für Begegnungen und Veranstaltungen angesprochen und weitere Bedingungen erwähnt",
+        "gruene": "Abstimmungsverhalten entnommen, im Programm (S. 25) positionieren sie sich ausdrücklich dazu, fordern jedoch auch eine Nutzung als Quartierstreffpunkt, eine bessere Klimabilanz und einen langfristig finanziell unabhängigen VFL",
         "uwg": "Abstimmungsverhalten entnommen"
       }
     },
@@ -687,7 +723,7 @@
         "Ratssitzung 21.04.2026"
       ],
       "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/si010"
+        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2398590.pdf"
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
@@ -716,19 +752,21 @@
         "uwg": "disagree"
       },
       "sources": [
-        "Ratssitzung 17.03.2026"
+        "Ratssitzung 17.03.2026",
+        "Wahlprogramme"
       ],
       "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/si010"
+        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2393530.pdf",
+        "-"
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
         "afd": "Abstimmungsverhalten entnommen",
-        "fdp": "Abstimmungsverhalten entnommen",
-        "cdu": "Abstimmungsverhalten entnommen",
-        "linke": "Abstimmungsverhalten entnommen",
-        "spd": "Abstimmungsverhalten entnommen",
-        "gruene": "Abstimmungsverhalten entnommen",
+        "fdp": "Abstimmungsverhalten entnommen, in Aussprache:Die Gruppe unterstützt grundsätzlich den Baumerhalt, lehnt aber den aus ihrer Sicht zu starken Eingriff in Privateigentum und die zusätzliche Bürokratie ab.",
+        "cdu": "Abstimmungsverhalten entnommen, in Aussprache wird der Eingriff in Privateigentum, Betretungsrechte auf Privatgrundstücken und zusätzlicher Verwaltungsaufwand, Im Programm (S. 19) wird das Thema erneut aufgegriffen",
+        "linke": "Abstimmungsverhalten entnommen, In Aussprache begründet vor allem mit dem langfristigen Beitrag des Baumschutzes zum Klimaschutz",
+        "spd": "Abstimmungsverhalten entnommen, in Aussprache wir mit Lebensqualität, Stadtklima, saubere Luft sowie transparenten und nachvollziehbaren Regeln agrumentiert, Im Programm wird das Themen ebenfalls aufgegriffen (S. 29)",
+        "gruene": "Abstimmungsverhalten entnommen, in Aussprache wird u.a. mit limawandel. Schutz von Klima, Luftqualität, Biodiversität und Lebensqualität argumentiert. Im Programm wird das Thema auch aufgegriffen (S. 10)",
         "uwg": "Abstimmungsverhalten entnommen"
       }
     },
@@ -748,19 +786,21 @@
         "uwg": "agree"
       },
       "sources": [
-        "Ratssitzung 21.04.2026"
+        "Ratssitzung 21.04.2026",
+        "Wahlprogramme"
       ],
       "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/si010"
+        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2398590.pdf",
+        "-"
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
         "afd": "Abstimmungsverhalten entnommen",
-        "fdp": "Abstimmungsverhalten entnommen",
-        "cdu": "Abstimmungsverhalten entnommen",
-        "linke": "Abstimmungsverhalten entnommen",
-        "spd": "Abstimmungsverhalten entnommen",
-        "gruene": "Abstimmungsverhalten entnommen",
+        "fdp": "Abstimmungsverhalten entnommen, In Aussprache alternative Nutzung des VW-Standorts auch vor dem Hintergrund der gestiegenen Bedeutung von Verteidigungsfähigkeit betont",
+        "cdu": "Abstimmungsverhalten entnommen, In Aussprache einer Rüstungsproduktion zur Sicherung von Arbeitsplätzen aber offen gegenüber, auch wenn Automobilproduktion bevorzugt",
+        "linke": "Abstimmungsverhalten entnommen, In Aussprache klare Ablehnung eines Wettrüstens, stattdessen Frühwarnsysteme, Prävention, friedenssichernde Missionen und Rüstungskontrolle, Forderung zudem im Programm (S. 15) zu finden",
+        "spd": "Abstimmungsverhalten entnommen, In Aussprache Rüstungsproduktion als letzte Option aber nicht ausgeschlossen aufgrund industrieller Zukunft der Region; zivile Nutzung klar bevorzugt",
+        "gruene": "Abstimmungsverhalten entnommen, In Aussprache Positionierung zum Erhalt der rund 2.300 Arbeitsplätze und Hinnehmbarkeit der Produktion von Verteidigungsgütern zum Schutz demokratischer Partner",
         "uwg": "Abstimmungsverhalten entnommen"
       }
     },
@@ -780,19 +820,21 @@
         "uwg": "disagree"
       },
       "sources": [
-        "Ratssitzung 29.04.2025"
+        "Ratssitzung 29.04.2025",
+        "Wahlprogramme"
       ],
       "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/si010"
+        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2326845.pdf",
+        "-"
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
         "afd": "Abstimmungsverhalten entnommen",
         "fdp": "Abstimmungsverhalten entnommen",
         "cdu": "Abstimmungsverhalten entnommen",
-        "linke": "Abstimmungsverhalten entnommen",
+        "linke": "Abstimmungsverhalten entnommen, zudem fordert die Partei im Programm (S. 11) Zugang zu Bargeld",
         "spd": "Abstimmungsverhalten entnommen",
-        "gruene": "Abstimmungsverhalten entnommen",
+        "gruene": "Abstimmungsverhalten entnommen, im Programm (S. 60) auch abgelehnt",
         "uwg": "Abstimmungsverhalten entnommen"
       }
     },
@@ -815,7 +857,7 @@
         "Ratssitzung 01.10.2024"
       ],
       "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/si010"
+        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc1622309.pdf"
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
@@ -847,7 +889,7 @@
         "Ratssitzung 11.06.2024"
       ],
       "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/si010"
+        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc1611905.pdf"
       ],
       "partyExplanations": {
         "volt": "Abstimmungsverhalten entnommen",
