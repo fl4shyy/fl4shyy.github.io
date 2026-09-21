@@ -1,906 +1,568 @@
 {
   "metadata": {
-    "title": "Wahlguide Osnabrück",
-    "municipality": "Osnabrück",
-    "electionDate": "2026-09-13",
-    "electionYear": 2026,
-    "version": "1.0.0",
-    "description": "Wahlguide für die Kommunalwahl in Osnabrück am 13. September 2026."
+    "title": "Wahlguide Osnabrück – Stichwahl",
+    "electionDate": "2026-09-27",
+    "candidateAliases": {
+      "cdu": "Kandidat A",
+      "gruene": "Kandidat B"
+    }
   },
-  "answerOptions": [
-    {
-      "id": "agree",
-      "label": "Stimme zu",
-      "sortOrder": 1
+  "kandidaten": {
+    "cdu": {
+      "partei": "CDU",
+      "name": "Katharina Pötter",
+      "color": "#1b1b1b"
     },
-    {
-      "id": "neutral",
-      "label": "Neutral",
-      "sortOrder": 2
-    },
-    {
-      "id": "disagree",
-      "label": "Stimme nicht zu",
-      "sortOrder": 3
+    "gruene": {
+      "partei": "BÜNDNIS 90/DIE GRÜNEN",
+      "name": "Volker Bajus",
+      "color": "#46962b"
     }
+  },
+  "gemeinsameThemen": [
+    "Neumarktfrieden",
+    "Erhöhungen der Preise im Busverkehr",
+    "Finanzierungsmaßnahmen des FMO",
+    "E-Ladeinfrastruktur",
+    "Grundeinstellung zum Bürgerbegehren Radentscheid",
+    "Private Hochschule für Medizin",
+    "Fortentwicklung der kommunalen Wohnungsbaugesellschaft WiO",
+    "Waffen- und Messerverbotszone",
+    "Sanierung Stadion Bremer Brücke",
+    "Finanzierungsmaßnahme Zoo Osnabrück",
+    "Positionierung für Angestellte des VW-Werks und Hinnehmbarkeit der Produktion von Verteidigungsgütern",
+    "Maßnahmen zur Stärkung von Beschäftigten mit Migrationsgeschichte im öffentlichen Dienst",
+    "(Polizei-)Präsenz an Brennpunkten",
+    "Stärkere Digitalisierung der Bürger-Schnittstellen zur Verwaltung",
+    "Schutz bestehender Grünflächen („Grüne Finger“)",
+    "Barrierefreiheit",
+    "Förderung von erneuerbaren Energien"
   ],
-  "parties": [
-    {
-      "id": "volt",
-      "name": "Volt",
-      "shortName": "Volt",
-      "color": "#582C83",
-      "wahlprogramm": "https://voltdeutschland.org/storage/assets-osna/docs/kwp_osnabruck.pdf"
-    },
-    {
-      "id": "afd",
-      "name": "AfD",
-      "shortName": "AfD",
-      "color": "#009EE0",
-      "wahlprogramm": "https://afd-os.de/wp-content/uploads/2026/01/Kommunalwahlprogramm-2026.pdf"
-    },
-    {
-      "id": "fdp",
-      "name": "FDP",
-      "shortName": "FDP",
-      "color": "#FFED00",
-      "wahlprogramm": "https://www.fdp-osnabrueck.de/sites/default/files/2026-08/Kurzwahlprogramm-FDP-Osnabru%CC%88ck-2026_0.pdf"
-    },
-    {
-      "id": "cdu",
-      "name": "CDU",
-      "shortName": "CDU",
-      "color": "#1B1B1B",
-      "wahlprogramm": "https://cdu-osnabrueck.de/wp-content/plugins/embedpress/assets/pdf/web/viewer.html?&file=https%3A%2F%2Fcdu-osnabrueck.de%2Fwp-content%2Fuploads%2FCDU_Osnabrueck_Kommunalwahlprogramm_2026.pdf"
-    },
-    {
-      "id": "linke",
-      "name": "Die Linke",
-      "shortName": "Die Linke",
-      "color": "#BE3075",
-      "wahlprogramm": "https://www.dielinke-osnabrueck.de/fileadmin/lcmskvosnabrueckstadt/user/upload/KWP_2026_Linke_OS_Stadt.pdf"
-    },
-    {
-      "id": "spd",
-      "name": "SPD",
-      "shortName": "SPD",
-      "color": "#E3000F",
-      "wahlprogramm": "https://www.spd-osnabrueck.de/wp-content/uploads/sites/758/2026/07/spd-os_wahlprogramm_26_2_korr2.pdf"
-    },
-    {
-      "id": "gruene",
-      "name": "GRÜNE",
-      "shortName": "GRÜNE",
-      "color": "#46962B",
-      "wahlprogramm": "https://gruene-os.de/wp-content/uploads/2026/07/Osnabrueck-zusammen-Kommunalwahlprogramm-2026-1.pdf"
-    },
-    {
-      "id": "uwg",
-      "name": "UWG",
-      "shortName": "UWG",
-      "color": "#2E6E57",
-      "wahlprogramm": "https://www.sjr-osnabrueck.de/wp-content/uploads/go-x/u/e3b74829-ebd6-4435-aa48-67c5493fb295/Wahlpruefsteine-Antworten-UWG.pdf"
-    }
-  ],
-  "questions": [
+  "fragen": [
     {
       "id": "1",
-      "question": "Die Partei setzt sich für die Einführung von Busspuren auf allen zweispurigen Straßen ein.",
-      "category": "Verkehr",
-      "weight": 1,
-      "parties": {
-        "volt": "unknown",
-        "afd": "unknown",
-        "fdp": "disagree",
-        "cdu": "disagree",
-        "linke": "agree",
-        "spd": "disagree",
-        "gruene": "agree",
-        "uwg": "unknown"
+      "bereich": "Verkehr & Mobilität",
+      "thema": "Autofreier Neumarkt",
+      "leftActor": "cdu",
+      "rightActor": "gruene",
+      "positionen": {
+        "cdu": {
+          "text": "Die Partei des/der Kandidat(in) ist der Ratsmehrheit im Rahmen eines Kompromisses entgegengekommen und hat deswegen mitgetragen, dass der Neumarkt autofrei wird.",
+          "quellen": [
+            {
+              "text": "Wahlprogramm S. 9",
+              "link": "https://cdu-osnabrueck.de/wp-content/plugins/embedpress/assets/pdf/web/viewer.html?&file=https%3A%2F%2Fcdu-osnabrueck.de%2Fwp-content%2Fuploads%2FCDU_Osnabrueck_Kommunalwahlprogramm_2026.pdf",
+              "linkFehlt": false
+            }
+          ]
+        },
+        "gruene": {
+          "text": "Die Partei des/der Kandidat(in) will eine Innenstadt ohne durchfahrende Autos. Dafür sehen sie mit der Befreiung des Neumarkts und des Domhofs vom Autoverkehr den Anfang.",
+          "quellen": [
+            {
+              "text": "Wahlprogramm S.23",
+              "link": "https://gruene-os.de/wp-content/uploads/2026/07/Osnabrueck-zusammen-Kommunalwahlprogramm-2026-1.pdf",
+              "linkFehlt": false
+            }
+          ]
+        }
       },
-      "sources": [
-        "LocalZero Wahlcheck",
-        "Wahlprogramme"
-      ],
-      "links": [
-        "https://localzero.net/loesungen/wahlcheck/kommunalwahl-ni-2026/osnabrueck",
-        "-"
-      ],
-      "partyExplanations": {
-        "volt": "Keine hinreichend konkrete/eindeutige Position ableitbar/gefunden. Volt befürwortet jedoch ausdrücklich Busspuren als Beschleunigungsmaßnahme (Programm S. 9)",
-        "afd": "Keine hinreichend konkrete/eindeutige Position ableitbar/gefunden. Im Programm auf S. 6 wird dies für die Iburger Straße verneint, jedoch fehlt eine allgemeine Aussage.",
-        "fdp": "Im Statement auf LocalZero wird die pauschale Aussage abgehlehnt. Zudem wird im Programm auf S.2 die Einspurigkeit auf stark befahrenen Straßen abgelehnt",
-        "cdu": "Im Statement auf LocalZero wird die Pauschale Aussage abgelehnt. Zudem finden sich weitere Begründungen im Programm auf S. 8",
-        "linke": "Die pauschale Aussage wird im Statement bei LocalZero bejaht. Zudem gibt es weiteren Zuspruch zur These im Programm auf S.5.",
-        "spd": "Die pauschale Aussage wird im Statement auf LocalZero abgelehnt, jedoch gibt es im Programm auf S.25 eine klare Forderung nach Busspuren",
-        "gruene": "Die pauschale Aussage wird im Statement bei LocalZero bejaht. Zudem gibt es weitere Hinweise im Programm auf S.16.",
-        "uwg": "Keine hinreichend konkrete/eindeutige Position ableitbar/gefunden"
-      }
+      "kontext": "Die beschlossene Konzeptvariante 3B für den Neumarkt sieht einen Ausschluss des Autoverkehrs, eine Reduzierung des Busverkehrs um bis zu 70 % sowie eine teilweise Verlagerung des Busverkehrs über die Johannisfreiheit vor."
     },
     {
       "id": "2",
-      "question": "Die Partei hat die Konzeptvariante 3B für den Neumarkt mitgetragen. Sie sieht einen Ausschluss des Autoverkehrs, eine Reduzierung des Busverkehrs um bis zu 70 % sowie eine teilweise Verlagerung des Busverkehrs über die Johannisfreiheit vor.",
-      "category": "Verkehr",
-      "weight": 1,
-      "parties": {
-        "volt": "agree",
-        "afd": "neutral",
-        "fdp": "disagree",
-        "cdu": "agree",
-        "linke": "disagree",
-        "spd": "agree",
-        "gruene": "agree",
-        "uwg": "disagree"
+      "bereich": "Bildung, Kultur & Finanzen",
+      "thema": "Steuer auf Übernachtungen („Bettensteuer“)",
+      "leftActor": "gruene",
+      "rightActor": "cdu",
+      "positionen": {
+        "cdu": {
+          "text": "Die Partei des/der Kandidat(in) bedauert die Einführung der Steuer und sieht darin eine Belastung von Touristen und Handwerksbetrieben, die Übernachtungsmöglichkeiten für Montagearbeiter suchen. Ferner sei es eine bürokratische Belastung für Hotels und Pensionen.\n\"Wir möchten Besucherinnen und Besuchern unserer Stadt ein freundliches Gesicht zeigen und freuen uns, wenn sie im Handel, in der Gastronomie oder in der vielfältigen Kulturlandschaft Geld ausgeben, anstatt sie mit einer Sondersteuer zu belasten. Wir treten für die Abschaffung dieser neuen, bürokratischen Steuer ein.\"\n\nIm Vorfeld der Einführung betonte der/die Kandidat(in), dass die Kommunikation mit dem Hotel- und Gaststättengewerbe wichtig sei.",
+          "quellen": [
+            {
+              "text": "Wahlprogramm S. 2",
+              "link": "https://cdu-osnabrueck.de/wp-content/plugins/embedpress/assets/pdf/web/viewer.html?&file=https%3A%2F%2Fcdu-osnabrueck.de%2Fwp-content%2Fuploads%2FCDU_Osnabrueck_Kommunalwahlprogramm_2026.pdf",
+              "linkFehlt": false
+            },
+            {
+              "text": "Ratssitzung 03.09.2024",
+              "link": "https://www.osnabrueck.sitzung-online.de/public/to010?SILFDNR=1003565",
+              "linkFehlt": false
+            },
+            {
+              "text": "Ratssitzung 01.07.2025",
+              "link": "https://www.osnabrueck.sitzung-online.de/public/to010?SILFDNR=1003894",
+              "linkFehlt": false
+            }
+          ]
+        },
+        "gruene": {
+          "text": "Die Partei des/der Kandidat(in) stimmte für die Einführung der Steuer: \"Mit der Einführung der Beherbergungssteuer haben wir bereits gezeigt, wie zusätzliche kommunale Einnahmen fair erschlossen werden können, um Kultur, Tourismus und städtische Infrastruktur mitzufinanzieren.\"\n\nDer/die Kandidat(in) weist im Vorfeld im Rat darauf hin, dass die Mehrzahl der Übernachtungen von Geschäftsreisenden und nicht von Familien zu verzeichnen seien. Er sei besorgt, dass das gute Angebot in der Stadt für Gäste und die Konkurrenzfähigkeit im Vergleich mit anderen Städten durch geplante Kürzungen im Kulturbereich beeinträchtigt werde.",
+          "quellen": [
+            {
+              "text": "Wahlprogramm S. 89",
+              "link": "https://gruene-os.de/wp-content/uploads/2026/07/Osnabrueck-zusammen-Kommunalwahlprogramm-2026-1.pdf",
+              "linkFehlt": false
+            },
+            {
+              "text": "Ratssitzung 03.09.2024",
+              "link": "https://www.osnabrueck.sitzung-online.de/public/to010?SILFDNR=1003565",
+              "linkFehlt": false
+            },
+            {
+              "text": "Ratssitzung 01.07.2025",
+              "link": "https://www.osnabrueck.sitzung-online.de/public/to010?SILFDNR=1003894",
+              "linkFehlt": false
+            }
+          ]
+        }
       },
-      "sources": [
-        "Ratssitzung 09.12.2025",
-        "Ratssitzung 01.10.2024",
-        "Wahlprogramme"
-      ],
-      "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2371466.pdf",
-        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc1622309.pdf",
-        "-"
-
-      ],
-      "partyExplanations": {
-        "volt": "Abstimmungsverhalten entnommen",
-        "afd": "Abstimmungsverhalten entnommen, Auf S. 5 des Programms wird sich gegen Bus- & Autofreiheit am Neumarkt ausgesprochen",
-        "fdp": "Abstimmungsverhalten entnommen, Auf S.2 im Programm fordert die FDP zudem einen Bus- & Autofreien Neumarkt",
-        "cdu": "Abstimmungsverhalten entnommen, die CDU betont jedoch, dass die Autofreiheit am Neumarkt mit einem Kompromiss für Zweispurigkeit auf dem Wall einhergeht (Programm S. 7)",
-        "linke": "Abstimmungsverhalten entnommen, Fordert keine Umleitung über die Johannisfreiheit & den Neumarkt als zentralen Umstiegspunkt erhalten (Programm S. 5)",
-        "spd": "Abstimmungsverhalten entnommen; die SPD redet von einer Umgesteltung zu einem multifunktionalen Stadtraum (Programm, S. 21)",
-        "gruene": "Abstimmungsverhalten entnommen; Laut Wahlprogramm (S. 20) wird der Neumarkt durchmehr Platz an den Haltestellen, Wetterschutz, Barrierefreiheit und moderne Fahrgastinformation massiv aufgewertet",
-        "uwg": "Abstimmungsverhalten entnommen, zudem existieren Wahlplakate zur Ablehnung der Umfahrung über die Johannisfreiheit"
-      }
+      "kontext": "Ist hier nachzulesen: https://service.osnabrueck.de/dienstleistungen/-/egov-bis-detail/dienstleistung/1511543/show?utm_source=chatgpt.com"
     },
     {
       "id": "3",
-      "question": "Die Partei setzte sich gegen die letzten zwei Preiserhöhungen im Busverkehr ein.",
-      "category": "Verkehr",
-      "weight": 1,
-      "parties": {
-        "volt": "disagree",
-        "afd": "disagree",
-        "fdp": "agree",
-        "cdu": "disagree",
-        "linke": "agree",
-        "spd": "agree",
-        "gruene": "disagree",
-        "uwg": "agree"
+      "bereich": "Verkehr & Mobilität",
+      "thema": "Busspuren auf allen zweispurigen Straßen",
+      "leftActor": "gruene",
+      "rightActor": "cdu",
+      "positionen": {
+        "cdu": {
+          "text": "Der/Die Kandidat(in) sagte dazu: \"Wir lehnen pauschale Vorgaben ab, da sie zu Staus und Verdrängungsverkehr und damit letztlich zu Widerständen der Bürgerinnen und Bürger führen; wir setzen stattdessen auf ein funktionierendes, ideologiefreies Miteinander aller Verkehrsteilnehmer.\" In einer Ratssitzung wird zudem auf bestehende rechtliche Vorgaben durch Bundes- und Landesgesetze hingewiesen, die berücksichtigt werden müssten.\n\nAuch Ihre/Seine Partei möchte dies nicht pauschal tragen, ferner setzt sie sich gegen Einspurigkeit auf der Iburger Str. & Martinistraße ein. Im Programm steht: \"Auch wenn wir für Radwege und schnellere Busse stehen, hofft sie, dass auch Autos, zukünftig hoffentlich mit wenig oder gar keinem Schadstoffausstoß, ihre Berechtigung behalten.\"",
+          "quellen": [
+            {
+              "text": "Wahlprogramm S. 10",
+              "link": "https://cdu-osnabrueck.de/wp-content/plugins/embedpress/assets/pdf/web/viewer.html?&file=https%3A%2F%2Fcdu-osnabrueck.de%2Fwp-content%2Fuploads%2FCDU_Osnabrueck_Kommunalwahlprogramm_2026.pdf",
+              "linkFehlt": false
+            },
+            {
+              "text": "LocalZero",
+              "link": "https://localzero.net/loesungen/wahlcheck/kommunalwahl-ni-2026/osnabrueck",
+              "linkFehlt": false
+            }
+          ]
+        },
+        "gruene": {
+          "text": "Der/Die Kandidat(in) sagt dazu: Ja, eine konsequente Busbeschleunigung ist das Rückgrat einer funktionierenden Verkehrswende. Wo immer es verkehrstechnisch und rechtlich machbar ist, schaffen Busspuren auf zweispurigen Hauptverkehrsachsen die nötige Zuverlässigkeit und Schnelligkeit, um den Umstieg auf den ÖPNV attraktiv zu machen.\n\nIm Programm steht dazu: \"Gefahren reduzieren wir durch die Umwandlung von Fahrspuren, Anpassung von Ampelphasen oder Umbau von Kreuzungen. So setzen wir uns weiter für wirkliche Verbesserungen auf den Hauptrouten des Radverkehrs, wie der Iburger Straße ein. Der Wallring wird als zentraler Verkehrsweg neugestaltet.\nZiel: Die Hälfte der Fläche für den Umweltverbund.\"",
+          "quellen": [
+            {
+              "text": "Wahlprogramm S. 18",
+              "link": "https://gruene-os.de/wp-content/uploads/2026/07/Osnabrueck-zusammen-Kommunalwahlprogramm-2026-1.pdf",
+              "linkFehlt": false
+            },
+            {
+              "text": "LocalZero",
+              "link": "https://localzero.net/loesungen/wahlcheck/kommunalwahl-ni-2026/osnabrueck",
+              "linkFehlt": false
+            }
+          ]
+        }
       },
-      "sources": [
-        "Ratssitzung 16.09.2025",
-        "Ratssitzung 03.09.2024",
-        "Wahlprüfsteine",
-        "Wahlprogramme"
-      ],
-      "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2358033.pdf,",
-        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc1618217.pdf",
-        "https://www.sjr-osnabrueck.de/aktuelles/wahlpruefsteine-2026/",
-        "-"
-
-      ],
-      "partyExplanations": {
-        "volt": "Abstimmungsverhalten entnommen: Die Partei hat für die letzten 2 Erhöhungen der Preise im Busverkehr mitgetragen.",
-        "afd": "Abstimmungsverhalten entnommen: Abstimmungsverhalten entnommen: Die Partei hat für die letzten 2 Erhöhungen der Preise im Busverkehr mitgetragen.",
-        "fdp": "Abstimmungsverhalten entnommen, Agrumentieren in den Wahl-Prüfsteinen (S.1) für einen gesicherten und kostengünstigen ÖPNV-Takt",
-        "cdu": "Abstimmungsverhalten entnommen. Begründung durch finanzielle Zwänge in der (Ratssitzung)",
-        "linke": "Abstimmungsverhalten entnommen, fordern Nulltarif im Nahverkehr (Programm S. 5)",
-        "spd": "Abstimmungsverhalten entnommen, Lehnen Erhöhungen ab (Prüfsteine S. 1)",
-        "gruene": "Abstimmungsverhalten entnommen: Abstimmungsverhalten entnommen: Die Partei hat für die letzten 2 Erhöhungen der Preise im Busverkehr mitgetragen.",
-        "uwg": "Abstimmungsverhalten entnommen"
-      }
+      "kontext": "Der Umweltverbund bezeichnet die Gruppe aller umweltverträglichen und nachhaltigen Verkehrsmittel im Personenverkehr (u.a. Bus & Fahrrad)"
     },
     {
       "id": "4",
-      "question": "Die Partei hat in der näheren Vergangenheit Finanzierungsmaßnahmen für den Flughafen Münster/Osnabrückk unterstützt.",
-      "category": "Verkehr",
-      "weight": 1,
-      "parties": {
-        "volt": "agree",
-        "afd": "agree",
-        "fdp": "agree",
-        "cdu": "agree",
-        "linke": "disagree",
-        "spd": "agree",
-        "gruene": "agree",
-        "uwg": "agree"
+      "bereich": "Verkehr & Mobilität",
+      "thema": "Tempo 30 innerorts inkl. auf Hauptverkehrsstraßen",
+      "leftActor": "cdu",
+      "rightActor": "gruene",
+      "positionen": {
+        "cdu": {
+          "text": "Die Partei schlug einen Beschluss vor, laut welchem Spielräume für Tempo 30 sachgerecht und unter Berücksichtigung aller Verkehrsarten sowie der jeweiligen\nörtlichen Gegebenheiten zu prüfen sind. Tempo 30 solle insbesondere dort angeordnet werden, wo dies zur Verbesserung der Verkehrssicherheit, zum Schutz\nsensibler Bereiche oder zur Verringerung erheblicher Lärmbelastungen sinnvoll sei. Die Leistungsfähigkeit von Hauptverkehrsstraßen sei dabei angemessen zu berücksichtigen.\nDer/die Kandidat(in) stimmte für diese Art des Beschlusses.",
+          "quellen": [
+            {
+              "text": "19.05.2026",
+              "link": "https://www.osnabrueck.sitzung-online.de/public/to010?SILFDNR=2000083",
+              "linkFehlt": false
+            },
+            {
+              "text": "LocalZero",
+              "link": "https://localzero.net/loesungen/wahlcheck/kommunalwahl-ni-2026/osnabrueck",
+              "linkFehlt": false
+            }
+          ]
+        },
+        "gruene": {
+          "text": "Der/die Kandidat(in) stimmte zudem für einen Beschluss, laut welchem die Verwaltung beauftragt wird, Spielräume konsequent auszuschöpfen und entsprechend Tempo 30 anzuordnen\n\nDie Partei fordert insgesamt mehr Tempo 30: \"Lärm ist eines der größten Gesundheitsrisiken. Aber auch Feinstaub und Stickoxide machen krank. Höhere Geschwindigkeiten erhöhen auch immer das Unfallrisiko und verschlimmern die Folgen eines Unfalls. Wir setzen uns deshalb dafür ein, dass die Stadt alle rechtlichen Möglichkeiten ausschöpft, um für mehr Tempo 30 im Stadtgebiet zu sorgen.\"",
+          "quellen": [
+            {
+              "text": "Ratssitzung 19.05.2026",
+              "link": "https://www.osnabrueck.sitzung-online.de/public/to010?SILFDNR=2000083",
+              "linkFehlt": false
+            },
+            {
+              "text": "Wahlprogramm S. 24",
+              "link": "https://gruene-os.de/wp-content/uploads/2026/07/Osnabrueck-zusammen-Kommunalwahlprogramm-2026-1.pdf",
+              "linkFehlt": false
+            },
+            {
+              "text": "LocalZero",
+              "link": "https://localzero.net/loesungen/wahlcheck/kommunalwahl-ni-2026/osnabrueck",
+              "linkFehlt": false
+            }
+          ]
+        }
       },
-      "sources": [
-        "Ratssitzung 01.10.2024",
-        "Wahlprogramme"
-      ],
-      "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc1622309.pdf",
-        "-"
-      ],
-      "partyExplanations": {
-        "volt": "Abstimmungsverhalten entnommen",
-        "afd": "Abstimmungsverhalten entnommen",
-        "fdp": "Abstimmungsverhalten entnommen",
-        "cdu": "Abstimmungsverhalten entnommen",
-        "linke": "Abstimmungsverhalten entnommen, die Partei möchte den FMO schließen oder Anteile verkaufen (Programm S. 7)",
-        "spd": "Abstimmungsverhalten entnommen, Positionieren sich im Programm S. 9 zur Stärkung des FMO",
-        "gruene": "Abstimmungsverhalten entnommen, Fordern jedoch ein Ende der Subventionen und Kapitaleinlagen für den FMO (Programm S. 26)",
-        "uwg": "Abstimmungsverhalten entnommen"
-      }
+      "kontext": "-"
     },
     {
       "id": "5",
-      "question": "Tempo 30 soll in Osnabrück innerorts grundsätzlich ausgeweitet werden und auch auf Hauptverkehrsstraßen häufiger gelten.",
-      "category": "Verkehr",
-      "weight": 1,
-      "parties": {
-        "volt": "agree",
-        "afd": "disagree",
-        "fdp": "disagree",
-        "cdu": "disagree",
-        "linke": "agree",
-        "spd": "agree",
-        "gruene": "agree",
-        "uwg": "disagree"
+      "bereich": "Verkehr & Mobilität",
+      "thema": "Parkgebühren",
+      "leftActor": "gruene",
+      "rightActor": "cdu",
+      "positionen": {
+        "cdu": {
+          "text": "Die Partei des/der Kandidat(in) fordert: \"Die Parkgebühren sind in dieser Wahlperiode exemplarisch für die erste Stunde von 1,50 € auf 2,50 € gestiegen. Gleichzeitig sind die Einfahrten in die städtischen Parkhäuser um ca. 15 % rückläufig. Zusätzliche Einnahmen verpuffen somit direkt wieder. Die erhöhten Parkgebühren reduzieren zudem die Attraktivität Osnabrücks gerade für Menschen aus dem Umland, die nach Osnabrück zum Einkaufen kommen, deutlich. Aus dem Landkreis oder aus dem Emsland scheiden Fahrrad und Bus oftmals aus, sodass die Erreichbarkeit und Bezahlbarkeit der Parkhäuser in Osnabrück wichtig ist für Handel, Gastronomie und Kultur. Wir stehen deshalb für eine Absenkung der überhöhten Parkgebühren.\"",
+          "quellen": [
+            {
+              "text": "Wahlprogramm S. 5",
+              "link": "https://www.cdu.de/fileadmin/user_upload/Dateien/Themen/Wahlen/Kommunalwahlen/Osnabrueck_2026.pdf",
+              "linkFehlt": false
+            }
+          ]
+        },
+        "gruene": {
+          "text": "Die Partei des/der Kandidat(in) fordert: \"Gleichzeitig wollen wir die Parkgebühren schrittweise anpassen und oberirdische Stellplätze in Flächen für Fuß- und Radverkehr, Grünräume und soziale Nutzungen umwandeln. Zusätzliche Einnahmen kommen direkt der Schaffung von mehr klimafreundlicher Mobilität zugute und der öffentliche Raum wird nicht nur fairer verteilt, sondern auch sicherer.\"",
+          "quellen": [
+            {
+              "text": "Wahlprogramm S. 23",
+              "link": "https://gruene-os.de/wp-content/uploads/2026/07/Osnabrueck-zusammen-Kommunalwahlprogramm-2026-1.pdf",
+              "linkFehlt": false
+            }
+          ]
+        }
       },
-      "sources": [
-        "Ratssitzung 19.05.2026",
-        "Wahlprogramme",
-        "LocalZero Wahlcheck"
-      ],
-      "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2407582.pdf",
-        "-",
-        "https://localzero.net/loesungen/wahlcheck/kommunalwahl-ni-2026/osnabrueck"
-      ],
-      "partyExplanations": {
-        "volt": "Abstimmungsverhalten entnommen + weitere Hinweise im Programm (S. 24).",
-        "afd": "Abstimmungsverhalten entnommen + weitere Hinweise im Programm (S. 5)",
-        "fdp": "Abstimmungsverhalten entnommen + weitere Hinweise im Statement auf LocalZero",
-        "cdu": "Abstimmungsverhalten entnommen + Inhalt Änderungsantrag + Inhalt des Statements auf LocalZero",
-        "linke": "Abstimmungsverhalten entnommen + Wahlprogramm (S. 7) + Inhalt des Statements auf LocalZero",
-        "spd": "Abstimmungsverhalten entnommen - Wahlprogramm + Inhalt des Statements auf LocalZero eher unkonkret bzgl. Hauptverkehrsstraßen",
-        "gruene": "Abstimmungsverhalten entnommen + Wahlprogramm (S. 16) + Inhalt des Statements auf LocalZero",
-        "uwg": "Abstimmungsverhalten entnommen"
-      }
+      "kontext": "-"
     },
     {
       "id": "6",
-      "question": "Die Partei unterstützte einen Antrag zur Prüfung des Ausbaus der E-Ladeinfrastruktur, insbesondere durch Ladepunkte an Straßenlaternen.",
-      "category": "Verkehr",
-      "weight": 1,
-      "parties": {
-        "volt": "agree",
-        "afd": "disagree",
-        "fdp": "agree",
-        "cdu": "agree",
-        "linke": "agree",
-        "spd": "agree",
-        "gruene": "agree",
-        "uwg": "agree"
+      "bereich": "Verkehr & Mobilität",
+      "thema": "Lückenschluss der A33-Nord",
+      "leftActor": "cdu",
+      "rightActor": "gruene",
+      "positionen": {
+        "cdu": {
+          "text": "Die Partei des/der Kandidat(in) unterstützt den Lückenschluss der A33.\n\nDer/die Kandidat(in) begründet, dass es derzeit nicht möglich sei, die Bundesstraße 68 durch einen Verwaltungsakt des Landesverkehrsministeriums aus Osnabrück heraus zu verlegen. Dieses sei aus Hannover schriftlich mitgeteilt worden. Deswegen sei eine\nUmwegung wichtig, um weniger Verkehr durch die Stadt zu führen. Dieses könne nur mit dem Lückenschluss der A 33 Nord gelingen.",
+          "quellen": [
+            {
+              "text": "Wahlprogramm S. 10",
+              "link": "https://cdu-osnabrueck.de/wp-content/plugins/embedpress/assets/pdf/web/viewer.html?&file=https%3A%2F%2Fcdu-osnabrueck.de%2Fwp-content%2Fuploads%2FCDU_Osnabrueck_Kommunalwahlprogramm_2026.pdf",
+              "linkFehlt": false
+            },
+            {
+              "text": "Ratssitzung 29.04.2025",
+              "link": "https://www.osnabrueck.sitzung-online.de/public/to010?SILFDNR=1003870",
+              "linkFehlt": false
+            }
+          ]
+        },
+        "gruene": {
+          "text": "Die Partei des/der Kandidat(in) lehnt den Bau der A33 Nord ab.\n\nDer/die Kandidat(in) begründet, dass der Neubau von Straßen nicht zur Entlastung des Straßenverkehrs führe, sondern noch mehr Verkehr hervorrufe. Eine Reduktion von Individualverkehr sei wünschenswert. Es gäbe dringendere Projekte als den Autobahnbau, zum Beispiel die Instandsetzung von Brücken und Bahnlinien. Der verkehrliche Nutzen des Lückenschlusses A 33 sei very fragwürdig und die Kostenkalkulation würde stetig steigen.",
+          "quellen": [
+            {
+              "text": "Wahlprogramm S. 25",
+              "link": "https://gruene-os.de/wp-content/uploads/2026/07/Osnabrueck-zusammen-Kommunalwahlprogramm-2026-1.pdf",
+              "linkFehlt": false
+            },
+            {
+              "text": "Ratssitzung 29.04.2025",
+              "link": "https://www.osnabrueck.sitzung-online.de/public/to010?SILFDNR=1003870",
+              "linkFehlt": false
+            }
+          ]
+        }
       },
-      "sources": [
-        "Ratssitzung 05.11.2024"
-      ],
-      "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc1628506.pdf"
-      ],
-      "partyExplanations": {
-        "volt": "Abstimmungsverhalten entnommen, Fordern öffentliche Ladeinfrastruktur (Programm S. 10)",
-        "afd": "Abstimmungsverhalten entnommen",
-        "fdp": "Abstimmungsverhalten entnommen",
-        "cdu": "Abstimmungsverhalten entnommen, Weitere Betonung im Programm auf S. 8",
-        "linke": "Abstimmungsverhalten entnommen, Fordern im Prorgamm (S. 7) mehr Ladesäulen",
-        "spd": "Abstimmungsverhalten entnommen",
-        "gruene": "Abstimmungsverhalten entnommen, Programm S. 23 betont ausreichend öffentliche Ladepunkte an zentralen Knotenpunkten",
-        "uwg": "Abstimmungsverhalten entnommen"
-      }
+      "kontext": "Der Lückenschluss der A33-Nord mit der A1 bezeichnet einen Neubau einer rund 9 km langen Strecke zwischen Belm und der A1 bei Wallenhorst."
     },
     {
       "id": "7",
-      "question": "Die Parkgebühren in der Osnabrücker Innenstadt sollen gesenkt bzw. durch gezielte Rabatte vergünstigt werden.",
-      "category": "Verkehr",
-      "weight": 1,
-      "parties": {
-        "volt": "disagree",
-        "afd": "agree",
-        "fdp": "agree",
-        "cdu": "agree",
-        "linke": "disagree",
-        "spd": "disagree",
-        "gruene": "disagree",
-        "uwg": "agree"
+      "bereich": "Wohnen & Umwelt",
+      "thema": "Baumschutzsatzung zum Schutz von Bäumen auf Privatgrundstücken",
+      "leftActor": "gruene",
+      "rightActor": "cdu",
+      "positionen": {
+        "cdu": {
+          "text": "Die Partei des/der Kandidat(in) stimmte gegen die Satzung.\n\nDer/die Kandidat(in) argumentierte: Das Bewusstsein in diesem Bereich habe sich geändert & es gab in 2024/2023 jeweils nur 1-2 Berichte über Baumfällungen auf privatem Grund in der Presse gegeben.\nMan schalte durch die Satzung ein bürokratisches Verfahren vor, das die Verwaltung belaste. Es seien für die Einführung und die Umsetzung der Satzung zwei zusätzliche Stellen erforderlich, die mindestens 160.000 Euro jährlich kosten würden. Für das Geld könne man wirksamere Dinge für den Klimaschutz im Rahmen der genannten Maßnahmen tun.",
+          "quellen": [
+            {
+              "text": "Ratssitzung 18.03.2025",
+              "link": "https://www.osnabrueck.sitzung-online.de/public/to010?SILFDNR=1003869",
+              "linkFehlt": false
+            }
+          ]
+        },
+        "gruene": {
+          "text": "Die Partei des/der Kandidat(in) stimmte für die Satzung.\n\nDer/die Kandidat(in) argumentierte, dass Bürgerinnen und Bürger in der Stadt sich für jeden Baum in der Stadt engagieren würden. Man habe jahrelange Erfahrungen mit einer Baumschutzsatzung. Dabei sei es nicht um Bußgelder gegangen, sondern um Beratung bei der Frage, ob von kranken Bäumen eine Gefährdung ausgehe. Eine solche Beratung sei keine Bürokratie. Das Kostenverhältnis sei so, dass für einen gesunden hundertjährigen Baum 400 Bäume nachgepflanzt werden müssten. Es lohne sich, für jeden der alten Bäume in der Stadt zu kämpfen.",
+          "quellen": [
+            {
+              "text": "Ratssitzung 18.03.2025",
+              "link": "https://www.osnabrueck.sitzung-online.de/public/to010?SILFDNR=1003869",
+              "linkFehlt": false
+            }
+          ]
+        }
       },
-      "sources": [
-        "Ratssitzung 19.05.2026",
-        "Wahlprogramme"
-      ],
-      "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2407582.pdf",
-        "-"
-      ],
-      "partyExplanations": {
-        "volt": "Abstimmungsverhalten entnommen",
-        "afd": "Abstimmungsverhalten entnommen",
-        "fdp": "Abstimmungsverhalten entnommen",
-        "cdu": "Abstimmungsverhalten entnommen, Bezeichnen Parkgebühren zudem als überhöht (Programm S. 2)",
-        "linke": "Abstimmungsverhalten entnommen",
-        "spd": "Abstimmungsverhalten entnommen",
-        "gruene": "Abstimmungsverhalten entnommen, Im Programm S. 23 ist von einer Anpassung der Parkgebühren die deren zusätzliche Einnahmen für klimafreundliche Mobilität eingesetzt werden könnten",
-        "uwg": "Abstimmungsverhalten entnommen"
-      }
+      "kontext": "Kontext: https://nachhaltig.osnabrueck.de/de/fragen-antworten/baumschutzsatzung/"
     },
     {
       "id": "8",
-      "question": "Die Maßnahmen des Bürgerbegehrens Radentscheid sollen umgesetzt werden, darunter der Ausbau von Fahrradstraßen und Radschnellwegen, zusätzliche Stellplätze sowie Sicherheitsmaßnahmen an Hauptverkehrsachsen und Kreuzungen.",
-      "category": "Verkehr",
-      "weight": 1,
-      "parties": {
-        "volt": "agree",
-        "afd": "disagree",
-        "fdp": "agree",
-        "cdu": "agree",
-        "linke": "agree",
-        "spd": "agree",
-        "gruene": "agree",
-        "uwg": "agree"
+      "bereich": "Wohnen & Umwelt",
+      "thema": "Ausweisung von Wohnbauflächen & Wohneigentum",
+      "leftActor": "cdu",
+      "rightActor": "gruene",
+      "positionen": {
+        "cdu": {
+          "text": "Die Partei des/der Kandidat(in) positioniert sich wie folgt:\n\n\"Innenentwicklung, Nachverdichtung und die Aktivierung von Bestandsflächen haben für uns Vorrang vor immer neuen Ausweisungen. Wir müssen uns jedoch in moderatem Umfang auch für die Ausweisung neuer Bauflächen öffnen.\"\n\n\"Gleichzeitig wollen wir die Eigentumsbildung und die kommunale Förderung des Ersterwerbs, insbesondere für Familien und junge Menschen, unterstützen. Eigentum schafft Verantwortung, stabilisiert Quartiere und ermöglicht Vermögensaufbau und Altersvorsorge\"\n\n\"Konkret fordern wir eine kommunale Eigenheimförderung, angelehnt an die frühere Eigenheimzulage, um die Eigenheimfinanzierung in den ersten, anspruchsvollsten Jahren der Baufinanzierung zu fördern.\"",
+          "quellen": [
+            {
+              "text": "Wahlprogramm S. 7",
+              "link": "https://www.cdu-os.de/wp-content/uploads/2026/07/Osnabrueck-zusammen-Kommunalwahlprogramm-2026-1.pdf",
+              "linkFehlt": false
+            }
+          ]
+        },
+        "gruene": {
+          "text": "Wir wollen verantwortungsvoll mit der knappen Ressource Fläche umgehen. Deshalb planen wir keine neuen Einfamilienhaussiedlungen. Stattdessen setzen wir auf\nNachverdichtung und kluge städtebauliche Lösungen – wie sie beispielsweise an der Windthorststraße oder westlich in der Schafmarsch geplant sind.",
+          "quellen": [
+            {
+              "text": "Wahlprogramm S. 11",
+              "link": "https://www.gruene-os.de/wp-content/uploads/2026/07/Osnabrueck-zusammen-Kommunalwahlprogramm-2026-1.pdf",
+              "linkFehlt": false
+            }
+          ]
+        }
       },
-      "sources": [
-        "LocalZero Wahlcheck",
-        "Wahlprüfsteine",
-        "Wahlprogramme"
-      ],
-      "links": [
-        "https://localzero.net/loesungen/wahlcheck/kommunalwahl-ni-2026/osnabrueck",
-        "https://www.sjr-osnabrueck.de/aktuelles/wahlpruefsteine-2026/",
-        "-"
-      ],
-      "partyExplanations": {
-        "volt": "Wahlprogramm (S. 8f.) entnommen",
-        "afd": "Wahlprogramm Forderungen (S. 5f) widersprechen Radentscheid in Teilen",
-        "fdp": "Im Statement auf LocalZero wird sich klar dafür positioniert.",
-        "cdu": "Im Statement auf LocalZero wird sich klar dafür positioniert.",
-        "linke": "Wahlprogramm (S. 6) explizit + Im Statement auf LocalZero wird sich klar dafür positioniert.",
-        "spd": "Wahlprogramm (S. 26) explizit + Im Statement auf LocalZero wird sich klar dafür positioniert",
-        "gruene": "Wahlprogramm (S. 20) + Im Statement auf LocalZero wird sich klar dafür positioniert",
-        "uwg": "Inhalte der Wahlprüfsteine S. 1f. erachten wir als hinreichend konkret und übereinstimmend"
-      }
+      "kontext": "Weiterer wichtiger Kontext findet sich in den jeweiligen Wahlprogrammen."
     },
     {
       "id": "9",
-      "question": "Die Partei unterstützt den Lückenschluss der A33-Nord mit der A1 durch den Neubau der rund 9 km langen Strecke zwischen Belm und der A1 bei Wallenhorst.",
-      "category": "Verkehr",
-      "weight": 1,
-      "parties": {
-        "volt": "unknown",
-        "afd": "agree",
-        "fdp": "agree",
-        "cdu": "agree",
-        "linke": "disagree",
-        "spd": "agree",
-        "gruene": "disagree",
-        "uwg": "disagree"
+      "bereich": "Wohnen & Umwelt",
+      "thema": "Einführung eines qualifizierten Mietspiegels nach wissenschaftlichen Grundsätzen.",
+      "leftActor": "gruene",
+      "rightActor": "cdu",
+      "positionen": {
+        "cdu": {
+          "text": "Der/die Kandidat(in) stimmte gegen den Beschluss.\n\nEine Fraktionskollegin führte aus, führt aus, dass nicht nur die Mieten, sondern auch die Nominallöhne und Verbraucherpreise angestiegen seien. Der Durchschnittsverdiener könne sich daher die höheren Mieten weiter leisten. Die Erstellung eines qualifizierten Mietpreisspiegels sei zeitaufwendig und kostspielig. Es sei besser, die Erfahrungen aus anderen Städten abzuwarten. Es sei erforderlich, eine signifikante Zahl von Bürgerinnen und Bürger alle zwei Jahre zur Auskunft zu verpflichten. Ferner kämen Bußgelder bei Nichterfüllung hinzu. Das stehe einem Bürokratieabbau entgegen. Der Verein Haus & Grund, der Mieterverein sowie der Immobilienverband Deutschland hätten nur ein geringes Interesse an einem qualifizierten Mietspiegel geäußert. Es gebe auch alternative Maßnahmen wie eine Erhöhung der Attraktivität für potenzielle Investoren im Hinblick auf Neubaumaßnahmen, die Förderung von energieeffizientem Umbau von Gebäuden oder eine Herabsetzung der Grundsteuer. Der Zuschlag für bessere Lagen sei gering, was die Attraktivität solcher Investitionen verringere. Zudem stehe teils durch WiO oder Stephanswerk geförderter Wohnraum zur Verfügung",
+          "quellen": [
+            {
+              "text": "Ratssitzung 03.09.2024",
+              "link": "https://www.osnabrueck.sitzung-online.de/public/to010?SILFDNR=1003565",
+              "linkFehlt": false
+            }
+          ]
+        },
+        "gruene": {
+          "text": "Der/die Kandidat(in) stimmte für den Beschluss.\nEine Fraktionskollegin begründete, es ginge darum Transparenz und Verlässlichkeit sowie Gerechtigkeit herzustellen. Man finde z. B. bei Immoscout Anzeigen, die die Höchstmietgrenze des Mietpreisspiegels in Osnabrück deutlich überstiegen. Durch die Einführung eines gerichtsfesten Mietspiegels würde mehr Rechtssicherheit geschaffen. Auch wenn dies aufwändiger sei, so sei es angemessen angesichts der Vorteile, die zu erwarten seien. Ein qualifizierter Mietpreisspiegel solle nicht von heute auf morgen, sondern schrittweise eingeführt werden, wobei alle Beteiligten ausreichend Zeit eingeräumt bekommen sollen, sich einzubringen.",
+          "quellen": [
+            {
+              "text": "Ratssitzung 03.09.2024",
+              "link": "https://www.osnabrueck.sitzung-online.de/public/to010?SILFDNR=1003565",
+              "linkFehlt": false
+            },
+            {
+              "text": "Instagram",
+              "link": "https://www.instagram.com/p/DcLIjJzD1TU/?img_index=2",
+              "linkFehlt": false
+            }
+          ]
+        }
       },
-      "sources": [
-        "Wahlprogramme",
-        "Ratssitzung 29.04.2025"
-      ],
-      "links": [
-        "-",
-        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2326845.pdf"
-      ],
-      "partyExplanations": {
-        "volt": "Keine hinreichend konkrete/eindeutige Position ableitbar/gefunden",
-        "afd": "Wahlprogramm S. 4",
-        "fdp": "Begründung während der Ratssitzung",
-        "cdu": "Wahlprogramm S. 8",
-        "linke": "Wahlprogramm S. 7",
-        "spd": "Wahlprogramm S. 25",
-        "gruene": "Wahlprogramm S. 25 + Statement in der Ratssitzung",
-        "uwg": "Statement in der Ratssitzung"
-      }
+      "kontext": "-"
     },
     {
       "id": "10",
-      "question": "Die Partei unterstützte einen Beschluss zur Abschaffung der Elternbeiträge für Krippen, Kindergärten, Horte und Kindertagespflege.",
-      "category": "Bildung & Kultur",
-      "weight": 1,
-      "parties": {
-        "volt": "agree",
-        "afd": "disagree",
-        "fdp": "disagree",
-        "cdu": "disagree",
-        "linke": "agree",
-        "spd": "agree",
-        "gruene": "agree",
-        "uwg": "disagree"
+      "bereich": "Bildung, Kultur & Finanzen",
+      "thema": "Abschaffung der Elternbeiträge für Krippen, Kindergärten, Horte und Kindertagespflege",
+      "leftActor": "gruene",
+      "rightActor": "cdu",
+      "positionen": {
+        "cdu": {
+          "text": "Der/die Kandidat(in) stimmte gegen den Beschluss.\nDer/die Kandidat(in) betont, dass für alle Antragsteller ein Betreuungsangebot von 0 Jahren bis zum Ende der Grundschulzeit mit Betreuung bis 17 Uhr geschaffen werden könne. Entscheidend sei dabei nicht die Kostenfrage, sondern ein verlässliches Betreuungsangebot.\nGleichzeitig weist er/sie auf den hohen Personalbedarf hin. Die vorhandenen Landesmittel seien nicht ausreichend, zudem seien die benötigten Fachkräfte am Arbeitsmarkt kaum verfügbar. Durch eine Beitragsbefreiung für Horte bis 17 Uhr sei außerdem mit deutlich höheren Anmeldezahlen, insbesondere für die Ferienbetreuung, zu rechnen. Dadurch müssten möglicherweise ganzjährig Fachkräfte vorgehalten werden, die tatsächlich nur in den Ferien benötigt würden. Daher appelliert er/sie an den Rat, der Beschlussvorlage nicht zuzustimmen.",
+          "quellen": [
+            {
+              "text": "Ratssitzung 01.07.2025",
+              "link": "https://www.osnabrueck.sitzung-online.de/public/to010?SILFDNR=1003894",
+              "linkFehlt": false
+            }
+          ]
+        },
+        "gruene": {
+          "text": "Der/die Kandidat(in) stimmte für den Beschluss.\nDer/die Kandidat(in)  vertritt die Ansicht, eine Kindesbetreuung dürfe nicht am Geld scheitern. Er/Sie sehe es als eine Pflicht der Politik, trotz der großen finanziellen Herausforderung junge Familien zu unterstützen. In diesem Kontext macht er/sie auf einen Haushaltsentwurf des Landes aufmerksam, der einen neuen Bezuschussungsmodus für Kindertagesstätten vorsehe.",
+          "quellen": [
+            {
+              "text": "Ratssitzung 01.07.2025",
+              "link": "https://www.osnabrueck.sitzung-online.de/public/to010?SILFDNR=1003894",
+              "linkFehlt": false
+            }
+          ]
+        }
       },
-      "sources": [
-        "Ratssitzung 01.07.2025",
-        "Ratssitzung 09.12.2025",
-        "Wahlprüfsteine",
-        "Wahlprogramme"
-      ],
-      "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2343925.pdf",
-        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2371466.pdf",
-        "https://www.sjr-osnabrueck.de/aktuelles/wahlpruefsteine-2026",
-        "-"
-      ],
-      "partyExplanations": {
-        "volt": "Abstimmungsverhalten entnommen, Auf S. 2 der Wahlprüfsteine explizit gefordert",
-        "afd": "Abstimmungsverhalten entnommen, trotz Gegenstimme im Rat im Programm Wegfall der Kita-Gebühren gefordert (S. 13)",
-        "fdp": "Abstimmungsverhalten entnommen, Mit finanziellen Gesichtspunkten begründet",
-        "cdu": "Abstimmungsverhalten entnommen, S. Programm S. 9: mit Qualität und Haushaltslage begründet",
-        "linke": "Abstimmungsverhalten entnommen, Vgl. Programm S. 30",
-        "spd": "Abstimmungsverhalten entnommen, Vgl- Programm S. 44 ",
-        "gruene": "Abstimmungsverhalten entnommen",
-        "uwg": "Abstimmungsverhalten entnommen"
-      }
+      "kontext": "-"
     },
     {
       "id": "11",
-      "question": "Die Stadt Osnabrück soll den Aufbau einer privatrechtlich organisierten Hochschule für Medizin in kommunaler Trägerschaft unterstützen.",
-      "category": "Bildung & Kultur",
-      "weight": 1,
-      "parties": {
-        "volt": "agree",
-        "afd": "neutral",
-        "fdp": "agree",
-        "cdu": "agree",
-        "linke": "disagree",
-        "spd": "agree",
-        "gruene": "agree",
-        "uwg": "agree"
+      "bereich": "Wohnen & Umwelt",
+      "thema": "Verpackungssteuer",
+      "leftActor": "cdu",
+      "rightActor": "gruene",
+      "positionen": {
+        "cdu": {
+          "text": "Der/die Kandidat(in) stimmte gegen die Einführung und positioniert sich für eine Abschaffung.\n\nDie Partei begründet dies mit der Teuerung bei Lebensmitteln zum Mitnehmen.\n\"Die Städte, die die Steuer eingeführt haben, generieren hierdurch Einnahmen. Das zeigt, dass es keine reine Lenkungssteuer ist. Ohne Konzept einfach das tägliche Leben für viele Menschen zu verteuern, ist in Zeiten wirtschaftlicher Schwäche und zunehmender Erwerbslosigkeit insbesondere ein Schlag gegen diejenigen, die weniger gut verdienen und überproportional unter dieser Steuer leiden. Auch hier müssen es gerade kleine und mittelständische Betriebe besonders ausbaden, denn eine neue Steuer verteuert nicht nur die eigenen hergestellten und verkauften Produkte, sondern löst neue Bürokratie und zusätzliches Personal zur Abrechnung der Steuer aus.\"",
+          "quellen": [
+            {
+              "text": "Wahlprogramm S. 4",
+              "link": "https://www.cdu-os.de/wp-content/uploads/2026/07/Osnabrueck-zusammen-Kommunalwahlprogramm-2026-1.pdf",
+              "linkFehlt": false
+            },
+            {
+              "text": "Instagram",
+              "link": "https://www.instagram.com/p/DautZa8t9bo/",
+              "linkFehlt": false
+            }
+          ]
+        },
+        "gruene": {
+          "text": "Der/die Kandidat(in) stimmte für die Einführung.\n\nDie Partei betrachtet die Verpackungssteuer als notwendigen Bestandteil, um den Verbrauch von Einwegverpackungen zu reduzieren und Druck in Richtung Mehrweg zu erzeugen. Ein stadtweites Mehrwegsystem und die Steuer sollen zusammenwirken.\nDie Partei betont ferner: \"Es wird ein stadtweites Mehrwegsystem geben, das subventioniert wird und die Betriebe erhalten fortlaufend saubereres Mehrweggeschirr und -becher und müssen sich weder um die Anschaffung, noch um die Reinigung kümmern.\"",
+          "quellen": [
+            {
+              "text": "Wahlprogramm S. 34",
+              "link": "https://gruene-os.de/wp-content/uploads/2026/07/Osnabrueck-zusammen-Kommunalwahlprogramm-2026-1.pdf",
+              "linkFehlt": false
+            },
+            {
+              "text": "Kommentar auf Instagram",
+              "link": "https://www.instagram.com/p/DautZa8t9bo/",
+              "linkFehlt": false
+            }
+          ]
+        }
       },
-      "sources": [
-        "Ratssitzung 01.07.25",
-        "Wahlprogramme"
-      ],
-      "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2343925.pdf",
-        "-"
-      ],
-      "partyExplanations": {
-        "volt": "Abstimmungsverhalten entnommen",
-        "afd": "Abstimmungsverhalten entnommen",
-        "fdp": "Abstimmungsverhalten entnommen",
-        "cdu": "Abstimmungsverhalten entnommen, im Programm auf S. 17 begründet mit  rot-grüne ablehnung eines Osnabrücker Medizinstudiengangs auf Landesebene",
-        "linke": "Abstimmungsverhalten entnommen, Im Programm parallel zur Ablehnung des Steckens öffentlicher Gelder in private Gesundheitsprojekte (S. 13)",
-        "spd": "Abstimmungsverhalten entnommen",
-        "gruene": "Abstimmungsverhalten entnommen",
-        "uwg": "Abstimmungsverhalten entnommen"
-      }
+      "kontext": "-"
     },
     {
       "id": "12",
-      "question": "Die Partei stimmte für die Einführung eines qualifizierten Mietspiegels nach wissenschaftlichen Grundsätzen.",
-      "category": "Wohnen",
-      "weight": 1,
-      "parties": {
-        "volt": "agree",
-        "afd": "disagree",
-        "fdp": "disagree",
-        "cdu": "disagree",
-        "linke": "agree",
-        "spd": "agree",
-        "gruene": "agree",
-        "uwg": "disagree"
+      "bereich": "Bildung, Kultur & Finanzen",
+      "thema": "Budget der Kunsthalle",
+      "leftActor": "gruene",
+      "rightActor": "cdu",
+      "positionen": {
+        "cdu": {
+          "text": "Die Partei des/der Kandidat(in) positioniert sich wie folgt:\n\"Wir bekennen uns klar zum kommunalen Theater Osnabrück als kulturellem Leuchtturm. (...) Wir bekennen uns aber auch klar dazu, dass wir einen verantwortungsvollen Umgang mit Steuermitteln einfordern. Dass das Budget der Kunsthalle in den vergangenen Jahren massiv gestiegen ist und die Anzahl der Eintritt zahlenden Besucherinnen und Besucher auf sehr niedrigem Niveau stagniert, sehen wir kritisch und werden weiterhin Verbesserungen einfordern.\"",
+          "quellen": [
+            {
+              "text": "Wahlprogramm S. 16",
+              "link": "https://cdu-osnabrueck.de/wp-content/plugins/embedpress/assets/pdf/web/viewer.html?&file=https%3A%2F%2Fcdu-osnabrueck.de%2Fwp-content%2Fuploads%2FCDU_Osnabrueck_Kommunalwahlprogramm_2026.pdf",
+              "linkFehlt": false
+            }
+          ]
+        },
+        "gruene": {
+          "text": "Die Partei des/der Kandidat(in) positioniert sich wie folgt: \"Wir stärken Institutionen wie der Kunsthalle oder dem Theater den Rücken, damit sie auch zukünftig gesellschaftskritische und unbequeme Themen künstlerisch erarbeiten und performativ, szenisch, musikalisch oder tänzerisch zeigen können.\"",
+          "quellen": [
+            {
+              "text": "Wahlprogramm S. 69",
+              "link": "https://gruene-os.de/wp-content/uploads/2026/07/Osnabrueck-zusammen-Kommunalwahlprogramm-2026-1.pdf",
+              "linkFehlt": false
+            }
+          ]
+        }
       },
-      "sources": [
-        "Ratssitzung 03.09.2024",
-        "Wahlprogramme"
-      ],
-      "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc1618217.pdf",
-        "-"
-
-      ],
-      "partyExplanations": {
-        "volt": "Abstimmungsverhalten entnommen",
-        "afd": "Abstimmungsverhalten entnommen, In Aussprache wird Kosten vs. Nutzen hinterfragt",
-        "fdp": "Abstimmungsverhalten entnommen, In Aussprache wird Effektivität des Instruments sowie Kosten-Nutzen-Verhältnis hinterfragt & eine Überweisung an Fachaussschuss angeregt",
-        "cdu": "Abstimmungsverhalten entnommen, In Aussprache wurde bürokratischen Aufwand und Priorisierung genannt",
-        "linke": "Abstimmungsverhalten entnommen",
-        "spd": "Abstimmungsverhalten entnommen, In Aussprache wird Mietspiegel als Instrument für gerichtsverwertbare Feststellung der ortsüblichen Miete kontextualisiert",
-        "gruene": "Abstimmungsverhalten entnommen, In Aussprache mit Transparenz, Verlässlichkeit sowie Gerechtigkeit begründet, S. auch Programm S. 31",
-        "uwg": "Abstimmungsverhalten entnommen"
-      }
+      "kontext": "-"
     },
     {
       "id": "13",
-      "question": "Die Stadt soll neue Wohnbauflächen ausweisen, die auch den Bau von Einfamilienhäusern ermöglichen.",
-      "category": "Wohnen",
-      "weight": 1,
-      "parties": {
-        "volt": "disagree",
-        "afd": "unknown",
-        "fdp": "agree",
-        "cdu": "agree",
-        "linke": "unknown",
-        "spd": "unknown",
-        "gruene": "disagree",
-        "uwg": "unknown"
+      "bereich": "Bildung, Kultur & Finanzen",
+      "thema": "Abgabenlast",
+      "leftActor": "cdu",
+      "rightActor": "gruene",
+      "positionen": {
+        "cdu": {
+          "text": "Die Partei des/der Kandidat(in) fordert allgemein keine weiteren Belastungen/Steuern für Bürgerinnen und Bürger, Familien sowie kleine und mittlere Betriebe. Ferner sollen Unternehmen sollen in den ersten zwei Jahren von der Gewerbesteuer befreit werden, was Standortanreize und neue Arbeitsplätze schaffe & weitere Steuern abgeschafft werden.",
+          "quellen": [
+            {
+              "text": "Wahlprogramm S. 3f.",
+              "link": "https://cdu-osnabrueck.de/wp-content/plugins/embedpress/assets/pdf/web/viewer.html?&file=https%3A%2F%2Fcdu-osnabrueck.de%2Fwp-content%2Fuploads%2FCDU_Osnabrueck_Kommunalwahlprogramm_2026.pdf",
+              "linkFehlt": false
+            },
+            {
+              "text": "Wahlprogramm S. 18",
+              "link": "https://cdu-osnabrueck.de/wp-content/plugins/embedpress/assets/pdf/web/viewer.html?&file=https%3A%2F%2Fcdu-osnabrueck.de%2Fwp-content%2Fuploads%2FCDU_Osnabrueck_Kommunalwahlprogramm_2026.pdf",
+              "linkFehlt": false
+            }
+          ]
+        },
+        "gruene": {
+          "text": "Die Partei des/der Kandidat(in) fordert, die Steuern und Abgaben stabil zu halten, soweit die äußeren Rahmenbedingungen dies zulassen, um Einnahmen verlässlich zu sichern.",
+          "quellen": [
+            {
+              "text": "Wahlprogramm S. 83",
+              "link": "https://gruene-os.de/wp-content/uploads/2026/07/Osnabrueck-zusammen-Kommunalwahlprogramm-2026-1.pdf",
+              "linkFehlt": false
+            }
+          ]
+        }
       },
-      "sources": [
-        "Wahlprogramme"
-      ],
-      "links": [],
-      "partyExplanations": {
-        "volt": "Wahlprogramm S. 19: Baugenehmigungen (...) ausschließlich für Mehrparteienhäuser",
-        "afd": "Keine hinreichend konkrete/eindeutige Position ableitbar/gefunden",
-        "fdp": "Wahlprogramm S. 3: Einfamilienhäuser bei Auflistung für Ausweisung neuer Baugebiete explizit erwähnt.",
-        "cdu": "Wahlprogramm S. 5: Fortderung zur allgemeinen, moderaten Ausweisung neuer Bauflächen + Förderung der Eigenheimfinanzierung stärken die These unserer Meinung nach in einem ausreichend explizitem Maßen, um diese Annahme zu treffen",
-        "linke": "Keine hinreichend konkrete/eindeutige Position ableitbar/gefunden",
-        "spd": "Keine hinreichend konkrete/eindeutige Position ableitbar/gefunden. S. 24:wird der Fokus auf geförderten Geschosswohnungsbau (Vertikalverdichtung) gelegt. Jedoch nicht ausreichend konkret, um eine Ablehnung anzunehmen",
-        "gruene": "Wahlprogramm S. 11: Keine Planung neuer Einfamilienhaussiedlungen. Stattdessen auf Nachverdichtung setzen. Ausreichend konkret",
-        "uwg": "Keine hinreichend konkrete/eindeutige Position ableitbar/gefunden"
-      }
+      "kontext": "-"
     },
     {
       "id": "14",
-      "question": "Die Partei trug die Einrichtung einer Waffen- und Messerverbotszone in der südlichen Innenstadt mit.",
-      "category": "Sicherheit",
-      "weight": 1,
-      "parties": {
-        "volt": "agree",
-        "afd": "neutral",
-        "fdp": "agree",
-        "cdu": "agree",
-        "linke": "disagree",
-        "spd": "unknown",
-        "gruene": "agree",
-        "uwg": "agree"
+      "bereich": "Bildung, Kultur & Finanzen",
+      "thema": "Schulsystem",
+      "leftActor": "cdu",
+      "rightActor": "gruene",
+      "positionen": {
+        "cdu": {
+          "text": "Die Partei des/der Kandidat(in) positioniert sich wie folgt:  \"Uns ist es wichtig, dass für jedes Kind gemeinsam mit seinen Eltern der richtige Weg offensteht. Deshalb stehen wir auch für die Beibehaltung der freien Schulwahl in der Sekundarstufe I ein.\"",
+          "quellen": [
+            {
+              "text": "Wahlprogramm S. 12",
+              "link": "https://cdu-osnabrueck.de/wp-content/plugins/embedpress/assets/pdf/web/viewer.html?&file=https%3A%2F%2Fcdu-osnabrueck.de%2Fwp-content%2Fuploads%2FCDU_Osnabrueck_Kommunalwahlprogramm_2026.pdf",
+              "linkFehlt": false
+            }
+          ]
+        },
+        "gruene": {
+          "text": "Die Partei des/der Kandidat(in) positioniert sich wie folgt:\n\"Kinder sollen in ihrem eigenen Tempo lernen können, mit fairer Beurteilung ihrer\npersönlichen Fortschritte. Darum ist längeres gemeinsames Lernen ein klares Ziel unserer Schulentwicklungsplanung. Die integrierte Gesamtschule ist dafür die beste Schulform. Unser Ziel bleibt der Aufbau einer weiteren integrierten Gesamtschule in Osnabrück. Mit der Integration von Haupt- und Realschulen in Oberschulen haben wir einen wichtigen Schritt zu längerem gemeinsamen Lernen erreicht.\"",
+          "quellen": [
+            {
+              "text": "Wahlprogramm S. 48",
+              "link": "https://gruene-os.de/wp-content/uploads/2026/07/Osnabrueck-zusammen-Kommunalwahlprogramm-2026-1.pdf",
+              "linkFehlt": false
+            }
+          ]
+        }
       },
-      "sources": [
-        "Ratssitzung 03.09.2024",
-        "Wahlprogramme"
-      ],
-      "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc1618217.pdf",
-        "-"
-      ],
-      "partyExplanations": {
-        "volt": "Abstimmungsverhalten entnommen",
-        "afd": "Abstimmungsverhalten entnommen",
-        "fdp": "Abstimmungsverhalten entnommen",
-        "cdu": "Abstimmungsverhalten entnommen, S. S.11 im Wahlprogramm",
-        "linke": "Abstimmungsverhalten entnommen, im Programm auf S. 10 argumentiert, solche Maßnahmen dienten der Verdrängung und erleichtern Racial Profiling",
-        "spd": "Keine hinreichend konkrete/eindeutige Position ableitbar/gefunden, in der Abstimmung war die SPD stark gespalten",
-        "gruene": "Abstimmungsverhalten entnommen, In Aussprache als ein wichtiges Signal gegen Waffen bezeichnet",
-        "uwg": "Abstimmungsverhalten entnommen"
-      }
+      "kontext": "-"
     },
     {
       "id": "15",
-      "question": "Im Bereich Neumarkt / Johannisstraße / Schlosspark soll eine dauerhaft besetzte Polizeistation eingerichtet werden.",
-      "category": "Sicherheit",
-      "weight": 1,
-      "parties": {
-        "volt": "disagree",
-        "afd": "agree",
-        "fdp": "disagree",
-        "cdu": "disagree",
-        "linke": "disagree",
-        "spd": "disagree",
-        "gruene": "disagree",
-        "uwg": "disagree"
+      "bereich": "Wohnen & Umwelt",
+      "thema": "Energiestandard sozialer Neubauten",
+      "leftActor": "gruene",
+      "rightActor": "cdu",
+      "positionen": {
+        "cdu": {
+          "text": "Die Partei des/der Kandidat(in) positioniert sich wie folgt: \"Der außergewöhnlich hohe Energiestandard ist auf das übliche gesetzliche Maß von KfW55 zu reduzieren, um mehr Wohnungen für das gleiche Geld errichten zu können. Wir benötigen keine ökologische Maßlosigkeit, sondern bezahlbare Wohnungen für alle Osnabrückerinnen und Osnabrücker.\"",
+          "quellen": [
+            {
+              "text": "Wahlprogramm S. 6",
+              "link": "https://cdu-osnabrueck.de/wp-content/plugins/embedpress/assets/pdf/web/viewer.html?&file=https%3A%2F%2Fcdu-osnabrueck.de%2Fwp-content%2Fuploads%2FCDU_Osnabrueck_Kommunalwahlprogramm_2026.pdf",
+              "linkFehlt": false
+            }
+          ]
+        },
+        "gruene": {
+          "text": "Die Partei des/der Kandidat(in) positioniert sich wie folgt: \"Sanierung bleibt erste Wahl – aber wir brauchen auch neue, bezahlbare Wohnungen mit flexiblen Grundrissen, die sich dem Leben der Bewohner*innen anpassen können. Dabei setzen wir auf energieeffizienten Neubau, nachhaltige Materialien wie Holz und recycelbare Baustoffe und eine klimaneutrale Wärmeversorgung.\"",
+          "quellen": [
+            {
+              "text": "Wahlprogramm S. 11",
+              "link": "https://gruene-os.de/wp-content/uploads/2026/07/Osnabrueck-zusammen-Kommunalwahlprogramm-2026-1.pdf",
+              "linkFehlt": false
+            }
+          ]
+        }
       },
-      "sources": [
-        "Ratssitzung 10.02.2026"
-      ],
-      "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2384564.pdf"
-      ],
-      "partyExplanations": {
-        "volt": "Abstimmungsverhalten entnommen",
-        "afd": "Abstimmungsverhalten entnommen, in Aussprache begründet mit Beschwerden über Unsauberkeit, offenen Drogenkonsum und Gewalttaten",
-        "fdp": "Abstimmungsverhalten entnommen, in Aussprache vervwiesen auf  bestehende nahegelegene Polizeistation am Kollegienwall",
-        "cdu": "Abstimmungsverhalten entnommen, in Aussprache Verweis auf nahegelegene Polizeistation und weitere Maßnahmen",
-        "linke": "Abstimmungsverhalten entnommen",
-        "spd": "Abstimmungsverhalten entnommen, in Aussprache Verweis auf bestehende Maßnahmen, Quartiersbüros und anstehende Neumarktentwicklung",
-        "gruene": "Abstimmungsverhalten entnommen, in Aussprache auf weitere Ma0nahmen und Polizeipräsenz verwiesen",
-        "uwg": "Abstimmungsverhalten entnommen"
-      }
-    },
-    {
-      "id": "16",
-      "question": "Die Partei trug die Einführung einer zusätzlichen Steuer auf Übernachtungen („Bettensteuer“) mit.",
-      "category": "Bildung & Kultur",
-      "weight": 1,
-      "parties": {
-        "volt": "agree",
-        "afd": "disagree",
-        "fdp": "disagree",
-        "cdu": "disagree",
-        "linke": "agree",
-        "spd": "agree",
-        "gruene": "agree",
-        "uwg": "disagree"
-      },
-      "sources": [
-        "Ratssitzung 01.07.25",
-        "Wahlprogramme"
-      ],
-      "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2343925.pdf",
-        "-"
-      ],
-      "partyExplanations": {
-        "volt": "Abstimmungsverhalten entnommen",
-        "afd": "Abstimmungsverhalten entnommen",
-        "fdp": "Abstimmungsverhalten entnommen, Vgl. Programm S. 4",
-        "cdu": "Abstimmungsverhalten entnommen, Treten für Abschaffung ein (S. 2 Programm)",
-        "linke": "Abstimmungsverhalten entnommen",
-        "spd": "Abstimmungsverhalten entnommen",
-        "gruene": "Abstimmungsverhalten entnommen, Programm S. 83 als faires Mittel zur Erzielung weiterer kommunaler Einnahmen erwähnt",
-        "uwg": "Abstimmungsverhalten entnommen"
-      }
-    },
-    {
-      "id": "17",
-      "question": "Die Partei unterstützte die Einführung einer Verpackungssteuer, um die Nutzung von Mehrwegverpackungen zu fördern und Einwegmüll zu reduzieren.",
-      "category": "Umwelt",
-      "weight": 1,
-      "parties": {
-        "volt": "agree",
-        "afd": "disagree",
-        "fdp": "disagree",
-        "cdu": "disagree",
-        "linke": "agree",
-        "spd": "agree",
-        "gruene": "agree",
-        "uwg": "disagree"
-      },
-      "sources": [
-        "Ratssitzung 17.03.2026",
-        "Wahlprogramme"
-      ],
-      "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2393530.pdf",
-        "-"
-      ],
-      "partyExplanations": {
-        "volt": "Abstimmungsverhalten entnommen",
-        "afd": "Abstimmungsverhalten entnommen",
-        "fdp": "Abstimmungsverhalten entnommen, Im Programm (S. 5) kritisiert, die Steuer belaste inbs. kleine Familienbetriebe",
-        "cdu": "Abstimmungsverhalten entnommen, in Aussprache bezeichnen sie eine Steuer u.a. als falsches Instrument, welches höheren Kosten und zusätzliche Arbeit produziere",
-        "linke": "Abstimmungsverhalten entnommen, in der Aussprache werden u.a. Anreize zur Nachhaltigkeit erwähnt",
-        "spd": "Abstimmungsverhalten entnommen, in der Aussprache wird u.a. auf die Kosten der Entsorgung fü die Allgemeinheit eingegangen",
-        "gruene": "Abstimmungsverhalten entnommen, In Aussprache wird auf Ressourcenverbrauch verwiesen & von der Gemeinheit getragene Entsortgungskosten",
-        "uwg": "Abstimmungsverhalten entnommen"
-      }
-    },
-    {
-      "id": "18",
-      "question": "Die Partei trug die Bereitstellung eines städtischen Zuschusses von bis zu 33 Millionen Euro für die Sanierung der Bremer Brücke mit.",
-      "category": "Bildung & Kultur",
-      "weight": 1,
-      "parties": {
-        "volt": "agree",
-        "afd": "disagree",
-        "fdp": "disagree",
-        "cdu": "agree",
-        "linke": "disagree",
-        "spd": "agree",
-        "gruene": "agree",
-        "uwg": "disagree"
-      },
-      "sources": [
-        "Ratssitzung 04.11.2025",
-        "Wahlprogramme"
-      ],
-      "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2367880.pdf",
-        "-"
-      ],
-      "partyExplanations": {
-        "volt": "Abstimmungsverhalten entnommen",
-        "afd": "Abstimmungsverhalten entnommen",
-        "fdp": "Abstimmungsverhalten entnommen, in der Aussprache wird die finanzielle Verhältnismäßigkeit angesprochen, im Programm (S. 5:) wird zudem der sofortige Verkauf des Stadions Bremer Brücke gefordert",
-        "cdu": "Abstimmungsverhalten entnommen, im Wahlprogramm (S. 13) wird sich ausdrücklich dafür Positionioert, in der Aussprache wird u.a. auf die Strahlkraft und deren monetären Nutzen verwiesen",
-        "linke": "Abstimmungsverhalten entnommen, Das Programm (S. 1) kritisiert ausdrücklich die Mobilisierung städtischer Mittel für den Profifußball",
-        "spd": "Abstimmungsverhalten entnommen, im Programm (S. 23) wird sich ausdrücklich dafür positioniert, in der Aussprache wurde die Nutzung für Begegnungen und Veranstaltungen angesprochen und weitere Bedingungen erwähnt",
-        "gruene": "Abstimmungsverhalten entnommen, im Programm (S. 25) positionieren sie sich ausdrücklich dazu, fordern jedoch auch eine Nutzung als Quartierstreffpunkt, eine bessere Klimabilanz und einen langfristig finanziell unabhängigen VFL",
-        "uwg": "Abstimmungsverhalten entnommen"
-      }
-    },
-    {
-      "id": "19",
-      "question": "Die Partei stimmte für die Einrichtung einer Koordinierungsstelle zur Stärkung und Weiterentwicklung der Osnabrücker Nachtkultur.",
-      "category": "Bildung & Kultur",
-      "weight": 1,
-      "parties": {
-        "volt": "agree",
-        "afd": "disagree",
-        "fdp": "disagree",
-        "cdu": "disagree",
-        "linke": "agree",
-        "spd": "agree",
-        "gruene": "agree",
-        "uwg": "disagree"
-      },
-      "sources": [
-        "Ratssitzung 21.04.2026"
-      ],
-      "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2398590.pdf"
-      ],
-      "partyExplanations": {
-        "volt": "Abstimmungsverhalten entnommen",
-        "afd": "Abstimmungsverhalten entnommen",
-        "fdp": "Abstimmungsverhalten entnommen",
-        "cdu": "Abstimmungsverhalten entnommen",
-        "linke": "Abstimmungsverhalten entnommen",
-        "spd": "Abstimmungsverhalten entnommen",
-        "gruene": "Abstimmungsverhalten entnommen",
-        "uwg": "Abstimmungsverhalten entnommen"
-      }
-    },
-    {
-      "id": "20",
-      "question": "Die Partei stimmte für die Einführung einer verbindlichen Baumschutzsatzung zum Schutz von Bäumen auf Privatgrundstücken.",
-      "category": "Umwelt",
-      "weight": 1,
-      "parties": {
-        "volt": "agree",
-        "afd": "disagree",
-        "fdp": "disagree",
-        "cdu": "disagree",
-        "linke": "agree",
-        "spd": "agree",
-        "gruene": "agree",
-        "uwg": "disagree"
-      },
-      "sources": [
-        "Ratssitzung 17.03.2026",
-        "Wahlprogramme"
-      ],
-      "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2393530.pdf",
-        "-"
-      ],
-      "partyExplanations": {
-        "volt": "Abstimmungsverhalten entnommen",
-        "afd": "Abstimmungsverhalten entnommen",
-        "fdp": "Abstimmungsverhalten entnommen, in Aussprache:Die Gruppe unterstützt grundsätzlich den Baumerhalt, lehnt aber den aus ihrer Sicht zu starken Eingriff in Privateigentum und die zusätzliche Bürokratie ab.",
-        "cdu": "Abstimmungsverhalten entnommen, in Aussprache wird der Eingriff in Privateigentum, Betretungsrechte auf Privatgrundstücken und zusätzlicher Verwaltungsaufwand, Im Programm (S. 19) wird das Thema erneut aufgegriffen",
-        "linke": "Abstimmungsverhalten entnommen, In Aussprache begründet vor allem mit dem langfristigen Beitrag des Baumschutzes zum Klimaschutz",
-        "spd": "Abstimmungsverhalten entnommen, in Aussprache wir mit Lebensqualität, Stadtklima, saubere Luft sowie transparenten und nachvollziehbaren Regeln agrumentiert, Im Programm wird das Themen ebenfalls aufgegriffen (S. 29)",
-        "gruene": "Abstimmungsverhalten entnommen, in Aussprache wird u.a. mit limawandel. Schutz von Klima, Luftqualität, Biodiversität und Lebensqualität argumentiert. Im Programm wird das Thema auch aufgegriffen (S. 10)",
-        "uwg": "Abstimmungsverhalten entnommen"
-      }
-    },
-    {
-      "id": "21",
-      "question": "Das VW-Werk in Osnabrück soll erhalten bleiben und vorrangig für zivile und nachhaltige Produktion genutzt werden; auch eine Produktion von Verteidigungsgütern soll unter bestimmten Bedingungen möglich sein.",
-      "category": "Bildung & Kultur",
-      "weight": 1,
-      "parties": {
-        "volt": "agree",
-        "afd": "neutral",
-        "fdp": "agree",
-        "cdu": "agree",
-        "linke": "disagree",
-        "spd": "agree",
-        "gruene": "agree",
-        "uwg": "agree"
-      },
-      "sources": [
-        "Ratssitzung 21.04.2026",
-        "Wahlprogramme"
-      ],
-      "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2398590.pdf",
-        "-"
-      ],
-      "partyExplanations": {
-        "volt": "Abstimmungsverhalten entnommen",
-        "afd": "Abstimmungsverhalten entnommen",
-        "fdp": "Abstimmungsverhalten entnommen, In Aussprache alternative Nutzung des VW-Standorts auch vor dem Hintergrund der gestiegenen Bedeutung von Verteidigungsfähigkeit betont",
-        "cdu": "Abstimmungsverhalten entnommen, In Aussprache einer Rüstungsproduktion zur Sicherung von Arbeitsplätzen aber offen gegenüber, auch wenn Automobilproduktion bevorzugt",
-        "linke": "Abstimmungsverhalten entnommen, In Aussprache klare Ablehnung eines Wettrüstens, stattdessen Frühwarnsysteme, Prävention, friedenssichernde Missionen und Rüstungskontrolle, Forderung zudem im Programm (S. 15) zu finden",
-        "spd": "Abstimmungsverhalten entnommen, In Aussprache Rüstungsproduktion als letzte Option aber nicht ausgeschlossen aufgrund industrieller Zukunft der Region; zivile Nutzung klar bevorzugt",
-        "gruene": "Abstimmungsverhalten entnommen, In Aussprache Positionierung zum Erhalt der rund 2.300 Arbeitsplätze und Hinnehmbarkeit der Produktion von Verteidigungsgütern zum Schutz demokratischer Partner",
-        "uwg": "Abstimmungsverhalten entnommen"
-      }
-    },
-    {
-      "id": "22",
-      "question": "Die Partei sprach sich für eine Prüfung der Erfolgsaussichten einer kommunalen Verfassungsbeschwerde gegen das derzeitige Modell der Bezahlkarte für Geflüchtete aus.",
-      "category": "Migration, Soziales & Teilhabe",
-      "weight": 1,
-      "parties": {
-        "volt": "agree",
-        "afd": "disagree",
-        "fdp": "disagree",
-        "cdu": "disagree",
-        "linke": "agree",
-        "spd": "agree",
-        "gruene": "agree",
-        "uwg": "disagree"
-      },
-      "sources": [
-        "Ratssitzung 29.04.2025",
-        "Wahlprogramme"
-      ],
-      "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc2326845.pdf",
-        "-"
-      ],
-      "partyExplanations": {
-        "volt": "Abstimmungsverhalten entnommen",
-        "afd": "Abstimmungsverhalten entnommen",
-        "fdp": "Abstimmungsverhalten entnommen",
-        "cdu": "Abstimmungsverhalten entnommen",
-        "linke": "Abstimmungsverhalten entnommen, zudem fordert die Partei im Programm (S. 11) Zugang zu Bargeld",
-        "spd": "Abstimmungsverhalten entnommen",
-        "gruene": "Abstimmungsverhalten entnommen, im Programm (S. 60) auch abgelehnt",
-        "uwg": "Abstimmungsverhalten entnommen"
-      }
-    },
-    {
-      "id": "23",
-      "question": "Die Partei stimmte für die Einrichtung einer eigenen queeren Beratungsstelle, unter anderem für Coming-out-, Identitäts- und Trans-Beratung.",
-      "category": "Migration, Soziales & Teilhabe",
-      "weight": 1,
-      "parties": {
-        "volt": "agree",
-        "afd": "disagree",
-        "fdp": "agree",
-        "cdu": "agree",
-        "linke": "agree",
-        "spd": "agree",
-        "gruene": "agree",
-        "uwg": "agree"
-      },
-      "sources": [
-        "Ratssitzung 01.10.2024"
-      ],
-      "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc1622309.pdf"
-      ],
-      "partyExplanations": {
-        "volt": "Abstimmungsverhalten entnommen",
-        "afd": "Abstimmungsverhalten entnommen",
-        "fdp": "Abstimmungsverhalten entnommen",
-        "cdu": "Abstimmungsverhalten entnommen",
-        "linke": "Abstimmungsverhalten entnommen",
-        "spd": "Abstimmungsverhalten entnommen",
-        "gruene": "Abstimmungsverhalten entnommen",
-        "uwg": "Abstimmungsverhalten entnommen"
-      }
-    },
-    {
-      "id": "24",
-      "question": "Die Partei sprach sich für gezielte Maßnahmen aus, um den Anteil von Beschäftigten mit Migrationsgeschichte - insbesondere in höheren Positionen - zu erhöhen.",
-      "category": "Migration, Soziales & Teilhabe",
-      "weight": 1,
-      "parties": {
-        "volt": "agree",
-        "afd": "disagree",
-        "fdp": "disagree",
-        "cdu": "agree",
-        "linke": "agree",
-        "spd": "agree",
-        "gruene": "agree",
-        "uwg": "disagree"
-      },
-      "sources": [
-        "Ratssitzung 11.06.2024"
-      ],
-      "links": [
-        "https://www.osnabrueck.sitzung-online.de/public/wicket/resource/org.apache.wicket.Application/doc1611905.pdf"
-      ],
-      "partyExplanations": {
-        "volt": "Abstimmungsverhalten entnommen",
-        "afd": "Abstimmungsverhalten entnommen",
-        "fdp": "Abstimmungsverhalten entnommen",
-        "cdu": "Abstimmungsverhalten entnommen",
-        "linke": "Abstimmungsverhalten entnommen",
-        "spd": "Abstimmungsverhalten entnommen",
-        "gruene": "Abstimmungsverhalten entnommen",
-        "uwg": "Abstimmungsverhalten entnommen"
-      }
+      "kontext": "Beide Parteien befürworten den sozialen Wohnbau. Abweichungen gibt es jedoch u.a. im Hinblick auf die Wichtigkeit von Energieeffizienz. Abweichungen bei anderen Aspekten (z. B. Sozialbindung) existieren, jedoch fehlt es stellenweise an konkreten Aussagen auf der jeweils anderen Seite (je nach genauem Thema)."
     }
   ]
 }

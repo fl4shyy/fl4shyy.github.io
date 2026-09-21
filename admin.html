@@ -3,115 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Verwaltungsoberfläche für den Wahlguide Osnabrück."
-    />
     <title>Verwaltung – Wahlguide Osnabrück</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
-
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html" aria-label="Wahlguide Osnabrück Startseite">
-          <span class="brand-mark" aria-hidden="true"><img src="assets/compass.svg" alt="" /></span>
-          <span>Wahlguide Osnabrück</span>
-        </a>
-        <a class="demo-label" href="index.html">Zum Wahlguide</a>
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><img src="assets/compass.svg" alt="" /></span><span>Wahlguide Osnabrück</span></a>
       </div>
     </header>
-
     <main id="main-content" class="container">
-      <section class="admin">
+      <section class="state-card">
         <p class="eyebrow">Verwaltung</p>
-        <h1>Thesen und Parteien bearbeiten</h1>
-        <p class="lead">
-          Bearbeite die CSV-Felder unten, lade eine CSV-Datei hoch oder erstelle neue Einträge.
-          Die Vorschau zeigt das Ergebnis. Exportiere anschließend die <code>questions.json</code>
-          und lege sie im Ordner <code>data/</code> ab. Es werden keine Daten gespeichert.
-        </p>
-
-        <p id="admin-status" class="admin-status" data-kind="info" aria-live="polite"></p>
-
-        <div class="admin-grid">
-          <article class="admin-panel">
-            <div class="admin-panel-head">
-              <h2>Parteien</h2>
-              <div class="admin-panel-actions">
-                <button id="template-parties-button" class="text-button" type="button">Vorlage</button>
-                <label class="text-button">
-                  CSV hochladen
-                  <input id="parties-file" type="file" accept=".csv,text/csv" hidden />
-                </label>
-              </div>
-            </div>
-            <p class="admin-hint">Spalten: <code>id,name,shortName,color</code></p>
-            <textarea id="parties-csv" class="csv-input" rows="8" spellcheck="false" aria-label="Parteien CSV"></textarea>
-          </article>
-
-          <article class="admin-panel">
-            <div class="admin-panel-head">
-              <h2>Thesen</h2>
-              <div class="admin-panel-actions">
-                <button id="template-questions-button" class="text-button" type="button">Vorlage</button>
-                <label class="text-button">
-                  CSV hochladen
-                  <input id="questions-file" type="file" accept=".csv,text/csv" hidden />
-                </label>
-              </div>
-            </div>
-            <p class="admin-hint">
-              Spalten: <code>id,question,category,weight</code> + eine Spalte pro Partei-ID
-              (Wert: <code>agree</code> / <code>neutral</code> / <code>disagree</code> / <code>unknown</code>)
-            </p>
-            <textarea id="questions-csv" class="csv-input" rows="14" spellcheck="false" aria-label="Thesen CSV"></textarea>
-          </article>
-        </div>
-
-        <section class="admin-editor">
-          <h2>Visueller Editor</h2>
-
-          <div class="editor-section">
-            <div class="editor-section-head">
-              <h3>Parteien</h3>
-              <button id="add-party-button" class="text-button" type="button">+ Partei hinzufügen</button>
-            </div>
-            <div id="parties-editor" class="editor-rows"></div>
-          </div>
-
-          <div class="editor-section">
-            <div class="editor-section-head">
-              <h3>Thesen</h3>
-              <button id="add-question-button" class="text-button" type="button">+ These hinzufügen</button>
-            </div>
-            <div id="questions-editor" class="editor-cards"></div>
-          </div>
-        </section>
-
-        <div class="admin-actions">
-          <button id="preview-button" class="button button-secondary" type="button">Vorschau aktualisieren</button>
-          <button id="download-json-button" class="button button-primary" type="button">⬇ data/questions.json herunterladen</button>
-          <button id="reset-button" class="button button-secondary" type="button">Auf aktuelle Daten zurücksetzen</button>
-        </div>
-
-        <section class="admin-previews">
-          <h2>Vorschau</h2>
-          <h3>Parteien</h3>
-          <div id="parties-preview" class="admin-preview"></div>
-          <h3>Thesen</h3>
-          <div id="questions-preview" class="admin-preview"></div>
-        </section>
+        <h1>Die Stichwahl-Daten werden direkt gepflegt.</h1>
+        <p>Für die neue Version gibt es keinen Admin-Editor. Die Datei <code>data/questions.json</code> kann direkt bearbeitet werden.</p>
+        <p><a class="button button-secondary" href="legacy/admin.html">Admin-Editor der vorherigen Version öffnen</a></p>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <p>Wahlguide Osnabrück · Verwaltung · Keine Daten werden gespeichert</p>
-      </div>
-    </footer>
-
-    <script type="module" src="js/admin.js"></script>
   </body>
 </html>

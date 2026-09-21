@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Wahlguide für die Kommunalwahl in Osnabrück am 13. September 2026."
+    />
+    <title>Wahlguide Osnabrück</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Wahlguide Osnabrück Startseite">
+          <span class="brand-mark" aria-hidden="true"><img src="assets/compass.svg" alt="" /></span>
+          <span>Wahlguide Osnabrück</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="main-content" class="container">
+      <section id="loading-state" class="state-card" aria-live="polite">
+        <div class="spinner" aria-hidden="true"></div>
+        <p>Fragen werden geladen …</p>
+      </section>
+
+      <section id="error-state" class="state-card is-hidden" role="alert">
+        <h1>Die Fragen konnten nicht geladen werden.</h1>
+        <p id="error-message"></p>
+        <p class="hint">
+          Bitte starte das Projekt über einen lokalen Webserver oder GitHub Pages. Details
+          stehen in der README.
+        </p>
+      </section>
+
+      <section id="welcome-screen" class="welcome is-hidden" aria-labelledby="welcome-title">
+        <p class="eyebrow">Kommunalwahl · 13.09.2026</p>
+        <h1 id="welcome-title">Dein Guide für die Kommunalwahl in der Stadt Osnabrück</h1>
+        <p class="lead">
+          Vergleiche deine Antworten mit den Positionen der Parteien zu kommunalpolitischen Thesen.
+        </p>
+        <aside class="welcome-notice" aria-label="Hinweis zur Auswertung">
+          <img src="assets/info.svg" alt="" aria-hidden="true" />
+          <p>
+            Die Auswertung ist kein offizieller Wahl-O-Mat und stellt keine Wahlempfehlung dar.
+            Sie soll politische Positionen anhand der ausgewählten Thesen vergleichbar machen und
+            einen ersten Ansatzpunkt für die Auseinandersetzung mit kommunalpolitischen Themen liefern.
+          </p>
+        </aside>
+        <button id="start-button" class="button button-primary start-button" type="button">
+          <img src="assets/play.svg" alt="" aria-hidden="true" />
+          Guide starten
+        </button>
+        <a class="button button-secondary legacy-return-link" href="../index.html">Zur Stichwahl-Version</a>
+        <div class="welcome-note-grid">
+          <section class="welcome-note">
+            <h2>Annahmen</h2>
+            <ul>
+              <li>Bei kleineren Fraktionen wurde teilweise angenommen, dass ihr Abstimmungsverhalten mit der allgemeinen politischen Position der jeweiligen Partei übereinstimmt.</li>
+              <li>Diese Annahme ist insbesondere bei UWG, AfD und Volt mit Unsicherheiten verbunden und gegebenenfalls nicht haltbar.</li>
+              <li>Berücksichtigt wurden Ratsentscheidungen seit Januar 2024, ergänzende Quellen sowie aktuelle Wahlprogramme. Das legt eine gewisse zeitliche Stabilität nahe, ist aber keine Garantie für unveränderte Positionen.</li>
+            </ul>
+          </section>
+          <section class="welcome-note">
+            <h2>Weitere Hinweise</h2>
+            <ul>
+              <li>Die Kürzung komplexer Sachverhalte auf Ja, Nein oder Neutral führt zwangsläufig zu Unschärfen.</li>
+              <li>Politische Aussagen, Abstimmungsverhalten und programmatische Positionen können missverständlich, unvollständig oder fehlerhaft interpretiert worden sein.</li>
+              <li>Thesen ohne ausreichend konkrete Position werden nicht in die Berechnung einbezogen.</li>
+              <li>Aufgrund der Datenlage geht es bei vielen Fragen auch um vergangenheitsgerichtete Themen. Diese stellen eher einen Einblick in das Verhalten der Parteien in der abgelaufenen Legislaturperiode dar.</li>
+              <li>Einige Parteien sind nicht enthalten. Mehr dazu unter „Quellen · Weitere Infos · Fehler“.</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+
+      <section id="quiz-screen" class="quiz is-hidden" aria-labelledby="question-text">
+        <div class="progress-meta">
+          <span id="progress-text">These 1 von 10</span>
+          <span id="category-label" class="category-label">Verkehr</span>
+        </div>
+        <nav id="progress-navigation" class="progress-navigation" aria-label="Fragen-Navigation"></nav>
+
+        <article class="question-card">
+          <div id="question-sources" class="source-list" aria-label="Hauptquellen"></div>
+          <h1 id="question-text" tabindex="-1"></h1>
+          <div id="answer-options" class="answer-options" role="group" aria-label="Antwort auswählen">
+            <button class="answer-button" type="button" data-answer="agree">
+              <img class="answer-icon" src="assets/stimme zu.svg" alt="" aria-hidden="true" />
+              Stimme zu
+            </button>
+            <button class="answer-button" type="button" data-answer="neutral">
+              <img class="answer-icon" src="assets/neutral.svg" alt="" aria-hidden="true" />
+              Neutral
+            </button>
+            <button class="answer-button" type="button" data-answer="disagree">
+              <img class="answer-icon" src="assets/stimme nicht zu.svg" alt="" aria-hidden="true" />
+              Stimme nicht zu
+            </button>
+          </div>
+          <div class="question-actions">
+            <button id="skip-button" class="skip-button" type="button">Frage überspringen</button>
+          </div>
+        </article>
+        <p class="keyboard-hint">Tipp: Mit Tab und Enter kannst du die Antwort auswählen.</p>
+      </section>
+
+      <section id="weighting-screen" class="weighting is-hidden" aria-labelledby="weighting-title">
+        <p class="eyebrow">Gewichtung</p>
+        <h1 id="weighting-title" tabindex="-1">Welche Thesen sind dir besonders wichtig?</h1>
+        <p class="lead">
+          Markiere Thesen, die dir besonders wichtig sind. Sie zählen bei der Auswertung doppelt.
+          Du kannst die Auswahl jederzeit ändern.
+        </p>
+        <p id="weighting-count" class="weighting-count" aria-live="polite"></p>
+        <div class="weighting-actions weighting-actions-top">
+          <button id="weighting-continue-button-top" class="button button-primary" type="button">
+            Zur Auswertung
+          </button>
+        </div>
+        <ol id="weighting-list" class="weighting-list"></ol>
+        <div class="weighting-actions">
+          <button id="weighting-continue-button" class="button button-primary" type="button">
+            Zur Auswertung
+          </button>
+        </div>
+      </section>
+
+      <section id="result-screen" class="results is-hidden" aria-labelledby="result-title">
+        <p class="eyebrow">Dein Ergebnis</p>
+        <h1 id="result-title" tabindex="-1">Die größten Übereinstimmungen</h1>
+        <p class="lead">
+          Die Reihenfolge vergleicht ausschließlich deine Antworten mit den hinterlegten Positionen
+          und ist keine Wahlempfehlung.
+        </p>
+        <p id="results-note" class="results-note"></p>
+        <div id="result-list" class="result-list" aria-live="polite"></div>
+        <div class="result-actions">
+          <button id="restart-button" class="button button-secondary" type="button">
+            Noch einmal starten
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="footer-note">
+          <span>Wahlguide Osnabrück · Keine personenbezogenen Daten</span>
+          <span class="footer-links">
+            <a class="footer-info-link" href="weitere-infos.html"><img src="assets/book.svg" alt="" aria-hidden="true" />Quellen · Weitere Infos · Fehler</a>
+            <span aria-hidden="true">·</span>
+            <a class="footer-info-link" href="https://mein.online-impressum.de/wahlguide-osnabrueck/" target="_blank" rel="noreferrer">Impressum</a>
+          </span>
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

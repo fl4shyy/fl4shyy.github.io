@@ -1,105 +1,69 @@
-# Wahlguide Osnabrück
+# Wahlguide Osnabrück – Stichwahl
 
-Ein vollständig statischer Wahlguide für die Kommunalwahl in der Stadt Osnabrück am 13. September 2026. Er macht die Positionen der teilnehmenden Parteien zu 24 kommunalpolitischen Thesen vergleichbar. Das Projekt läuft ohne Backend, Datenbank, Cookies oder Speicherung personenbezogener Daten und ist für GitHub Pages geeignet.
+Ein vollständig statischer, anonymisierter Positionsvergleich für die Stichwahl in Osnabrück am 27. September 2026. Zu 15 kommunalpolitischen Themen wählen Nutzende zwischen zwei zunächst anonymisierten Positionen oder „Keine von beiden“. Erst die Auswertung nennt die Kandidaten und zeigt die Tendenz.
 
-Der Wahlguide ist keine Wahlempfehlung und kein offizielles Angebot der Stadt Osnabrück. Quellen, Hinweise zur Datengrundlage und eine Kontaktmöglichkeit für Fehler sind direkt im Projekt unter [weitere-infos.html](weitere-infos.html) zu finden.
+Die Anwendung läuft ohne Backend, Datenbank, Cookies oder Speicherung personenbezogener Daten und eignet sich für GitHub Pages. Sie ist keine Wahlempfehlung und kein offizielles Angebot der Stadt Osnabrück.
 
-## Features
+## Funktionsumfang
 
-- 24 Thesen und acht Parteien für die Kommunalwahl in Osnabrück
-- Drei Antworten für Nutzende: `agree`, `neutral` und `disagree`
-- Direkte Navigation über Fortschrittspunkte; beantwortete, übersprungene und wichtige Thesen sind erkennbar
-- Überspringen ohne Einfluss auf das Ergebnis
-- Markierung wichtiger Thesen: Sie zählen bei der Prozentzahl doppelt, nicht aber bei den sichtbaren Antwortzählern
-- Parteiposition `unknown`: Eine nicht auffindbare Position wird als „Keine Aussage gefunden“ dargestellt und für diese Partei nicht gewertet
-- Quellen direkt oberhalb der jeweiligen These
-- Aufklappbare Ergebnis-Karten mit vergleichbaren Antworten und Parteibegründungen
-- Kategorien sind in Gewichtungs- und Ergebnisansicht fest oben rechts positioniert
-- Responsives, zugängliches Mobile-First-Layout
-- Sitzung nur im Arbeitsspeicher: Nach einem Neuladen beginnt der Fragebogen erneut
+- Feste, über die Themen durchmischte Links-Rechts-Zuordnung
+- Je Thema zwei Positionen mit getrennten Quellen und zusätzlichem Kontext
+- „Keine von beiden“ als bewusste neutrale Antwort
+- Überspringen ohne Einfluss auf die Auswertung
+- Laufende anonyme Tendenz während des Vergleichs
+- Finale Auswertung zwischen Katharina Pötter (CDU) und Volker Bajus (BÜNDNIS 90/DIE GRÜNEN)
+- Gemeinsame Themen als pflegbare Tag-Cloud
+- Responsive, tastaturbedienbare Mobile-First-Oberfläche
+- Keine Persistenz: Ein Neuladen startet den Vergleich neu
+- Vollständige vorherige Kommunalwahl-Version unter `legacy/`
 
 ## Projektstruktur
 
 ```text
 .
-├── index.html              # Wahlguide
-├── weitere-infos.html      # Quellen, Hinweise und Fehlerkontakt
-├── admin.html              # Lokaler Dateneditor für die Weiterentwicklung
-├── assets/                 # Logo und UI-Icons
-├── css/style.css           # Responsives Design
-├── data/questions.json     # Metadaten, Parteien, Thesen, Quellen und Begründungen
+├── index.html              # Neue Stichwahl-Version
+├── weitere-infos.html      # Methodik, Hinweise und Kontakt
+├── admin.html              # Hinweis auf direkte JSON-Pflege
+├── assets/                 # Gemeinsame UI-Icons
+├── css/style.css           # Design der Stichwahl-Version
+├── data/questions.json     # Kandidaten, Themen, Positionen, Quellen und gemeinsame Themen
 ├── js/
 │   ├── app.js              # DOM, Navigation und Rendering
 │   ├── quiz.js             # Sitzungszustand im Browser
-│   ├── scoring.js          # Isolierte Bewertungslogik
-│   ├── dataLoader.js       # Laden und Validierung der JSON-Daten
-│   ├── csv.js              # CSV-Import und -Export
-│   └── admin.js            # Dateneditor
-└── test/
-    ├── unit/               # Tests der reinen Logik
-    └── e2e/                # Playwright-Tests der Browser-Flows
+│   ├── scoring.js          # Reine Tendenzberechnung
+│   └── dataLoader.js       # Laden und Validierung der Daten
+├── legacy/                 # Selbstständige vorherige Version einschließlich Admin-Editor
+└── test/                   # Unit- und Browser-Tests beider Versionen
 ```
+
+## Daten pflegen
+
+`data/questions.json` ist die einzige Laufzeit-Datenquelle der Stichwahl-Version. Fehlende Quellenlinks sind mit `"link": ""` und `"linkFehlt": true` markiert. Nach dem Eintragen eines Links sollte `linkFehlt` auf `false` gesetzt werden.
+
+Die feste Darstellungsseite wird je Thema über `leftActor` und `rightActor` gesteuert. Beide Werte müssen entweder `cdu` oder `gruene` enthalten und dürfen nicht identisch sein.
+
+Gemeinsame Themen werden im Array `gemeinsameThemen` gepflegt:
+
+```json
+"gemeinsameThemen": [
+  "Beispielthema"
+]
+```
+
+## Berechnung
+
+Jede Auswahl einer Position zählt als ein Punkt für den intern zugeordneten Kandidaten. Die Prozentwerte berechnen sich ausschließlich aus diesen eindeutigen Positionswahlen. „Keine von beiden“ und übersprungene Themen werden gezählt, bleiben aber außerhalb des Nenners. Ohne eindeutige Positionswahl zeigt die Anwendung keine Prozentwerte, sondern „Keine eindeutige Tendenz“.
 
 ## Lokal starten
 
-Die Seite muss über einen lokalen Webserver laufen, weil Browser JSON-Dateien bei `file://` aus Sicherheitsgründen nicht zuverlässig laden.
+Die Seite muss über einen lokalen Webserver laufen, da Browser JSON-Dateien bei `file://` nicht zuverlässig laden.
 
 ```bash
 npm install
 npm run serve
 ```
 
-Anschließend `http://localhost:8765` öffnen. Alternativ funktioniert jeder statische Webserver, etwa `python -m http.server 8000`.
-
-## Deployment mit GitHub Pages
-
-1. Repository auf GitHub anlegen und die Dateien in den Standard-Branch pushen.
-2. Unter **Settings → Pages** bei **Build and deployment** „Deploy from a branch“ auswählen.
-3. Den Branch (meist `main`) und den Ordner `/(root)` wählen.
-4. Speichern. GitHub Pages stellt anschließend die URL bereit.
-
-Da `index.html` im Repository-Stamm liegt und alle Pfade relativ sind, ist kein Build-Schritt erforderlich.
-
-## Architektur und Datenmodell
-
-`data/questions.json` ist die einzige Laufzeit-Datenquelle. Die Module trennen Datenzugriff, Quiz-Zustand, Berechnung und Oberfläche bewusst voneinander:
-
-- `dataLoader.js` lädt und prüft die JSON-Struktur.
-- `quiz.js` verwaltet Antworten, Überspringen und Wichtig-Markierungen nur für die aktuelle Browser-Sitzung.
-- `scoring.js` berechnet die Ergebnisse ohne DOM-Zugriff. Gleiche Antworten erhalten einen Punkt, unterschiedliche null Punkte. Übersprungene Antworten und `unknown`-Positionen der jeweiligen Partei bleiben aus Zählern und Nenner heraus.
-- `app.js` verbindet diese Teile mit dem HTML.
-
-Jede These lässt sich um weitere Felder ergänzen und enthält bereits Kategorie, Quellen, Gewicht, Antworten und Parteibegründungen:
-
-```json
-{
-  "id": "1",
-  "question": "Beispielthese",
-  "category": "Verkehr",
-  "weight": 1,
-  "sources": ["https://example.org/quelle"],
-  "parties": {
-    "volt": "agree",
-    "afd": "unknown"
-  },
-  "partyExplanations": {
-    "volt": "Begründung der Partei.",
-    "afd": "Keine Position auffindbar."
-  }
-}
-```
-
-`unknown` ist ausschließlich eine Parteiposition. Nutzende können weiterhin nur zustimmen, neutral antworten, nicht zustimmen oder eine These überspringen.
-
-## Daten bearbeiten
-
-`admin.html` ist ein lokaler Editor für Parteien und Thesen mit CSV-Import/-Export und JSON-Download. Er wird nicht in der öffentlichen Navigation verlinkt. Änderungen werden erst wirksam, wenn die heruntergeladene `data/questions.json` bewusst in den Projektordner übernommen und veröffentlicht wird.
-
-Beim Bearbeiten gilt:
-
-- Für Parteien sind `agree`, `neutral`, `disagree` und `unknown` gültige Werte.
-- Quellen und Parteibegründungen werden beim CSV-Import nach bestehender Thesen-ID erhalten; die veröffentlichte JSON-Datei bleibt die maßgebliche, vollständige Datenquelle.
-- Eine geänderte Partei-ID wird auch in Antworten und Parteibegründungen aktualisiert.
+Danach `http://localhost:8765` öffnen.
 
 ## Tests
 
@@ -109,20 +73,9 @@ npm run test:e2e
 npm test
 ```
 
-Für die End-to-End-Tests wird einmalig ein Playwright-Browser benötigt:
+## Legacy-Version
 
-```bash
-npx playwright install chromium
-```
-
-## Roadmap
-
-- Redaktioneller Workflow für Quellen- und Positionsupdates
-- Themenauswertung und Diagramme
-- Ergebnis als Bild exportieren
-- Mehrere Kommunen und getrennte Fragensätze
-- Zusätzliche Antwortoptionen und konfigurierbare Sprachversionen
-- Erweiterte Barrierefreiheits- und Plausibilitätsprüfungen
+Die bisherige Kommunalwahl-Anwendung liegt vollständig unter `legacy/` und wird über `legacy/index.html` gestartet. Sie besitzt weiterhin ihre ursprünglichen Daten, Berechnung, Gewichtung und Verwaltungsoberfläche.
 
 ## Lizenz
 

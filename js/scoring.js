@@ -1,61 +1,37 @@
-/**
- * Zentrale Bewertungslogik. Übersprungene Fragen werden nicht gewertet.
- * Als wichtig markierte Antworten fließen mit dem doppelten Gewicht ein;
- * die sichtbare Anzahl gleicher Antworten bleibt davon bewusst unberührt.
- */
-export function calculateResults({ questions, parties, questionStates }) {
-  return parties
-    .map((party) => {
-      const result = questions.reduce(
-        (totals, question) => {
-          const state = questionStates.get(question.id);
-          if (!state?.answer) {
-            if (state?.skipped) totals.skipped += 1;
-            return totals;
-          }
+export function calculateTendency(questionStates) {
+  const totals = { cdu: 0, gruene: 0, neither: 0, skipped: 0, directional: 0 };
+  questionStates.forEach((state) => {
+    if (state.skipped) {
+      totals.skipped += 1;
+    } else if (state.choice === "neither") {
+      totals.neither += 1;
+    } else if (state.actor === "cdu" || state.actor === "gruene") {
+      totals[state.actor] += 1;
+      totals.directional += 1;
+    }
+  });
 
-          const weight = (question.weight || 1) * (state.isImportant ? 2 : 1);
-          const userAnswer = state.answer;
-          const partyAnswer = question.parties[party.id];
+  if (totals.directional === 0) {
+    return { ...totals, cduPercentage: null, gruenePercentage: null, markerPercentage: 50, leader: null };
+  }
 
-          if (partyAnswer === "unknown") {
-            totals.unknown += 1;
-            return totals;
-          }
+  const cduPercentage = Math.round((totals.cdu / totals.directional) * 100);
+  const gruenePercentage = 100 - cduPercentage;
+  const markerPercentage = Math.round((totals.gruene / totals.directional) * 100);
+  const leader = totals.cdu === totals.gruene ? "tie" : totals.cdu > totals.gruene ? "cdu" : "gruene";
+  return { ...totals, cduPercentage, gruenePercentage, markerPercentage, leader };
+}
 
-          totals.totalWeight += weight;
+export function calculateTendenciesByArea(questions, questionStates) {
+  const areaStates = new Map();
 
-          if (userAnswer === partyAnswer) {
-            totals.matches += 1;
-            totals.weightedMatches += weight;
-          } else {
-            totals.differences += 1;
-          }
-          return totals;
-        },
-        {
-          matches: 0,
-          differences: 0,
-          skipped: 0,
-          unknown: 0,
-          weightedMatches: 0,
-          totalWeight: 0
-        }
-      );
+  questions.forEach((question) => {
+    if (!areaStates.has(question.bereich)) areaStates.set(question.bereich, new Map());
+    areaStates.get(question.bereich).set(question.id, questionStates.get(question.id));
+  });
 
-      return {
-        ...party,
-        ...result,
-        percentage: result.totalWeight
-          ? Math.round((result.weightedMatches / result.totalWeight) * 100)
-          : 0
-      };
-    })
-    .sort(
-      (a, b) =>
-        b.percentage - a.percentage ||
-        b.weightedMatches - a.weightedMatches ||
-        b.matches - a.matches ||
-        a.name.localeCompare(b.name)
-    );
+  return Array.from(areaStates, ([bereich, states]) => ({
+    bereich,
+    result: calculateTendency(states)
+  }));
 }
