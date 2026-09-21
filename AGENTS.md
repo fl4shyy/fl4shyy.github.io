@@ -5,23 +5,23 @@ Projekt arbeiten. Lies diese Datei vor der ersten Änderung vollständig durch.
 
 ## Projektcharakter
 
-- Statisches, frontend-only Proof of Concept eines kommunalen Wahl-O-Mat.
+- Statischer, frontend-only Positionsvergleich für die Osnabrücker Stichwahl.
 - **Kein Backend, keine Build-Pipeline, keine Bundler, keine Frameworks.**
-- Reines Vanilla-JS (ESM), ein HTML-File, ein CSS-File, eine JSON-Datendatei.
-- UI-Sprache ist **Deutsch**. Antwort-IDs (`agree`/`neutral`/`disagree`) bleiben sprachunabhängig.
-- Alle Fragen, Parteipositionen und Ortsangaben sind erfundene Demo-Daten – keine Wahlempfehlung.
+- Reines Vanilla-JS (ESM), statische HTML- und CSS-Dateien sowie eine JSON-Datendatei.
+- UI-Sprache ist **Deutsch**. Auswahl-IDs (`left`/`right`/`neither`) bleiben sprachunabhängig.
+- Die reale politische Datengrundlage stammt ausschließlich aus den vom Auftraggeber bereitgestellten Dateien. Fehlende politische Inhalte oder Links nicht recherchieren oder erfinden.
+- Die bisherige Kommunalwahl-Version bleibt vollständig und eigenständig unter `legacy/` erhalten.
 
 ## Module und Verantwortung
 
 | Datei | Aufgabe | darf nicht |
 |---|---|---|
 | `js/dataLoader.js` | `fetch` von `data/questions.json` + Strukturvalidierung | DOM berühren |
-| `js/quiz.js` | Sitzungszustand im Speicher (Antworten, Skip, Wichtig) | DOM berühren, persistieren |
-| `js/scoring.js` | Reine Bewertungslogik (Gewichtung, %, Sortierung) | DOM berühren, I/O |
+| `js/quiz.js` | Sitzungszustand im Speicher (Auswahl und Skip) | DOM berühren, persistieren |
+| `js/scoring.js` | Reine Tendenz- und Prozentberechnung | DOM berühren, I/O |
 | `js/app.js` | Verbindet Daten + Quiz + DOM, Rendering, Events | Geschäftslogik enthalten |
-| `js/csv.js` | Reiner CSV-Parser/Serializer (vanilla) | DOM berühren, I/O |
-| `js/admin.js` | Verwaltungsoberfläche: visueller Editor + CSV-Import/Export, Vorschau | Geschäftslogik enthalten |
-| `data/questions.json` | Fragen, Parteien, Antwortoptionen, Metadaten (einzige Datenquelle) | UI-Strings oder Code |
+| `data/questions.json` | Kandidaten, Themen, Positionen, Quellen und gemeinsame Themen (einzige Datenquelle) | Code |
+| `legacy/` | Vollständige vorherige Version einschließlich Admin-Editor | Mit neuen Daten oder neuer Logik vermischen |
 
 Halte diese Trennung ein. Neue Logik kommt in das passende Modul, neue UI-Verkabelung in `app.js`.
 
@@ -31,16 +31,17 @@ Halte diese Trennung ein. Neue Logik kommt in das passende Modul, neue UI-Verkab
 2. **ESM** (`import`/`export`), keine CommonJS, kein `type="module"`-Wechsel.
 3. **Keine neuen Runtime-Abhängigkeiten.** Dev-Dependencies nur für Tests (`@playwright/test`).
 4. **Deutsche UI-Strings** in der Oberfläche und in Fehlermeldungen der Validierung.
-5. **Antwort-IDs** immer `agree`/`neutral`/`disagree`. Labels über `ANSWER_LABELS` bzw. `data.answerOptions`.
+5. **Auswahl-IDs** immer `left`/`right`/`neither`. Die Kandidatenzuordnung wird separat im Zustand gespeichert.
 6. **Keine Persistenz.** Seitenreload setzt den Fragebogen absichtlich zurück. Kein `localStorage`, keine Cookies.
 7. **Mobile-First.** Standard-Viewport für Tests ist 420×900.
 8. **Barrierefreiheit beachten**: `aria-pressed`/`aria-expanded`/`aria-current`, `aria-label`, sichtbarer Fokus, Tastaturbedienung, `#main-content`-Sprunglink.
 
 ## Wichtige Logikregeln (nicht verletzen)
 
-- Übersprungene Fragen werden **nicht** gewertet und nicht in `totalWeight` gezählt.
-- Wichtig-Markierungen verdoppeln das Gewicht nur in der **Prozentzahl**, nicht in `matches`/`differences`.
-- Ergebnisse sortieren nach `percentage → weightedMatches → matches → name.localeCompare`.
+- Übersprungene Themen und „Keine von beiden“ werden **nicht** in die Tendenz oder deren Nenner einbezogen.
+- Jede eindeutige Positionswahl zählt genau einen Punkt für den intern zugeordneten Kandidaten.
+- Ohne eindeutige Positionswahl werden keine Prozentwerte ausgewiesen.
+- `leftActor` und `rightActor` müssen pro Thema verschieden sein und bleiben dauerhaft fest.
 - `getNextUnresolvedIndex` läuft zyklisch und gibt `null` zurück, wenn alles erledigt ist.
 
 ## Lokal starten
@@ -58,14 +59,14 @@ Die E2E-Suite startet diesen Server automatisch via `playwright.config.js` (`web
 Vor jedem Abschluss einer Aufgabe müssen **alle Tests grün** sein:
 
 ```bash
-npm test           # 116 Tests: 58 Unit + 58 E2E
+npm test           # Unit- und E2E-Suite
 npm run test:unit  # nur Logik, kein Browser
 npm run test:e2e   # nur Browser-Flows
 ```
 
 - Einmalig: `npm install && npx playwright install chromium`.
-- Änderungen an `quiz.js`/`scoring.js`/`dataLoader.js`/`csv.js` → entsprechende Unit-Tests in `test/unit/` pflegen.
-- Änderungen an `app.js`/`admin.js`, `index.html`/`admin.html` oder Flows → E2E-Tests in `test/e2e/flows.spec.js` bzw. `test/e2e/admin.spec.js` pflegen.
+- Änderungen an `quiz.js`/`scoring.js`/`dataLoader.js` → entsprechende Unit-Tests in `test/unit/` pflegen.
+- Änderungen an `app.js`, `index.html` oder Flows → E2E-Tests in `test/e2e/` pflegen.
 - Neue Features brauchen neue Tests; rein visuelle Änderungen mindestens einen E2E-Check.
 - Schreibe keine brittle CSS-Selektoren, die von der exakten DOM-Tiefe abhängen – bevorzugte Hooks: `[data-answer]`, `[data-result-toggle]`, `[data-question-index]`, `[data-weighting-question-id]`, `#progress-text`, `.match-score`.
 
@@ -83,7 +84,7 @@ npm run test:e2e   # nur Browser-Flows
 - Keine neuen Runtime-Abhängigkeiten installieren.
 - Keine Kommentare in den Code streuen.
 - Keine Persistenz oder Tracking einbauen.
-- Keine echten Parteipositionen oder Orte eintragen.
+- Keine politischen Inhalte oder Links außerhalb der bereitgestellten Daten ergänzen.
 - Keine Änderung committen, ohne dass `npm test` grün ist.
 
 ## Schnelle Referenz
