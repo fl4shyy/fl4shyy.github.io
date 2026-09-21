@@ -57,7 +57,7 @@
           ]
         },
         "gruene": {
-          "text": "Die Partei des/der Kandidat(in) will eine Innenstadt ohne durchfahrende Autos. Dafür sehen sie mit der Befreiung des Neumarkts und des Domhofs vom Autoverkehr den Anfang.",
+          "text": "Die Partei des/der Kandidat(in) will eine Innenstadt ohne durchfahrende Autos.\n Dafür sehen sie mit der Befreiung des Neumarkts und des Domhofs vom Autoverkehr den Anfang.",
           "quellen": [
             {
               "text": "Wahlprogramm S.23",
@@ -77,7 +77,7 @@
       "rightActor": "cdu",
       "positionen": {
         "cdu": {
-          "text": "Die Partei des/der Kandidat(in) bedauert die Einführung der Steuer und sieht darin eine Belastung von Touristen und Handwerksbetrieben, die Übernachtungsmöglichkeiten für Montagearbeiter suchen. Ferner sei es eine bürokratische Belastung für Hotels und Pensionen.\n\"Wir möchten Besucherinnen und Besuchern unserer Stadt ein freundliches Gesicht zeigen und freuen uns, wenn sie im Handel, in der Gastronomie oder in der vielfältigen Kulturlandschaft Geld ausgeben, anstatt sie mit einer Sondersteuer zu belasten. Wir treten für die Abschaffung dieser neuen, bürokratischen Steuer ein.\"\n\nIm Vorfeld der Einführung betonte der/die Kandidat(in), dass die Kommunikation mit dem Hotel- und Gaststättengewerbe wichtig sei.",
+          "text": "Die Partei des/der Kandidat(in) bedauert die Einführung der Steuer und sieht darin eine Belastung von Touristen und Handwerksbetrieben, die Übernachtungsmöglichkeiten für Montagearbeiter suchen. Ferner sei es eine bürokratische Belastung für Hotels und Pensionen: \"Wir möchten Besucherinnen und Besuchern unserer Stadt ein freundliches Gesicht zeigen und freuen uns, wenn sie im Handel, in der Gastronomie oder in der vielfältigen Kulturlandschaft Geld ausgeben, anstatt sie mit einer Sondersteuer zu belasten. Wir treten für die Abschaffung dieser neuen, bürokratischen Steuer ein.\"\n\nIm Vorfeld der Einführung betonte der/die Kandidat(in), dass die Kommunikation mit dem Hotel- und Gaststättengewerbe wichtig sei.",
           "quellen": [
             {
               "text": "Wahlprogramm S. 2",
@@ -142,7 +142,7 @@
           ]
         },
         "gruene": {
-          "text": "Der/Die Kandidat(in) sagt dazu: Ja, eine konsequente Busbeschleunigung ist das Rückgrat einer funktionierenden Verkehrswende. Wo immer es verkehrstechnisch und rechtlich machbar ist, schaffen Busspuren auf zweispurigen Hauptverkehrsachsen die nötige Zuverlässigkeit und Schnelligkeit, um den Umstieg auf den ÖPNV attraktiv zu machen.\n\nIm Programm steht dazu: \"Gefahren reduzieren wir durch die Umwandlung von Fahrspuren, Anpassung von Ampelphasen oder Umbau von Kreuzungen. So setzen wir uns weiter für wirkliche Verbesserungen auf den Hauptrouten des Radverkehrs, wie der Iburger Straße ein. Der Wallring wird als zentraler Verkehrsweg neugestaltet.\nZiel: Die Hälfte der Fläche für den Umweltverbund.\"",
+          "text": "Der/Die Kandidat(in) sagt dazu: \"Ja, eine konsequente Busbeschleunigung ist das Rückgrat einer funktionierenden Verkehrswende. Wo immer es verkehrstechnisch und rechtlich machbar ist, schaffen Busspuren auf zweispurigen Hauptverkehrsachsen die nötige Zuverlässigkeit und Schnelligkeit, um den Umstieg auf den ÖPNV attraktiv zu machen.\"\n\nIm Programm steht dazu: \"Gefahren reduzieren wir durch die Umwandlung von Fahrspuren, Anpassung von Ampelphasen oder Umbau von Kreuzungen. So setzen wir uns weiter für wirkliche Verbesserungen auf den Hauptrouten des Radverkehrs, wie der Iburger Straße ein. Der Wallring wird als zentraler Verkehrsweg neugestaltet.\nZiel: Die Hälfte der Fläche für den Umweltverbund.\"",
           "quellen": [
             {
               "text": "Wahlprogramm S. 18",
@@ -167,7 +167,7 @@
       "rightActor": "gruene",
       "positionen": {
         "cdu": {
-          "text": "Die Partei schlug einen Beschluss vor, laut welchem Spielräume für Tempo 30 sachgerecht und unter Berücksichtigung aller Verkehrsarten sowie der jeweiligen\nörtlichen Gegebenheiten zu prüfen sind. Tempo 30 solle insbesondere dort angeordnet werden, wo dies zur Verbesserung der Verkehrssicherheit, zum Schutz\nsensibler Bereiche oder zur Verringerung erheblicher Lärmbelastungen sinnvoll sei. Die Leistungsfähigkeit von Hauptverkehrsstraßen sei dabei angemessen zu berücksichtigen.\nDer/die Kandidat(in) stimmte für diese Art des Beschlusses.",
+          "text": "Die Partei schlug einen Beschluss vor, laut welchem Spielräume für Tempo 30 sachgerecht und unter Berücksichtigung aller Verkehrsarten sowie der jeweiligen\nörtlichen Gegebenheiten zu prüfen sind. Tempo 30 solle insbesondere dort angeordnet werden, wo dies zur Verbesserung der Verkehrssicherheit, zum Schutz\nsensibler Bereiche oder zur Verringerung erheblicher Lärmbelastungen sinnvoll sei. Die Leistungsfähigkeit von Hauptverkehrsstraßen sei dabei angemessen zu berücksichtigen.\n\nDer/die Kandidat(in) stimmte entsprechend für diese Art des Beschlusses.",
           "quellen": [
             {
               "text": "19.05.2026",
@@ -182,7 +182,7 @@
           ]
         },
         "gruene": {
-          "text": "Der/die Kandidat(in) stimmte zudem für einen Beschluss, laut welchem die Verwaltung beauftragt wird, Spielräume konsequent auszuschöpfen und entsprechend Tempo 30 anzuordnen\n\nDie Partei fordert insgesamt mehr Tempo 30: \"Lärm ist eines der größten Gesundheitsrisiken. Aber auch Feinstaub und Stickoxide machen krank. Höhere Geschwindigkeiten erhöhen auch immer das Unfallrisiko und verschlimmern die Folgen eines Unfalls. Wir setzen uns deshalb dafür ein, dass die Stadt alle rechtlichen Möglichkeiten ausschöpft, um für mehr Tempo 30 im Stadtgebiet zu sorgen.\"",
+          "text": "Der/die Kandidat(in) stimmte für einen Beschluss, laut welchem die Verwaltung beauftragt wird, Spielräume konsequent auszuschöpfen und entsprechend Tempo 30 anzuordnen\n\nDie Partei fordert insgesamt mehr Tempo 30: \"Lärm ist eines der größten Gesundheitsrisiken. Aber auch Feinstaub und Stickoxide machen krank. Höhere Geschwindigkeiten erhöhen auch immer das Unfallrisiko und verschlimmern die Folgen eines Unfalls. Wir setzen uns deshalb dafür ein, dass die Stadt alle rechtlichen Möglichkeiten ausschöpft, um für mehr Tempo 30 im Stadtgebiet zu sorgen.\"",
           "quellen": [
             {
               "text": "Ratssitzung 19.05.2026",
@@ -212,7 +212,7 @@
       "rightActor": "cdu",
       "positionen": {
         "cdu": {
-          "text": "Die Partei des/der Kandidat(in) fordert: \"Die Parkgebühren sind in dieser Wahlperiode exemplarisch für die erste Stunde von 1,50 € auf 2,50 € gestiegen. Gleichzeitig sind die Einfahrten in die städtischen Parkhäuser um ca. 15 % rückläufig. Zusätzliche Einnahmen verpuffen somit direkt wieder. Die erhöhten Parkgebühren reduzieren zudem die Attraktivität Osnabrücks gerade für Menschen aus dem Umland, die nach Osnabrück zum Einkaufen kommen, deutlich. Aus dem Landkreis oder aus dem Emsland scheiden Fahrrad und Bus oftmals aus, sodass die Erreichbarkeit und Bezahlbarkeit der Parkhäuser in Osnabrück wichtig ist für Handel, Gastronomie und Kultur. Wir stehen deshalb für eine Absenkung der überhöhten Parkgebühren.\"",
+          "text": "Die Partei des/der Kandidat(in) fordert:\n \"Die Parkgebühren sind in dieser Wahlperiode exemplarisch für die erste Stunde von 1,50 € auf 2,50 € gestiegen. Gleichzeitig sind die Einfahrten in die städtischen Parkhäuser um ca. 15 % rückläufig. Zusätzliche Einnahmen verpuffen somit direkt wieder. Die erhöhten Parkgebühren reduzieren zudem die Attraktivität Osnabrücks gerade für Menschen aus dem Umland, die nach Osnabrück zum Einkaufen kommen, deutlich. Aus dem Landkreis oder aus dem Emsland scheiden Fahrrad und Bus oftmals aus, sodass die Erreichbarkeit und Bezahlbarkeit der Parkhäuser in Osnabrück wichtig ist für Handel, Gastronomie und Kultur. Wir stehen deshalb für eine Absenkung der überhöhten Parkgebühren.\"",
           "quellen": [
             {
               "text": "Wahlprogramm S. 5",
@@ -222,7 +222,7 @@
           ]
         },
         "gruene": {
-          "text": "Die Partei des/der Kandidat(in) fordert: \"Gleichzeitig wollen wir die Parkgebühren schrittweise anpassen und oberirdische Stellplätze in Flächen für Fuß- und Radverkehr, Grünräume und soziale Nutzungen umwandeln. Zusätzliche Einnahmen kommen direkt der Schaffung von mehr klimafreundlicher Mobilität zugute und der öffentliche Raum wird nicht nur fairer verteilt, sondern auch sicherer.\"",
+          "text": "Die Partei des/der Kandidat(in) fordert:\n \"Gleichzeitig wollen wir die Parkgebühren schrittweise anpassen und oberirdische Stellplätze in Flächen für Fuß- und Radverkehr, Grünräume und soziale Nutzungen umwandeln. Zusätzliche Einnahmen kommen direkt der Schaffung von mehr klimafreundlicher Mobilität zugute und der öffentliche Raum wird nicht nur fairer verteilt, sondern auch sicherer.\"",
           "quellen": [
             {
               "text": "Wahlprogramm S. 23",
@@ -322,7 +322,7 @@
           ]
         },
         "gruene": {
-          "text": "Wir wollen verantwortungsvoll mit der knappen Ressource Fläche umgehen. Deshalb planen wir keine neuen Einfamilienhaussiedlungen. Stattdessen setzen wir auf\nNachverdichtung und kluge städtebauliche Lösungen – wie sie beispielsweise an der Windthorststraße oder westlich in der Schafmarsch geplant sind.",
+          "text": "Die Partei des/der Kandidat(in) positioniert sich wie folgt:\n\n\"Wir wollen verantwortungsvoll mit der knappen Ressource Fläche umgehen. Deshalb planen wir keine neuen Einfamilienhaussiedlungen. Stattdessen setzen wir auf\nNachverdichtung und kluge städtebauliche Lösungen – wie sie beispielsweise an der Windthorststraße oder westlich in der Schafmarsch geplant sind.\"",
           "quellen": [
             {
               "text": "Wahlprogramm S. 11",
@@ -342,7 +342,7 @@
       "rightActor": "cdu",
       "positionen": {
         "cdu": {
-          "text": "Der/die Kandidat(in) stimmte gegen den Beschluss.\n\nEine Fraktionskollegin führte aus, führt aus, dass nicht nur die Mieten, sondern auch die Nominallöhne und Verbraucherpreise angestiegen seien. Der Durchschnittsverdiener könne sich daher die höheren Mieten weiter leisten. Die Erstellung eines qualifizierten Mietpreisspiegels sei zeitaufwendig und kostspielig. Es sei besser, die Erfahrungen aus anderen Städten abzuwarten. Es sei erforderlich, eine signifikante Zahl von Bürgerinnen und Bürger alle zwei Jahre zur Auskunft zu verpflichten. Ferner kämen Bußgelder bei Nichterfüllung hinzu. Das stehe einem Bürokratieabbau entgegen. Der Verein Haus & Grund, der Mieterverein sowie der Immobilienverband Deutschland hätten nur ein geringes Interesse an einem qualifizierten Mietspiegel geäußert. Es gebe auch alternative Maßnahmen wie eine Erhöhung der Attraktivität für potenzielle Investoren im Hinblick auf Neubaumaßnahmen, die Förderung von energieeffizientem Umbau von Gebäuden oder eine Herabsetzung der Grundsteuer. Der Zuschlag für bessere Lagen sei gering, was die Attraktivität solcher Investitionen verringere. Zudem stehe teils durch WiO oder Stephanswerk geförderter Wohnraum zur Verfügung",
+          "text": "Der/die Kandidat(in) stimmte gegen den Beschluss.\n\nEine Fraktionskollegin führte aus, führt aus, dass nicht nur die Mieten, sondern auch die Nominallöhne und Verbraucherpreise angestiegen seien. Der Durchschnittsverdiener könne sich daher die höheren Mieten weiter leisten. Die Erstellung eines qualifizierten Mietpreisspiegels sei zeitaufwendig und kostspielig. Es sei besser, die Erfahrungen aus anderen Städten abzuwarten. Es sei erforderlich, eine signifikante Zahl von Bürgerinnen und Bürger alle zwei Jahre zur Auskunft zu verpflichten. Ferner kämen Bußgelder bei Nichterfüllung hinzu. Das stehe einem Bürokratieabbau entgegen. (...) Sie verweist in der folge auf alternative Maßnahmen wie eine Erhöhung der Attraktivität für potenzielle Investoren im Hinblick auf Neubaumaßnahmen, die Förderung von energieeffizientem Umbau von Gebäuden oder eine Herabsetzung der Grundsteuer.",
           "quellen": [
             {
               "text": "Ratssitzung 03.09.2024",
@@ -352,7 +352,7 @@
           ]
         },
         "gruene": {
-          "text": "Der/die Kandidat(in) stimmte für den Beschluss.\nEine Fraktionskollegin begründete, es ginge darum Transparenz und Verlässlichkeit sowie Gerechtigkeit herzustellen. Man finde z. B. bei Immoscout Anzeigen, die die Höchstmietgrenze des Mietpreisspiegels in Osnabrück deutlich überstiegen. Durch die Einführung eines gerichtsfesten Mietspiegels würde mehr Rechtssicherheit geschaffen. Auch wenn dies aufwändiger sei, so sei es angemessen angesichts der Vorteile, die zu erwarten seien. Ein qualifizierter Mietpreisspiegel solle nicht von heute auf morgen, sondern schrittweise eingeführt werden, wobei alle Beteiligten ausreichend Zeit eingeräumt bekommen sollen, sich einzubringen.",
+          "text": "Der/die Kandidat(in) stimmte für den Beschluss.\n\nEine Fraktionskollegin begründete, es ginge darum Transparenz und Verlässlichkeit sowie Gerechtigkeit herzustellen. Man finde z. B. bei Immoscout Anzeigen, die die Höchstmietgrenze des Mietpreisspiegels in Osnabrück deutlich überstiegen. Durch die Einführung eines gerichtsfesten Mietspiegels würde mehr Rechtssicherheit geschaffen. Auch wenn dies aufwändiger sei, so sei es angemessen angesichts der Vorteile, die zu erwarten seien. Ein qualifizierter Mietpreisspiegel solle nicht von heute auf morgen, sondern schrittweise eingeführt werden, wobei alle Beteiligten ausreichend Zeit eingeräumt bekommen sollen, sich einzubringen.",
           "quellen": [
             {
               "text": "Ratssitzung 03.09.2024",
@@ -377,7 +377,7 @@
       "rightActor": "cdu",
       "positionen": {
         "cdu": {
-          "text": "Der/die Kandidat(in) stimmte gegen den Beschluss.\nDer/die Kandidat(in) betont, dass für alle Antragsteller ein Betreuungsangebot von 0 Jahren bis zum Ende der Grundschulzeit mit Betreuung bis 17 Uhr geschaffen werden könne. Entscheidend sei dabei nicht die Kostenfrage, sondern ein verlässliches Betreuungsangebot.\nGleichzeitig weist er/sie auf den hohen Personalbedarf hin. Die vorhandenen Landesmittel seien nicht ausreichend, zudem seien die benötigten Fachkräfte am Arbeitsmarkt kaum verfügbar. Durch eine Beitragsbefreiung für Horte bis 17 Uhr sei außerdem mit deutlich höheren Anmeldezahlen, insbesondere für die Ferienbetreuung, zu rechnen. Dadurch müssten möglicherweise ganzjährig Fachkräfte vorgehalten werden, die tatsächlich nur in den Ferien benötigt würden. Daher appelliert er/sie an den Rat, der Beschlussvorlage nicht zuzustimmen.",
+          "text": "Der/die Kandidat(in) stimmte gegen den Beschluss.\n\nDer/die Kandidat(in) betont, dass für alle Antragsteller ein Betreuungsangebot von 0 Jahren bis zum Ende der Grundschulzeit mit Betreuung bis 17 Uhr geschaffen werden könne. Entscheidend sei dabei nicht die Kostenfrage, sondern ein verlässliches Betreuungsangebot.\nGleichzeitig weist er/sie auf den hohen Personalbedarf hin. Die vorhandenen Landesmittel seien nicht ausreichend, zudem seien die benötigten Fachkräfte am Arbeitsmarkt kaum verfügbar. Durch eine Beitragsbefreiung für Horte bis 17 Uhr sei außerdem mit deutlich höheren Anmeldezahlen, insbesondere für die Ferienbetreuung, zu rechnen. Dadurch müssten möglicherweise ganzjährig Fachkräfte vorgehalten werden, die tatsächlich nur in den Ferien benötigt würden. Daher appelliert er/sie an den Rat, der Beschlussvorlage nicht zuzustimmen.",
           "quellen": [
             {
               "text": "Ratssitzung 01.07.2025",
@@ -387,7 +387,7 @@
           ]
         },
         "gruene": {
-          "text": "Der/die Kandidat(in) stimmte für den Beschluss.\nDer/die Kandidat(in)  vertritt die Ansicht, eine Kindesbetreuung dürfe nicht am Geld scheitern. Er/Sie sehe es als eine Pflicht der Politik, trotz der großen finanziellen Herausforderung junge Familien zu unterstützen. In diesem Kontext macht er/sie auf einen Haushaltsentwurf des Landes aufmerksam, der einen neuen Bezuschussungsmodus für Kindertagesstätten vorsehe.",
+          "text": "Der/die Kandidat(in) stimmte für den Beschluss.\n\nDer/die Kandidat(in) vertritt die Ansicht, eine Kindesbetreuung dürfe nicht am Geld scheitern. Er/Sie sehe es als eine Pflicht der Politik, trotz der großen finanziellen Herausforderung junge Familien zu unterstützen. In diesem Kontext macht er/sie auf einen Haushaltsentwurf des Landes aufmerksam, der einen neuen Bezuschussungsmodus für Kindertagesstätten vorsehe.",
           "quellen": [
             {
               "text": "Ratssitzung 01.07.2025",
